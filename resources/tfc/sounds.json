@@ -1,0 +1,57 @@
+{
+  "dirt.slide.short": {
+    "category": "block",
+    "subtitle": "tfc.dirt.slide",
+    "replace": true,
+    "sounds": [
+      { "name": "tfc:fdirts1", "pitch": 0.7},
+      { "name": "tfc:fdirts1", "pitch": 0.8},
+      { "name": "tfc:fdirts1", "pitch": 0.9},
+      { "name": "tfc:fdirts1", "pitch": 1.0},
+      { "name": "tfc:fdirts1", "pitch": 1.1},
+      { "name": "tfc:fdirts1", "pitch": 1.2},
+      { "name": "tfc:fdirts2", "pitch": 0.7},
+      { "name": "tfc:fdirts2", "pitch": 0.8},
+      { "name": "tfc:fdirts2", "pitch": 0.9},
+      { "name": "tfc:fdirts2", "pitch": 1.0},
+      { "name": "tfc:fdirts2", "pitch": 1.1},
+      { "name": "tfc:fdirts2", "pitch": 1.2}
+    ]
+  },
+  "rock.slide.long": {
+    "category": "block",
+    "subtitle": "tfc.rock.slide",
+    "sounds": [
+      { "name": "tfc:frockl1", "pitch": 0.7},
+      { "name": "tfc:frockl1", "pitch": 0.8},
+      { "name": "tfc:frockl1", "pitch": 0.9},
+      { "name": "tfc:frockl1", "pitch": 1.0},
+      { "name": "tfc:frockl1", "pitch": 1.1},
+      { "name": "tfc:frockl1", "pitch": 1.2},
+      { "name": "tfc:frockl2", "pitch": 0.7},
+      { "name": "tfc:frockl2", "pitch": 0.8},
+      { "name": "tfc:frockl2", "pitch": 0.9},
+      { "name": "tfc:frockl2", "pitch": 1.0},
+      { "name": "tfc:frockl2", "pitch": 1.1},
+      { "name": "tfc:frockl2", "pitch": 1.2}
+    ]
+  },
+  "rock.slide.short": {
+    "category": "block",
+    "subtitle": "tfc.rock.slide",
+    "sounds": [
+      { "name": "tfc:frocks1", "pitch": 0.7},
+      { "name": "tfc:frocks1", "pitch": 0.8},
+      { "name": "tfc:frocks1", "pitch": 0.9},
+      { "name": "tfc:frocks1", "pitch": 1.0},
+      { "name": "tfc:frocks1", "pitch": 1.1},
+      { "name": "tfc:frocks1", "pitch": 1.2},
+      { "name": "tfc:frocks2", "pitch": 0.7},
+      { "name": "tfc:frocks2", "pitch": 0.8},
+      { "name": "tfc:frocks2", "pitch": 0.9},
+      { "name": "tfc:frocks2", "pitch": 1.0},
+      { "name": "tfc:frocks2", "pitch": 1.1},
+      { "name": "tfc:frocks2", "pitch": 1.2}
+    ]
+  }
+}

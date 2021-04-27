@@ -1,0 +1,63 @@
+{
+    "images":
+    {
+
+    },
+    
+    "buttons": {
+        "quit":
+        {
+            "text" : "Quit",
+            "posX" : 2,
+            "posY" : 10,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+        "back":
+        {
+            "text" : "Back",
+            "posX" : -100,
+            "posY" : 10,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui": "mainmenu"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "text":
+        {
+            "text" : "Are you sure you want to quit?",
+            "posX" : 0,
+            "posY" : -30,
+            "color": -1,
+            "hoverColor": -1,
+            "anchor": "middle",
+            "alignment" : "center"
+        }
+    },
+    
+    "other":
+    {
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : false,
+            "synced": true
+        }
+    }
+}

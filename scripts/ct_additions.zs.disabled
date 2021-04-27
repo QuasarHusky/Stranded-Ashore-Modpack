@@ -1,0 +1,21 @@
+#loader contenttweaker
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Block;
+import mods.contenttweaker.AxisAlignedBB;
+
+// ===== Ambient Light Blocks ===== //
+for i in 0 to 15 {
+    var block = VanillaFactory.createBlock("ambient_light_" ~ i, <blockmaterial:portal>);
+    block.setAxisAlignedBB(AxisAlignedBB.create(0.3, 0.3, 0.3, 0.7, 0.7, 0.7));
+    block.setLightOpacity(0);
+    block.setLightValue(15 - i);
+    block.setBlockHardness(100000.0);
+    block.setBlockResistance(100000.0);
+    block.setWitherProof(true);
+    block.setTranslucent(true);
+    block.setPassable(true);
+    block.setFullBlock(false);
+    block.setEnumBlockRenderType("INVISIBLE");
+    block.setCreativeTab(<creativetab:misc>);
+    block.register();
+}

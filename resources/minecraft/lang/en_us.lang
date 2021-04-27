@@ -1,0 +1,42 @@
+tile.stone.stone.name=Pure Stone
+tile.dirt.name=Pure Dirt
+tile.dirt.default.name=Pure Dirt
+tile.grass.name=Pure Grass
+tile.sand.name=Pure Sand
+tile.sand.default.name=Pure Sand
+tile.gravel.name=Pure Gravel
+tile.stonebrick.name=Pure Cobblestone
+tile.workbench.name=Pure Workbench
+
+tile.wood.name=Traditional Planks
+tile.wood.oak.name=Traditional Oak Planks
+tile.wood.spruce.name=Traditional Spruce Planks
+tile.wood.birch.name=Traditional Birch Planks
+tile.wood.jungle.name=Traditional Jungle Planks
+tile.wood.acacia.name=Traditional Acacia Planks
+tile.wood.big_oak.name=Traditional Dark Oak Planks
+
+tile.log.name=Traditional Log
+tile.log.oak.name=Traditional Oak Log
+tile.log.spruce.name=Traditional Spruce Log
+tile.log.birch.name=Traditional Birch Log
+tile.log.jungle.name=Traditional Jungle Log
+tile.log.acacia.name=Traditional Acacia Log
+tile.log.big_oak.name=Traditional Dark Oak Log
+
+item.coal.name=Ancient Coal
+item.diamond.name=Ancient Diamond
+item.emerald.name=Ancient Emerald
+item.ingotIron.name=Ancient Iron
+item.ingotGold.name=Ancient Gold
+item.dyePowder.blue.name=Lunar Lapis
+item.reeds.name=Petrified Sugar Cane
+item.netherquartz.name=Quartz
+
+tile.anvil.name=Tool Workbench
+tile.anvil.intact.name=Tool Workbench
+tile.anvil.slightlyDamaged.name=Worn Tool Workbench
+tile.anvil.veryDamaged.name=Damaged Tool Workbench
+
+item.helmetIron.name=Mining Helmet
+item.hatchetWood.name=WorldEdit Wand

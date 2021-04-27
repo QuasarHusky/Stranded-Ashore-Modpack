@@ -1,0 +1,8 @@
+item.chisel.chisel_iron.name=Rock Decorative Chisel
+item.chisel.chisel_diamond.name=Copper Decorative Chisel
+item.chisel.chisel_hitech.name=Advanced Decorative Chisel
+item.chisel.offsettool.name=Decorative Offsetter Tool
+
+jei.chisel.desc.chisel_iron=The rock chisel is the most basic chisel, it has a low durability, and can only chisel one block in the world at a time.
+jei.chisel.desc.chisel_diamond=The copper chisel is the mid-tier chisel, it has a high durability, and the ability to chisel up to 3x3 (9) blocks at once!
+jei.chisel.desc.chisel_hitech=The advanced chisel is the newest revolution in chiseling technology! No more moving stacks around, just click on the source (in your inventory) and then the target (in the selection slots), then the button on the left to chisel away. Holding SHIFT allows you to chisel every stack of the same type at once. The handy preview window at the top left shows what the target block will look like in the world. Finally, the iChisel allows you to chisel OVER 9000 blocks in the world! Using the Contiguous and Contiguous 2D modes you can chisel an area of similar blocks at the same time.

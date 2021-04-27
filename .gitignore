@@ -1,0 +1,12 @@
+/**
+!.gitignore
+!/config/
+!/config/**
+!/resourcepacks/
+!/resourcepacks/**
+!/resources/
+!/resources/**
+!/scripts/
+!/scripts/**
+!/background.png
+!/LICENSE

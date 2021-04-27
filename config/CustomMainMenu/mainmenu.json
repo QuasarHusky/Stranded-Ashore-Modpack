@@ -1,0 +1,244 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "modpack:textures/gui/logo.png",
+            "posX" : -108,
+            "posY" : -110,
+            "width" : 320,
+            "height" : 320,
+            "alignment" : "center"
+        },
+
+        "player_head_default":
+        {
+            "image": "modpack:textures/gui/player_head_default.png",
+            "posX" : 10,
+            "posY" : -31,
+            "width" : 20,
+            "height" : 24,
+            "alignment" : "bottom_left"
+        },
+
+        "player_head":
+        {
+            "image": "web:https://minotar.net/cube/#username#/300.png",
+            "posX" : 10,
+            "posY" : -31,
+            "width" : 20,
+            "height" : 24,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "Singleplayer",
+            "posX" : -100,
+            "posY" : -5,
+            "width" : 200,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "Multiplayer",
+            "posX" : -100,
+            "posY" : 19,
+            "width" : 200,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+
+        "language":
+        {
+            "text" : "",
+            "posX" : -100,
+            "posY" : 43,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+
+        "options":
+        {
+            "text" : "Settings",
+            "posX" : -76,
+            "posY" : 43,
+            "width" : 86,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+        
+        "mods":
+        {
+            "text" : "Mods",
+            "posX" : 14,
+            "posY" : 43,
+            "width" : 86,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "Quit",
+            "posX" : -100,
+            "posY" : 75,
+            "width" : 200,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.quit"
+            }
+        },
+
+        "replay_mod":
+        {
+            "text" : "Replay Mod",
+            "posX" : 5,
+            "posY" : 5,
+            "width" : 105,
+            "height" : 20,
+            "alignment" : "top_left",
+            "wrappedButton": "17890234",
+            "texture": "modpack:textures/gui/replay_buttons.png"
+        }
+
+    },
+    
+    "labels":
+    {
+        "pack_version":
+        {
+            "text" : "Stranded Ashore v1.1.0",
+            "posX" : -10,
+            "posY" : -66,
+            "color" : -1,
+            "hoverColor": 16776960,
+            "anchor": "end",
+            "alignment" : "bottom_right",
+            "action": {
+                "type": "openLink",
+                "link": "https://www.youtube.com/watch?v=5sNuDu4dE8Y"
+            }
+        },
+
+        "pack_update":
+        {
+            "text" : "web:https://quasarhusky.uk/stranded-ashore/version-check?v=1.1.0",
+            "posX" : 0,
+            "posY" : 5,
+            "color" : 16776960,
+            "hoverColor": -1,
+            "anchor": "middle",
+            "alignment" : "top_center",
+            "action": {
+                "type": "openLink",
+                "link": "https://github.com/QuasarHusky/Stranded-Ashore-Modpack/releases"
+            }
+        },
+
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB.",
+            "posX" : -10,
+            "posY" : -18,
+            "color" : -1,
+            "hoverColor": 16776960,
+            "anchor": "end",
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "credits"
+            }
+        },
+        
+        "info":
+        {
+            "text" : "Minecraft #mcversion#\nForge #forgeversion#\n#modsloaded# Mods Loaded",
+            "posX" : -10,
+            "posY" : -51,
+            "color" : -1,
+            "anchor": "end",
+            "alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        },
+
+        "player_name":
+        {
+            "text" : "#username#",
+            "posX" : 35,
+            "posY" : -28,
+            "color": -1,
+            "alignment" : "bottom_left"
+        },
+
+        "playermessage":
+        {
+            "text" : "web:https://quasarhusky.uk/friends-modpack/message/?username=#username#",
+            "posX" : 35,
+            "posY" : -19,
+            "color": 16776960,
+            "hoverColor": 16776960,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 80,
+            "posY" : -40,
+            "color" : -256,
+            "alignment" : "center",
+            "texts" : "file:modpack:texts/splashes.txt"
+        },
+        
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : false,
+            "synced": true
+        }
+    }
+}
