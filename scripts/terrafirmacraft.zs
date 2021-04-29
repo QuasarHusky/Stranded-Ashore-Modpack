@@ -3,6 +3,7 @@ import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.Loom;
 
 // ===== Gem Growing ===== //
 for gem in tfc_gem_types {
@@ -153,3 +154,6 @@ for crop in tfc_crop_types {
 
     Barrel.addRecipe("crop_growing_" ~ crop, seeds, <liquid:water> * 1000, produce, null, 24 * 8);
 }
+
+// ===== Jute Is Too Hard™ ===== //
+Loom.addRecipe("jute_fiber", <ore:straw> * 10, <tfc:crop/product/jute_fiber>, 10, "tfc:textures/blocks/plants/sargassum/sargassum.png");
