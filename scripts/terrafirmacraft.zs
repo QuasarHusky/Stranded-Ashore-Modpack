@@ -157,4 +157,4 @@ for crop in tfc_crop_types {
 }
 
 // ===== Jute Is Too Hard™ ===== //
-Loom.addRecipe("jute_fiber", <ore:straw> * 10, <tfc:crop/product/jute_fiber>, 10, "tfc:textures/blocks/plants/sargassum/sargassum.png");
+Loom.addRecipe("jute_fiber", <ore:straw> * 10, <tfc:crop/product/jute_fiber>, 10, "tfc:textures/blocks/thatch.png");
