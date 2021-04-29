@@ -153,6 +153,7 @@ for crop in tfc_crop_types {
     var produce as IItemStack = tfc_crop_produce[crop];
 
     Barrel.addRecipe("crop_growing_" ~ crop, seeds, <liquid:fresh_water> * 1000, produce * 2, null, 24 * 8);
+    Barrel.addRecipe("crop_seeds_" ~ crop, produce, <liquid:salt_water> * 1000, seeds * 3, null, 24 * 2);
 }
 
 // ===== Jute Is Too Hard™ ===== //
