@@ -212,3 +212,90 @@ JEI.removeAndHide(<thermalfoundation:tool.shears_bronze>);
 JEI.removeAndHide(<thermalfoundation:tool.sickle_bronze>);
 JEI.removeAndHide(<thermalfoundation:tool.shield_bronze>);
 JEI.removeAndHide(<thermalfoundation:horse_armor_bronze>);
+
+JEI.removeAndHide(<thermalfoundation:armor.helmet_constantan>);
+JEI.removeAndHide(<thermalfoundation:armor.plate_constantan>);
+JEI.removeAndHide(<thermalfoundation:armor.legs_constantan>);
+JEI.removeAndHide(<thermalfoundation:armor.boots_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.sword_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.shovel_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.pickaxe_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.axe_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.hoe_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.bow_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.fishing_rod_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.shears_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.sickle_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.shield_constantan>);
+JEI.removeAndHide(<thermalfoundation:horse_armor_constantan>);
+
+JEI.removeAndHide(<thermalfoundation:tool.bow_iron>);
+JEI.removeAndHide(<thermalfoundation:tool.fishing_rod_iron>);
+JEI.removeAndHide(<thermalfoundation:tool.sickle_iron>);
+
+JEI.removeAndHide(<thermalfoundation:tool.bow_diamond>);
+JEI.removeAndHide(<thermalfoundation:tool.fishing_rod_diamond>);
+JEI.removeAndHide(<thermalfoundation:tool.shears_diamond>);
+JEI.removeAndHide(<thermalfoundation:tool.sickle_diamond>);
+JEI.removeAndHide(<thermalfoundation:tool.hammer_diamond>);
+JEI.removeAndHide(<thermalfoundation:tool.excavator_diamond>);
+JEI.removeAndHide(<thermalfoundation:tool.shield_diamond>);
+
+JEI.removeAndHide(<thermalfoundation:tool.bow_gold>);
+JEI.removeAndHide(<thermalfoundation:tool.fishing_rod_gold>);
+JEI.removeAndHide(<thermalfoundation:tool.shears_gold>);
+JEI.removeAndHide(<thermalfoundation:tool.sickle_gold>);
+JEI.removeAndHide(<thermalfoundation:tool.hammer_gold>);
+JEI.removeAndHide(<thermalfoundation:tool.excavator_gold>);
+JEI.removeAndHide(<thermalfoundation:tool.shield_gold>);
+
+// Gears
+recipes.remove(<thermalfoundation:material:22>);
+recipes.remove(<thermalfoundation:material:23>);
+recipes.remove(<thermalfoundation:material:24>);
+recipes.remove(<thermalfoundation:material:25>);
+recipes.remove(<thermalfoundation:material:26>);
+recipes.remove(<thermalfoundation:material:27>);
+recipes.remove(<thermalfoundation:material:256>);
+recipes.remove(<thermalfoundation:material:257>);
+recipes.remove(<thermalfoundation:material:258>);
+recipes.remove(<thermalfoundation:material:259>);
+recipes.remove(<thermalfoundation:material:260>);
+recipes.remove(<thermalfoundation:material:261>);
+recipes.remove(<thermalfoundation:material:262>);
+recipes.remove(<thermalfoundation:material:263>);
+recipes.remove(<thermalfoundation:material:264>);
+recipes.remove(<thermalfoundation:material:288>);
+recipes.remove(<thermalfoundation:material:289>);
+recipes.remove(<thermalfoundation:material:290>);
+recipes.remove(<thermalfoundation:material:291>);
+recipes.remove(<thermalfoundation:material:292>);
+recipes.remove(<thermalfoundation:material:293>);
+recipes.remove(<thermalfoundation:material:294>);
+recipes.remove(<thermalfoundation:material:295>);
+
+// Components
+recipes.remove(<thermalfoundation:material:512>);
+recipes.remove(<thermalfoundation:material:513>);
+recipes.remove(<thermalfoundation:material:514>);
+recipes.remove(<thermalfoundation:material:515>);
+recipes.remove(<thermalfoundation:material:640>);
+recipes.remove(<thermalfoundation:material:656>);
+recipes.remove(<thermalfoundation:material:657>);
+
+recipes.addShapeless("pigment_0",  <thermalfoundation:dye:0>, [ <ore:dyeBlack> ]);
+recipes.addShapeless("pigment_1",  <thermalfoundation:dye:1>, [ <ore:dyeRed> ]);
+recipes.addShapeless("pigment_2",  <thermalfoundation:dye:2>, [ <ore:dyeGreen> ]);
+recipes.addShapeless("pigment_3",  <thermalfoundation:dye:3>, [ <ore:dyeBrown> ]);
+recipes.addShapeless("pigment_4",  <thermalfoundation:dye:4>, [ <ore:dyeBlue> ]);
+recipes.addShapeless("pigment_5",  <thermalfoundation:dye:5>, [ <ore:dyePurple> ]);
+recipes.addShapeless("pigment_6",  <thermalfoundation:dye:6>, [ <ore:dyeCyan> ]);
+recipes.addShapeless("pigment_7",  <thermalfoundation:dye:7>, [ <ore:dyeLightGray> ]);
+recipes.addShapeless("pigment_8",  <thermalfoundation:dye:8>, [ <ore:dyeGray> ]);
+recipes.addShapeless("pigment_9",  <thermalfoundation:dye:9>, [ <ore:dyePink> ]);
+recipes.addShapeless("pigment_10", <thermalfoundation:dye:10>, [ <ore:dyeLime> ]);
+recipes.addShapeless("pigment_11", <thermalfoundation:dye:11>, [ <ore:dyeYellow> ]);
+recipes.addShapeless("pigment_12", <thermalfoundation:dye:12>, [ <ore:dyeLightBlue> ]);
+recipes.addShapeless("pigment_13", <thermalfoundation:dye:13>, [ <ore:dyeMagenta> ]);
+recipes.addShapeless("pigment_14", <thermalfoundation:dye:14>, [ <ore:dyeOrange> ]);
+recipes.addShapeless("pigment_15", <thermalfoundation:dye:15>, [ <ore:dyeWhite> ]);
