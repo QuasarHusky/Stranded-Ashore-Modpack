@@ -283,6 +283,7 @@ recipes.remove(<thermalfoundation:material:640>);
 recipes.remove(<thermalfoundation:material:656>);
 recipes.remove(<thermalfoundation:material:657>);
 
+// Pigments
 recipes.addShapeless("pigment_0",  <thermalfoundation:dye:0>, [ <ore:dyeBlack> ]);
 recipes.addShapeless("pigment_1",  <thermalfoundation:dye:1>, [ <ore:dyeRed> ]);
 recipes.addShapeless("pigment_2",  <thermalfoundation:dye:2>, [ <ore:dyeGreen> ]);
