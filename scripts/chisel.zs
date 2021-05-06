@@ -7,6 +7,8 @@ recipes.remove(<chisel:chisel_hitech>);
 recipes.remove(<chisel:offsettool>);
 recipes.remove(<chisel:auto_chisel>);
 
+recipes.removeByRecipeName("chisel:charcoal_uncraft");
+
 recipes.addShaped("chisel_iron", <chisel:chisel_iron>,
     [[<ore:rock>],
      [<ore:stickWood>]]
