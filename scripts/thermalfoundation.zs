@@ -1,4 +1,5 @@
 import mods.jei.JEI;
+import mods.terrafirmacraft.Quern;
 
 JEI.removeAndHide(<thermalfoundation:rockwool:*>);
 JEI.removeAndHide(<thermalfoundation:wrench>);
@@ -300,3 +301,17 @@ recipes.addShapeless("pigment_12", <thermalfoundation:dye:12>, [ <ore:dyeLightBl
 recipes.addShapeless("pigment_13", <thermalfoundation:dye:13>, [ <ore:dyeMagenta> ]);
 recipes.addShapeless("pigment_14", <thermalfoundation:dye:14>, [ <ore:dyeOrange> ]);
 recipes.addShapeless("pigment_15", <thermalfoundation:dye:15>, [ <ore:dyeWhite> ]);
+
+// Dusts
+Quern.addRecipe("dust_aluminum", <ore:ingotAluminum>, <thermalfoundation:material:68>);
+Quern.addRecipe("dust_iridium", <ore:ingotIridium>, <thermalfoundation:material:71>);
+Quern.addRecipe("dust_mithril", <ore:ingotMithril>, <thermalfoundation:material:72>);
+Quern.addRecipe("dust_electrum", <ore:ingotElectrum>, <thermalfoundation:material:97>);
+Quern.addRecipe("dust_invar", <ore:ingotInvar>, <thermalfoundation:material:98>);
+Quern.addRecipe("dust_constantan", <ore:ingotConstantan>, <thermalfoundation:material:100>);
+Quern.addRecipe("dust_signalum", <ore:ingotSignalum>, <thermalfoundation:material:101>);
+Quern.addRecipe("dust_lumium", <ore:ingotLumium>, <thermalfoundation:material:102>);
+Quern.addRecipe("dust_enderium", <ore:ingotEnderium>, <thermalfoundation:material:103>);
+Quern.addRecipe("dust_coal", <ore:gemCoal>, <thermalfoundation:material:768> * 4);
+Quern.addRecipe("dust_obsidian", <ore:obsidian>, <thermalfoundation:material:770>);
+Quern.addRecipe("dust_sawdust", <ore:lumber>, <thermalfoundation:material:800> * 3);
