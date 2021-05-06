@@ -12,8 +12,7 @@
       "entries": [
         "{material:\"minecraft:flowing_lava\",count:1,id:\"material\"}",
         "{count:1,block:\"minecraft:torch\",id:\"block\"}",
-        "{item:\"minecraft:lava_bucket\",count:1,id:\"item\"}",
-        "{item:\"nyx:fallen_star\",count:1,id:\"item\"}"
+        "{item:\"minecraft:lava_bucket\",count:1,id:\"item\"}"
       ],
       "isWhitelist": false
     },
@@ -30,8 +29,7 @@
       "entries": [
         "{material:\"minecraft:flowing_lava\",count:1,id:\"material\"}",
         "{count:1,block:\"minecraft:torch\",id:\"block\"}",
-        "{item:\"minecraft:lava_bucket\",count:1,id:\"item\"}",
-        "{item:\"nyx:fallen_star\",count:1,id:\"item\"}"
+        "{item:\"minecraft:lava_bucket\",count:1,id:\"item\"}"
       ],
       "isWhitelist": true
     }
