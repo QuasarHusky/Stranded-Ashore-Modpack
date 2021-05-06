@@ -79,7 +79,7 @@ recipes.addShaped("mining_helmet", <minecraft:iron_helmet>,
 );
 
 // Pure / Pristine Blocks
-Barrel.addRecipe("water_purification", <ore:string>, <liquid:fresh_water> * 1000, <tfc:crop/product/dirty_jute_net>, <liquid:water> * 1000, 1);
+Barrel.addRecipe("water_purification", <tfc:crop/product/jute_net>, <liquid:fresh_water> * 1000, <tfc:crop/product/dirty_jute_net>, <liquid:water> * 1000, 1);
 Barrel.addRecipe("pure_stone", <ore:stone>, <liquid:water> * 100, <minecraft:stone>, null, 1);
 Barrel.addRecipe("pure_cobblestone", <ore:cobblestone>, <liquid:water> * 100, <minecraft:cobblestone>, null, 1);
 Barrel.addRecipe("pure_dirt", <ore:dirt>, <liquid:water> * 100, <minecraft:dirt>, null, 1);

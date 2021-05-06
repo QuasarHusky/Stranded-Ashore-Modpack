@@ -142,7 +142,7 @@
     {
         "pack_version":
         {
-            "text" : "Stranded Ashore v1.1.0",
+            "text" : "Stranded Ashore v1.1.1",
             "posX" : -10,
             "posY" : -66,
             "color" : -1,
@@ -151,13 +151,13 @@
             "alignment" : "bottom_right",
             "action": {
                 "type": "openLink",
-                "link": "https://www.youtube.com/watch?v=5sNuDu4dE8Y"
+                "link": "https://www.youtube.com/watch?v=zE1yP9mepVM"
             }
         },
 
         "pack_update":
         {
-            "text" : "web:https://quasarhusky.uk/stranded-ashore/version-check?v=1.1.0",
+            "text" : "web:https://quasarhusky.uk/stranded-ashore/version-check?v=1.1.1",
             "posX" : 0,
             "posY" : 5,
             "color" : 16776960,

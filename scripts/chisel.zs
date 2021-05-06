@@ -33,63 +33,6 @@ recipes.addShaped("auto_chisel", <chisel:auto_chisel>,
      [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]]
 );
 
-// ===== Block Crafting ===== //
-recipes.addShapeless("chisel_bookshelf_oak", <chisel:bookshelf_oak> * 3, [
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:logWoodOakLike>
-]);
-
-recipes.addShapeless("chisel_bookshelf_birch", <chisel:bookshelf_birch> * 3, [
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:logWoodBirchLike>
-]);
-
-recipes.addShapeless("chisel_bookshelf_spruce", <chisel:bookshelf_spruce> * 3, [
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:logWoodSpruceLike>
-]);
-
-recipes.addShapeless("chisel_bookshelf_jungle", <chisel:bookshelf_jungle> * 3, [
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:logWoodJungleLike>
-]);
-
-recipes.addShapeless("chisel_bookshelf_acacia", <chisel:bookshelf_acacia> * 3, [
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:logWoodAcaciaLike>
-]);
-
-recipes.addShapeless("chisel_bookshelf_darkoak", <chisel:bookshelf_darkoak> * 3, [
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:bookshelf>,
-    <ore:logWoodDarkOakLike>
-]);
-
-recipes.addShapeless("chisel_block_coal_coke", <chisel:block_coal_coke> * 16, [
-    <ore:gemCoal>,
-    <ore:gemCoal>,
-    <ore:charcoal>,
-    <ore:charcoal>
-]);
-
-recipes.addShapeless("chisel_limestone", <chisel:limestone> * 16, [
-    <ore:stone>,
-    <ore:stone>,
-    <ore:dustFlux>,
-    <ore:dustFlux>
-]);
-
 // ===== Carving ===== //
 Carving.addGroup("tfc_rock");
 Carving.addGroup("tfc_raw");

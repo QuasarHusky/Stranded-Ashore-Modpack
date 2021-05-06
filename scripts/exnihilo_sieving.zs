@@ -209,7 +209,6 @@ tier_2(<ore:sand>, <aquaculture:fish:18>, 0.01);
 tier_2(<ore:sand>, <tfc:powder/salt>, 0.05);
 tier_2(<ore:sand>, <minecraft:stick>, 0.15);
 tier_2(<ore:sand>, <minecraft:glowstone_dust>, 0.01);
-tier_2(<ore:sand>, <astralsorcery:itemcraftingcomponent:0>, 0.04);
 
 tier_3(<ore:sand>, <aquaculture:loot:0>, 0.04);
 tier_3(<ore:sand>, <aquaculture:fish:37>, 0.02);
@@ -219,7 +218,6 @@ tier_3(<ore:sand>, <minecraft:stick>, 0.15);
 tier_3(<ore:sand>, <tfc:stick_bunch>, 0.03);
 tier_3(<ore:sand>, <minecraft:glowstone_dust>, 0.05);
 tier_3(<ore:sand>, <minecraft:quartz>, 0.05);
-tier_3(<ore:sand>, <astralsorcery:itemcraftingcomponent:0>, 0.09);
 
 tier_4(<ore:sand>, <aquaculture:fish:14>, 0.001);
 tier_4(<ore:sand>, <tfc:powder/saltpeter>, 0.25);
@@ -229,7 +227,6 @@ tier_4(<ore:sand>, <tfc:stick_bunch>, 0.25);
 tier_4(<ore:sand>, <minecraft:glowstone_dust>, 0.05);
 tier_4(<ore:sand>, <minecraft:quartz>, 0.15);
 tier_4(<ore:sand>, <minecraft:soul_sand>, 0.03);
-tier_4(<ore:sand>, <astralsorcery:itemcraftingcomponent:0>, 0.18);
 
 // ===== Coarse Dirt Loot Tables  ===== //
 tier_1(<minecraft:dirt:1>, <minecraft:dirt:0>, 1.0);

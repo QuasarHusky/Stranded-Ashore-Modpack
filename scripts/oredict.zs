@@ -76,17 +76,14 @@
     <tfc:stick_bundle>,
     <tfc:wood/log/ash>,
     <tfc:wood/log/blackwood>,
-    <tfc:wood/log/oak>,
-    <minecraft:log:0>
+    <tfc:wood/log/oak>
 ]);
 
 <ore:logWoodSpruceLike>.addItems([
     <tfc:wood/log/hickory>,
     <tfc:wood/log/maple>,
     <tfc:wood/log/pine>,
-    <tfc:wood/log/spruce>,
-    <wizardry:wisdom_wood_log>,
-    <minecraft:log:1>
+    <tfc:wood/log/spruce>
 ]);
 
 <ore:logWoodBirchLike>.addItems([
@@ -94,27 +91,23 @@
     <tfc:wood/log/birch>,
     <tfc:wood/log/rosewood>,
     <tfc:wood/log/sycamore>,
-    <tfc:wood/log/white_cedar>,
-    <minecraft:log:2>
+    <tfc:wood/log/white_cedar>
 ]);
 
 <ore:logWoodJungleLike>.addItems([
     <tfc:wood/log/kapok>,
     <tfc:wood/log/palm>,
     <tfc:wood/log/chestnut>,
-    <tfc:wood/log/willow>,
-    <minecraft:log:3>
+    <tfc:wood/log/willow>
 ]);
 
 <ore:logWoodAcaciaLike>.addItems([
     <tfc:wood/log/acacia>,
-    <tfc:wood/log/sequoia>,
-    <minecraft:log2:0>
+    <tfc:wood/log/sequoia>
 ]);
 
 <ore:logWoodDarkOakLike>.addItems([
-    <tfc:wood/log/douglas_fir>,
-    <minecraft:log2:1>
+    <tfc:wood/log/douglas_fir>
 ]);
 
 // ===== Plank Type Alikes ===== //
@@ -128,8 +121,7 @@
     <tfc:wood/planks/hickory>,
     <tfc:wood/planks/maple>,
     <tfc:wood/planks/pine>,
-    <tfc:wood/planks/spruce>,
-    <wizardry:wisdom_wood_planks>
+    <tfc:wood/planks/spruce>
 ]);
 
 <ore:plankWoodBirchLike>.addItems([
@@ -167,8 +159,7 @@
     <tfc:slab/wood/hickory>,
     <tfc:slab/wood/maple>,
     <tfc:slab/wood/pine>,
-    <tfc:slab/wood/spruce>,
-    <wizardry:wisdom_wood_slab>
+    <tfc:slab/wood/spruce>
 ]);
 
 <ore:slabWoodBirchLike>.addItems([
@@ -206,8 +197,7 @@
     <tfc:stairs/wood/hickory>,
     <tfc:stairs/wood/maple>,
     <tfc:stairs/wood/pine>,
-    <tfc:stairs/wood/spruce>,
-    <wizardry:wisdom_wood_stairs>
+    <tfc:stairs/wood/spruce>
 ]);
 
 <ore:stairWoodBirchLike>.addItems([

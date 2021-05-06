@@ -3,7 +3,6 @@ import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
-import mods.terrafirmacraft.Loom;
 
 // ===== Gem Growing ===== //
 for gem in tfc_gem_types {
@@ -152,9 +151,5 @@ for crop in tfc_crop_types {
     var seeds as IItemStack  = tfc_seeds[crop];
     var produce as IItemStack = tfc_crop_produce[crop];
 
-    Barrel.addRecipe("crop_growing_" ~ crop, seeds, <liquid:fresh_water> * 1000, produce * 2, null, 24 * 8);
-    Barrel.addRecipe("crop_seeds_" ~ crop, produce, <liquid:salt_water> * 1000, seeds * 3, null, 24 * 2);
+    Barrel.addRecipe("crop_growing_" ~ crop, seeds, <liquid:water> * 1000, produce, null, 24 * 8);
 }
-
-// ===== Jute Is Too Hard™ ===== //
-Loom.addRecipe("jute_fiber", <ore:straw> * 10, <tfc:crop/product/jute_fiber>, 10, "tfc:textures/blocks/thatch.png");

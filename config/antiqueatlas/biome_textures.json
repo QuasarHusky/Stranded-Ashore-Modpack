@@ -76,7 +76,6 @@
     "tfc:plains": "PLAINS",
     "tfc:river": "WATER",
     "tfc:rolling_hills": "HILLS",
-    "tfc:swampland": "SWAMP",
-    "wizardry:wizardry_underworld": "PLAINS"
+    "tfc:swampland": "SWAMP"
   }
 }
