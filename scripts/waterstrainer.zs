@@ -103,19 +103,9 @@ recipes.addShapeless("strainer_bait_meat", <waterstrainer:bait_pot:123>, [
     <ore:categoryMeat>
 ]);
 
-recipes.addShapeless("strainer_bait_frog", <waterstrainer:bait_pot:98>, [
-    <minecraft:flower_pot>,
-    <aquaculture:fish:17>
-]);
-
 recipes.addShapeless("strainer_bait_worm", <waterstrainer:bait_pot:123>, [
     <minecraft:flower_pot>,
     <waterstrainer:worm>
-]);
-
-recipes.addShapeless("strainer_bait_whale", <waterstrainer:bait_pot:0>, [
-    <minecraft:flower_pot>,
-    <aquaculture:fish:14>
 ]);
 
 Barrel.addRecipe("worm_drowning", <ore:grass>, <liquid:water> * 100, <waterstrainer:worm>, null, 1);
