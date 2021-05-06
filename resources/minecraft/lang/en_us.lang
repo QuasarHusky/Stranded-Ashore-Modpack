@@ -27,16 +27,16 @@ tile.log.big_oak.name=Traditional Dark Oak Log
 item.coal.name=Ancient Coal
 item.diamond.name=Ancient Diamond
 item.emerald.name=Ancient Emerald
-item.ingotIron.name=Ancient Iron
-item.ingotGold.name=Ancient Gold
-item.dyePowder.blue.name=Lunar Lapis
-item.reeds.name=Petrified Sugar Cane
+item.ingotIron.name=Ancient Wrought Iron Ingot
+item.ingotGold.name=Ancient Gold Ingot
+item.dyePowder.blue.name=Arcane Lapis
+item.reeds.name=Reeds
 item.netherquartz.name=Quartz
 
-tile.anvil.name=Tool Workbench
-tile.anvil.intact.name=Tool Workbench
-tile.anvil.slightlyDamaged.name=Worn Tool Workbench
-tile.anvil.veryDamaged.name=Damaged Tool Workbench
+tile.anvil.name=Heavy-Duty Anvil
+tile.anvil.intact.name=Heavy-Duty Anvil
+tile.anvil.slightlyDamaged.name=Worn Heavy-Duty Anvil
+tile.anvil.veryDamaged.name=Damaged Heavy-Duty Anvil
 
 item.helmetIron.name=Mining Helmet
 item.hatchetWood.name=WorldEdit Wand
