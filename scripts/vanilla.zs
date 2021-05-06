@@ -88,8 +88,6 @@ Barrel.addRecipe("pure_gravel", <ore:gravel>, <liquid:water> * 100, <minecraft:g
 Barrel.addRecipe("pure_coal", <tfc:ore/bituminous_coal>, <liquid:water> * 100, <minecraft:coal>, null, 4);
 Barrel.addRecipe("pure_diamond", <tfc:gem/diamond:4>, <liquid:water> * 100, <minecraft:diamond>, null, 4);
 Barrel.addRecipe("pure_emerald", <tfc:gem/emerald:4>, <liquid:water> * 100, <minecraft:emerald>, null, 4);
-Barrel.addRecipe("pure_iron", <tfc:metal/ingot/wrought_iron>, <liquid:water> * 100, <minecraft:iron_ingot>, null, 4);
-Barrel.addRecipe("pure_gold", <tfc:metal/ingot/gold>, <liquid:water> * 100, <minecraft:gold_ingot>, null, 4);
 Barrel.addRecipe("pure_workbench", <ore:workbench>, <liquid:water> * 1000, <minecraft:crafting_table>, null, 8);
 
 Barrel.addRecipe("traditional_oak_log", <ore:logWoodOakLike>, <liquid:water> * 100, <minecraft:log:0>, null, 1);
