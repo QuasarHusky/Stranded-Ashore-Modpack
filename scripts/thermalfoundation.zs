@@ -1,5 +1,7 @@
 import mods.jei.JEI;
 import mods.terrafirmacraft.Quern;
+import mods.terrafirmacraft.ItemRegistry;
+import mods.terrafirmacraft.Anvil;
 
 JEI.removeAndHide(<thermalfoundation:rockwool:*>);
 JEI.removeAndHide(<thermalfoundation:wrench>);
@@ -250,7 +252,69 @@ JEI.removeAndHide(<thermalfoundation:tool.hammer_gold>);
 JEI.removeAndHide(<thermalfoundation:tool.excavator_gold>);
 JEI.removeAndHide(<thermalfoundation:tool.shield_gold>);
 
-// Gears
+// ===== Plates ===== //
+
+// Lead Plate
+ItemRegistry.registerItemHeat(<thermalfoundation:material:323>, 0.20, 328, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:323>, "LEAD", 100, true);
+Anvil.addRecipe(
+        "plate_lead",
+        <tfc:metal/ingot/lead>,
+        <thermalfoundation:material:323>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Copper Plate
+ItemRegistry.registerItemHeat(<thermalfoundation:material:320>, 0.20, 1080, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:320>, "COPPER", 100, true);
+Anvil.addRecipe(
+        "plate_copper",
+        <tfc:metal/ingot/copper>,
+        <thermalfoundation:material:320>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Bronze Plate
+ItemRegistry.registerItemHeat(<thermalfoundation:material:355>, 0.20, 950, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:355>, "BRONZE", 100, true);
+Anvil.addRecipe(
+        "plate_bronze",
+        <tfc:metal/ingot/bronze>,
+        <thermalfoundation:material:355>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Tin Plate
+ItemRegistry.registerItemHeat(<thermalfoundation:material:321>, 0.20, 230, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:321>, "TIN", 100, true);
+Anvil.addRecipe(
+        "plate_tin",
+        <tfc:metal/ingot/tin>,
+        <thermalfoundation:material:321>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Nickel Plate
+ItemRegistry.registerItemHeat(<thermalfoundation:material:325>, 0.20, 1453, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:325>, "NICKEL", 100, true);
+Anvil.addRecipe(
+        "plate_nickel",
+        <tfc:metal/ingot/nickel>,
+        <thermalfoundation:material:325>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Iron Plate
+ItemRegistry.registerItemHeat(<thermalfoundation:material:32>, 0.20, 1535, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:32>, "WROUGHT_IRON", 100, true);
+Anvil.addRecipe(
+        "plate_iron",
+        <tfc:metal/ingot/wrought_iron>,
+        <thermalfoundation:material:32>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// ===== Gears ===== //
 recipes.remove(<thermalfoundation:material:22>);
 recipes.remove(<thermalfoundation:material:23>);
 recipes.remove(<thermalfoundation:material:24>);
@@ -274,6 +338,80 @@ recipes.remove(<thermalfoundation:material:292>);
 recipes.remove(<thermalfoundation:material:293>);
 recipes.remove(<thermalfoundation:material:294>);
 recipes.remove(<thermalfoundation:material:295>);
+
+// Wooden Gear
+recipes.addShaped("gear_wood", <thermalfoundation:material:22>,
+    [[null, <ore:stickWood>, null],
+     [<ore:stickWood>, <ore:lumber>, <ore:stickWood>],
+     [null, <ore:stickWood>, null]]
+);
+
+// Stone Gear
+recipes.addShaped("gear_stone", <thermalfoundation:material:23>,
+    [[null, <ore:rock>, null],
+     [<ore:rock>, <ore:cobblestone>, <ore:rock>],
+     [null, <ore:rock>, null]]
+);
+
+// Lead Gear
+ItemRegistry.registerItemHeat(<thermalfoundation:material:259>, 0.50, 328, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:259>, "LEAD", 100, true);
+Anvil.addRecipe(
+        "gear_lead",
+        <thermalfoundation:material:323>,
+        <thermalfoundation:material:259>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Copper Gear
+ItemRegistry.registerItemHeat(<thermalfoundation:material:256>, 0.50, 1080, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:256>, "COPPER", 100, true);
+Anvil.addRecipe(
+        "gear_copper",
+        <thermalfoundation:material:320>,
+        <thermalfoundation:material:256>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Bronze Gear
+ItemRegistry.registerItemHeat(<thermalfoundation:material:291>, 0.50, 950, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:291>, "BRONZE", 100, true);
+Anvil.addRecipe(
+        "gear_bronze",
+        <thermalfoundation:material:355>,
+        <thermalfoundation:material:291>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Tin Gear
+ItemRegistry.registerItemHeat(<thermalfoundation:material:257>, 0.50, 230, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:257>, "TIN", 100, true);
+Anvil.addRecipe(
+        "gear_tin",
+        <thermalfoundation:material:321>,
+        <thermalfoundation:material:257>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Nickel Gear
+ItemRegistry.registerItemHeat(<thermalfoundation:material:261>, 0.50, 1453, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:261>, "NICKEL", 100, true);
+Anvil.addRecipe(
+        "gear_nickel",
+        <thermalfoundation:material:325>,
+        <thermalfoundation:material:261>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
+
+// Iron Gear
+ItemRegistry.registerItemHeat(<thermalfoundation:material:24>, 0.50, 1535, true);
+ItemRegistry.registerItemMetal(<thermalfoundation:material:24>, "WROUGHT_IRON", 100, true);
+Anvil.addRecipe(
+        "gear_iron",
+        <thermalfoundation:material:32>,
+        <thermalfoundation:material:24>,
+        1,
+        "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST");
 
 // Components
 recipes.remove(<thermalfoundation:material:512>);
