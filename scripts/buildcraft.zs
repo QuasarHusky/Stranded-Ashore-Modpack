@@ -9,6 +9,12 @@ JEI.removeAndHide(<buildcraftbuilders:schematic_single>);
 JEI.removeAndHide(<buildcraftbuilders:filler_planner>);
 JEI.removeAndHide(<buildcrafttransport:plug_power_adaptor>);
 
+recipes.remove(<buildcraftcore:gear_wood>);
+recipes.remove(<buildcraftcore:gear_stone>);
+recipes.remove(<buildcraftcore:gear_iron>);
+recipes.remove(<buildcraftcore:gear_gold>);
+recipes.remove(<buildcraftcore:gear_diamond>);
+
 // Ore Dictionary
 <ore:pipeItemBasic>.addItems([
     <buildcrafttransport:pipe_cobble_item>,
