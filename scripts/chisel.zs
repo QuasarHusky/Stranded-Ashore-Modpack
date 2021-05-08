@@ -41,6 +41,7 @@ Carving.addGroup("tfc_raw");
 Carving.addGroup("tfc_smooth");
 Carving.addGroup("tfc_cobble");
 Carving.addGroup("tfc_brick");
+Carving.addGroup("tfc_brick_block");
 Carving.addGroup("tfc_sand");
 Carving.addGroup("tfc_gravel");
 Carving.addGroup("tfc_dirt");
@@ -50,7 +51,8 @@ for rock in tfc_rock_types {
     Carving.addVariation("tfc_raw", tfc_raws[rock]);
     Carving.addVariation("tfc_smooth", tfc_smooths[rock]);
     Carving.addVariation("tfc_cobble", tfc_cobbles[rock]);
-    Carving.addVariation("tfc_brick", tfc_brick_blocks[rock]);
+    Carving.addVariation("tfc_brick", tfc_bricks[rock]);
+    Carving.addVariation("tfc_brick_block", tfc_brick_blocks[rock]);
     Carving.addVariation("tfc_sand", tfc_sands[rock]);
     Carving.addVariation("tfc_gravel", tfc_gravels[rock]);
     Carving.addVariation("tfc_dirt", tfc_dirts[rock]);
