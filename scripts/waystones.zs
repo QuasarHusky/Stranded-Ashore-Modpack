@@ -18,7 +18,7 @@ recipes.addShapeless("return_scroll", <waystones:return_scroll> * 2, [
     <ore:gemChipped>
 ]);
 
-recipes.addShapeless("bound_scroll", <waystones:bound_scroll>) [
+recipes.addShapeless("bound_scroll", <waystones:bound_scroll>, [
     <ore:enderpearl>,
     <ore:paper>,
     <ore:gemFlawed>
