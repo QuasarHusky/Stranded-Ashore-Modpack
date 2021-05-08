@@ -40,6 +40,8 @@ JEI.removeAndHide(<thermalfoundation:tool.shears_copper>);
 JEI.removeAndHide(<thermalfoundation:tool.sickle_copper>);
 JEI.removeAndHide(<thermalfoundation:tool.shield_copper>);
 JEI.removeAndHide(<thermalfoundation:horse_armor_copper>);
+JEI.removeAndHide(<thermalfoundation:tool.hammer_copper>);
+JEI.removeAndHide(<thermalfoundation:tool.excavator_copper>);
 
 JEI.removeAndHide(<thermalfoundation:armor.helmet_tin>);
 JEI.removeAndHide(<thermalfoundation:armor.plate_tin>);
@@ -164,6 +166,8 @@ JEI.removeAndHide(<thermalfoundation:tool.shears_steel>);
 JEI.removeAndHide(<thermalfoundation:tool.sickle_steel>);
 JEI.removeAndHide(<thermalfoundation:tool.shield_steel>);
 JEI.removeAndHide(<thermalfoundation:horse_armor_steel>);
+JEI.removeAndHide(<thermalfoundation:tool.hammer_steel>);
+JEI.removeAndHide(<thermalfoundation:tool.excavator_steel>);
 
 JEI.removeAndHide(<thermalfoundation:armor.helmet_electrum>);
 JEI.removeAndHide(<thermalfoundation:armor.plate_electrum>);
@@ -216,6 +220,8 @@ JEI.removeAndHide(<thermalfoundation:tool.shears_bronze>);
 JEI.removeAndHide(<thermalfoundation:tool.sickle_bronze>);
 JEI.removeAndHide(<thermalfoundation:tool.shield_bronze>);
 JEI.removeAndHide(<thermalfoundation:horse_armor_bronze>);
+JEI.removeAndHide(<thermalfoundation:tool.hammer_bronze>);
+JEI.removeAndHide(<thermalfoundation:tool.excavator_bronze>);
 
 JEI.removeAndHide(<thermalfoundation:armor.helmet_constantan>);
 JEI.removeAndHide(<thermalfoundation:armor.plate_constantan>);
@@ -232,10 +238,15 @@ JEI.removeAndHide(<thermalfoundation:tool.shears_constantan>);
 JEI.removeAndHide(<thermalfoundation:tool.sickle_constantan>);
 JEI.removeAndHide(<thermalfoundation:tool.shield_constantan>);
 JEI.removeAndHide(<thermalfoundation:horse_armor_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.hammer_constantan>);
+JEI.removeAndHide(<thermalfoundation:tool.excavator_constantan>);
 
 JEI.removeAndHide(<thermalfoundation:tool.bow_iron>);
 JEI.removeAndHide(<thermalfoundation:tool.fishing_rod_iron>);
 JEI.removeAndHide(<thermalfoundation:tool.sickle_iron>);
+JEI.removeAndHide(<thermalfoundation:tool.hammer_iron>);
+JEI.removeAndHide(<thermalfoundation:tool.excavator_iron>);
+JEI.removeAndHide(<thermalfoundation:tool.shield_iron>);
 
 JEI.removeAndHide(<thermalfoundation:tool.bow_diamond>);
 JEI.removeAndHide(<thermalfoundation:tool.fishing_rod_diamond>);
@@ -252,6 +263,8 @@ JEI.removeAndHide(<thermalfoundation:tool.sickle_gold>);
 JEI.removeAndHide(<thermalfoundation:tool.hammer_gold>);
 JEI.removeAndHide(<thermalfoundation:tool.excavator_gold>);
 JEI.removeAndHide(<thermalfoundation:tool.shield_gold>);
+
+
 
 // ===== Plates ===== //
 
