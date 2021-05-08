@@ -76,10 +76,7 @@ recipes.addShaped("tool_workbench", <minecraft:anvil>,
 );
 
 // Mining Helmet
-recipes.addShaped("mining_helmet", <minecraft:iron_helmet>, 
-    [[<ore:ingotNickel>, <ore:glowstone>, <ore:ingotNickel>],
-     [<ore:ingotNickel>, null, <ore:ingotNickel>]]
-);
+recipes.addShapeless("mining_helmet", <minecraft:iron_helmet>, [<tfc:metal/unfinished_helmet/wrought_iron>, <tfc:metal/lamp/lead>]);
 
 // Pure / Pristine Blocks
 Barrel.addRecipe("water_purification", <tfc:crop/product/jute_net>, <liquid:fresh_water> * 1000, <tfc:crop/product/dirty_jute_net>, <liquid:water> * 1000, 1);
