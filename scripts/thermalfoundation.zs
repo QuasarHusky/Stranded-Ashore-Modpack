@@ -23,6 +23,7 @@ JEI.removeAndHide(<thermalfoundation:material:2051>);
 JEI.removeAndHide(<thermalfoundation:material:2052>);
 JEI.removeAndHide(<thermalfoundation:material:2053>);
 JEI.removeAndHide(<thermalfoundation:geode>);
+JEI.removeAndHide(<thermalfoundation:tome_experience>);
 
 JEI.removeAndHide(<thermalfoundation:armor.helmet_copper>);
 JEI.removeAndHide(<thermalfoundation:armor.plate_copper>);
