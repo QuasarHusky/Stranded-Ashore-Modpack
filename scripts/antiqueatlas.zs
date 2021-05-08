@@ -9,6 +9,6 @@ recipes.addShapeless("empty_antique_atlas", <antiqueatlas:empty_antique_atlas>, 
 ]);
 
 recipes.addShapeless("clear_antique_atlas", <antiqueatlas:empty_antique_atlas>, [
-    <antiqueatlas:antique_atlas>,
+    <antiqueatlas:antique_atlas:*>,
     <ore:stickWood>
 ]);
