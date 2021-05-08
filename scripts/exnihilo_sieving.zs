@@ -192,26 +192,16 @@ tier_4(<ore:dirt>, <tfc:animal/product/wool_yarn>, 0.10);
 tier_4(<ore:dirt>, <minecraft:slime_ball>, 0.05);
 
 // ===== Sand Loot Tables  ===== //
-tier_1(<ore:sand>, <aquaculture:loot:0>, 0.10);
 tier_1(<ore:sand>, <minecraft:bone>, 0.01);
-tier_1(<ore:sand>, <aquaculture:loot:2>, 0.10);
-tier_1(<ore:sand>, <aquaculture:fish:17>, 0.01);
-tier_1(<ore:sand>, <aquaculture:fish:38>, 0.02);
-tier_1(<ore:sand>, <aquaculture:loot:3>, 0.02);
 tier_1(<ore:sand>, <tfc:powder/salt>, 0.20);
 tier_1(<ore:sand>, <minecraft:stick>, 0.05);
 tier_1(<ore:sand>, <weather2:pocket_sand>, 0.01);
 
-tier_2(<ore:sand>, <aquaculture:loot:0>, 0.10);
 tier_2(<ore:sand>, <minecraft:bone>, 0.35);
-tier_2(<ore:sand>, <aquaculture:loot:2>, 0.05);
-tier_2(<ore:sand>, <aquaculture:fish:18>, 0.01);
 tier_2(<ore:sand>, <tfc:powder/salt>, 0.05);
 tier_2(<ore:sand>, <minecraft:stick>, 0.15);
 tier_2(<ore:sand>, <minecraft:glowstone_dust>, 0.01);
 
-tier_3(<ore:sand>, <aquaculture:loot:0>, 0.04);
-tier_3(<ore:sand>, <aquaculture:fish:37>, 0.02);
 tier_3(<ore:sand>, <tfc:powder/graphite>, 0.05);
 tier_3(<ore:sand>, <tfc:powder/coke>, 0.03);
 tier_3(<ore:sand>, <minecraft:stick>, 0.15);
@@ -219,7 +209,6 @@ tier_3(<ore:sand>, <tfc:stick_bunch>, 0.03);
 tier_3(<ore:sand>, <minecraft:glowstone_dust>, 0.05);
 tier_3(<ore:sand>, <minecraft:quartz>, 0.05);
 
-tier_4(<ore:sand>, <aquaculture:fish:14>, 0.001);
 tier_4(<ore:sand>, <tfc:powder/saltpeter>, 0.25);
 tier_4(<ore:sand>, <tfc:powder/lapis_lazuli>, 0.30);
 tier_4(<ore:sand>, <tfc:straw>, 0.30);

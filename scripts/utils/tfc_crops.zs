@@ -22,7 +22,9 @@ global tfc_crop_types as string[] = [
     "tomato",
     "red_bell_pepper",
     "yellow_bell_pepper",
-    "jute"
+    "jute",
+    "pumpkin",
+    "melon"
 ];
 
 global tfc_seeds as IItemStack[string] = {
@@ -45,7 +47,9 @@ global tfc_seeds as IItemStack[string] = {
     tomato             : <tfc:crop/seeds/tomato>,
     red_bell_pepper    : <tfc:crop/seeds/red_bell_pepper>,
     yellow_bell_pepper : <tfc:crop/seeds/yellow_bell_pepper>,
-    jute               : <tfc:crop/seeds/jute>
+    jute               : <tfc:crop/seeds/jute>,
+    pumpkin            : <firmalife:crop/seeds/pumpkin>,
+    melon              : <firmalife:crop/seeds/melon>
 };
 
 global tfc_crop_produce as IItemStack[string] = {
@@ -68,5 +72,7 @@ global tfc_crop_produce as IItemStack[string] = {
     tomato             : <tfc:food/tomato>,
     red_bell_pepper    : <tfc:food/red_bell_pepper>,
     yellow_bell_pepper : <tfc:food/yellow_bell_pepper>,
-    jute               : <tfc:crop/product/jute>
+    jute               : <tfc:crop/product/jute>,
+    pumpkin            : <firmalife:pumpkin_fruit>,
+    melon              : <firmalife:melon_fruit>
 };

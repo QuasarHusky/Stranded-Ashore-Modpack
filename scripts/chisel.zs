@@ -7,6 +7,8 @@ recipes.remove(<chisel:chisel_hitech>);
 recipes.remove(<chisel:offsettool>);
 recipes.remove(<chisel:auto_chisel>);
 
+recipes.removeByRecipeName("chisel:charcoal_uncraft");
+
 recipes.addShaped("chisel_iron", <chisel:chisel_iron>,
     [[<ore:rock>],
      [<ore:stickWood>]]
@@ -39,6 +41,7 @@ Carving.addGroup("tfc_raw");
 Carving.addGroup("tfc_smooth");
 Carving.addGroup("tfc_cobble");
 Carving.addGroup("tfc_brick");
+Carving.addGroup("tfc_brick_block");
 Carving.addGroup("tfc_sand");
 Carving.addGroup("tfc_gravel");
 Carving.addGroup("tfc_dirt");
@@ -48,7 +51,8 @@ for rock in tfc_rock_types {
     Carving.addVariation("tfc_raw", tfc_raws[rock]);
     Carving.addVariation("tfc_smooth", tfc_smooths[rock]);
     Carving.addVariation("tfc_cobble", tfc_cobbles[rock]);
-    Carving.addVariation("tfc_brick", tfc_brick_blocks[rock]);
+    Carving.addVariation("tfc_brick", tfc_bricks[rock]);
+    Carving.addVariation("tfc_brick_block", tfc_brick_blocks[rock]);
     Carving.addVariation("tfc_sand", tfc_sands[rock]);
     Carving.addVariation("tfc_gravel", tfc_gravels[rock]);
     Carving.addVariation("tfc_dirt", tfc_dirts[rock]);
@@ -185,3 +189,21 @@ Carving.addVariation("tfc_water_plant", <tfc:plants/pistia>);
 Carving.addVariation("tfc_water_plant", <tfc:plants/sargassum>);
 Carving.addVariation("tfc_water_plant", <tfc:plants/water_lily>);
 Carving.addVariation("tfc_water_plant", <minecraft:waterlily>);
+
+Carving.addGroup("buildcraft_paintbrush");
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:0>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:1>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:2>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:3>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:4>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:5>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:6>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:7>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:8>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:9>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:10>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:11>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:12>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:13>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:14>);
+Carving.addVariation("buildcraft_paintbrush", <buildcraftcore:paintbrush:15>);

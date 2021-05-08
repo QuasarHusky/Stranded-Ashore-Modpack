@@ -1,9 +1,0 @@
-{
-    "parent": "block/anvil",
-    "textures": {
-        "particle": "blocks/anvil_base",
-        "tabletop": "minecraft:blocks/anvil_base",
-        "leg": "tfc:blocks/metal/wrought_iron",
-        "support": "tfc:blocks/metal/pig_iron"
-    }
-}

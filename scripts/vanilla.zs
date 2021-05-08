@@ -7,6 +7,9 @@ import mods.terrafirmacraft.ItemRegistry;
 JEI.hideCategory("minecraft.fuel");
 JEI.hideCategory("minecraft.smelting");
 
+// Remove recipes
+recipes.remove(<minecraft:ender_chest>);
+
 // Glowstone
 recipes.addShaped("glowstone_block", <minecraft:glowstone>, 
     [[<ore:dustGlowstone>, <ore:dustGlowstone>],
@@ -60,7 +63,7 @@ recipes.addShaped("noteblock", <minecraft:noteblock>,
 
 // Enchanting Table
 recipes.addShapedMirrored("enchanting_table", <minecraft:enchanting_table>, 
-    [[null, <minecraft:enchanted_book:*>, null],
+    [[null, <xpbook:xp_tome:*>, null],
      [<ore:gemExquisiteSapphire>, <ore:gemExquisiteAmethyst>, <ore:gemExquisiteRuby>],
      [<ore:sheetBlackSteel>, <ore:sheetPlatinum>, <ore:sheetBlackSteel>]]
 );
@@ -73,13 +76,10 @@ recipes.addShaped("tool_workbench", <minecraft:anvil>,
 );
 
 // Mining Helmet
-recipes.addShaped("mining_helmet", <minecraft:iron_helmet>, 
-    [[<ore:ingotNickel>, <ore:glowstone>, <ore:ingotNickel>],
-     [<ore:ingotNickel>, null, <ore:ingotNickel>]]
-);
+recipes.addShapeless("mining_helmet", <minecraft:iron_helmet>, [<tfc:metal/unfinished_helmet/wrought_iron>, <tfc:metal/lamp/lead>]);
 
 // Pure / Pristine Blocks
-Barrel.addRecipe("water_purification", <tfc:crop/product/jute_net>, <liquid:fresh_water> * 1000, <tfc:crop/product/dirty_jute_net>, <liquid:water> * 1000, 1);
+Barrel.addRecipe("water_purification", <ore:string>, <liquid:fresh_water> * 1000, null, <liquid:water> * 1000, 1);
 Barrel.addRecipe("pure_stone", <ore:stone>, <liquid:water> * 100, <minecraft:stone>, null, 1);
 Barrel.addRecipe("pure_cobblestone", <ore:cobblestone>, <liquid:water> * 100, <minecraft:cobblestone>, null, 1);
 Barrel.addRecipe("pure_dirt", <ore:dirt>, <liquid:water> * 100, <minecraft:dirt>, null, 1);
@@ -88,8 +88,6 @@ Barrel.addRecipe("pure_gravel", <ore:gravel>, <liquid:water> * 100, <minecraft:g
 Barrel.addRecipe("pure_coal", <tfc:ore/bituminous_coal>, <liquid:water> * 100, <minecraft:coal>, null, 4);
 Barrel.addRecipe("pure_diamond", <tfc:gem/diamond:4>, <liquid:water> * 100, <minecraft:diamond>, null, 4);
 Barrel.addRecipe("pure_emerald", <tfc:gem/emerald:4>, <liquid:water> * 100, <minecraft:emerald>, null, 4);
-Barrel.addRecipe("pure_iron", <tfc:metal/ingot/wrought_iron>, <liquid:water> * 100, <minecraft:iron_ingot>, null, 4);
-Barrel.addRecipe("pure_gold", <tfc:metal/ingot/gold>, <liquid:water> * 100, <minecraft:gold_ingot>, null, 4);
 Barrel.addRecipe("pure_workbench", <ore:workbench>, <liquid:water> * 1000, <minecraft:crafting_table>, null, 8);
 
 Barrel.addRecipe("traditional_oak_log", <ore:logWoodOakLike>, <liquid:water> * 100, <minecraft:log:0>, null, 1);
@@ -107,7 +105,7 @@ Barrel.addRecipe("traditional_acacia_planks", <ore:plankWoodAcaciaLike>, <liquid
 Barrel.addRecipe("traditional_dark_oak_planks", <ore:plankWoodDarkOakLike>, <liquid:water> * 100, <minecraft:planks:5>, null, 1);
 
 // Lapis Lazuli
-Barrel.addRecipe("lapis_lazuli", <ore:gemLapis>, <liquid:lunar_water> * 100, <minecraft:dye:4>, null, 12);
+Barrel.addRecipe("lapis_lazuli", <ore:gemLapis>, <liquid:astralsorcery.liquidstarlight> * 100, <minecraft:dye:4>, null, 12);
 
 // Enchanted Books
 Barrel.addRecipe("enchant_vanishing", <minecraft:book>, <liquid:witchwater> * 1000, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 71 as short}]}), null, 24);

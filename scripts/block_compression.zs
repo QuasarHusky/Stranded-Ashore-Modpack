@@ -76,14 +76,6 @@ recipes.addShaped("platinum_block", <chisel:blockplatinum:2>,
      [<ore:ingotPlatinum>, <ore:ingotPlatinum>, <ore:ingotPlatinum>]]
 );
 
-recipes.addShaped("charcoal_block", <chisel:block_charcoal:0>, 
-    [[<ore:charcoal>, <ore:charcoal>, <ore:charcoal>],
-     [<ore:charcoal>, <ore:charcoal>, <ore:charcoal>],
-     [<ore:charcoal>, <ore:charcoal>, <ore:charcoal>]]
-);
-
-recipes.addShapeless("uncraft_charcoal_block", <minecraft:coal:1> * 9, [ <ore:blockCharcoal> ]);
-
 recipes.addShaped("coal_block", <chisel:block_coal:0>, 
     [[<ore:gemCoal>, <ore:gemCoal>, <ore:gemCoal>],
      [<ore:gemCoal>, <ore:gemCoal>, <ore:gemCoal>],
