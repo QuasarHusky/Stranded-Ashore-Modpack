@@ -11,3 +11,9 @@
 !/background.png
 !/LICENSE
 !/manifest.json
+
+config/antiqueatlas/biome_textures.json
+config/splash.properties
+config/BlockDrops/modVersions.txt
+config/worldedit/worldedit.properties
+config/buildcraft/detailed.properties
