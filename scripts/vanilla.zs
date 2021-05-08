@@ -7,6 +7,9 @@ import mods.terrafirmacraft.ItemRegistry;
 JEI.hideCategory("minecraft.fuel");
 JEI.hideCategory("minecraft.smelting");
 
+// Remove recipes
+recipes.remove(<minecraft:ender_chest>);
+
 // Glowstone
 recipes.addShaped("glowstone_block", <minecraft:glowstone>, 
     [[<ore:dustGlowstone>, <ore:dustGlowstone>],
@@ -60,7 +63,7 @@ recipes.addShaped("noteblock", <minecraft:noteblock>,
 
 // Enchanting Table
 recipes.addShapedMirrored("enchanting_table", <minecraft:enchanting_table>, 
-    [[null, <minecraft:enchanted_book:*>, null],
+    [[null, <xpbook:xp_tome:*>, null],
      [<ore:gemExquisiteSapphire>, <ore:gemExquisiteAmethyst>, <ore:gemExquisiteRuby>],
      [<ore:sheetBlackSteel>, <ore:sheetPlatinum>, <ore:sheetBlackSteel>]]
 );
