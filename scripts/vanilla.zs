@@ -104,8 +104,5 @@ Barrel.addRecipe("traditional_jungle_planks", <ore:plankWoodJungleLike>, <liquid
 Barrel.addRecipe("traditional_acacia_planks", <ore:plankWoodAcaciaLike>, <liquid:water> * 100, <minecraft:planks:4>, null, 1);
 Barrel.addRecipe("traditional_dark_oak_planks", <ore:plankWoodDarkOakLike>, <liquid:water> * 100, <minecraft:planks:5>, null, 1);
 
-// Lapis Lazuli
-Barrel.addRecipe("lapis_lazuli", <ore:gemLapis>, <liquid:astralsorcery.liquidstarlight> * 100, <minecraft:dye:4>, null, 12);
-
 // Enchanted Books
 Barrel.addRecipe("enchant_vanishing", <minecraft:book>, <liquid:witchwater> * 1000, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 71 as short}]}), null, 24);
