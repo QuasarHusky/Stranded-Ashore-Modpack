@@ -155,3 +155,27 @@ for crop in tfc_crop_types {
 
     recipes.addShapeless("crop_seeds_" ~ crop, seeds, [produce, produce, produce, <minecraft:dirt:1>]);
 }
+
+// ===== Fruit Tree Sapling Recipes ===== //
+for tree_fruit in tfc_tree_fruit_types {
+    var fruit as IItemStack = tfc_tree_fruits[tree_fruit];
+    var pole as IItemStack = tfc_tree_fruit_poles[tree_fruit];
+    var sapling as IItemStack = tfc_tree_fruit_saplings[tree_fruit];
+
+    recipes.addShaped("fruit_tree_sapling_" ~ tree_fruit, sapling,
+        [[<firmalife:fruit_leaf>, pole, <firmalife:fruit_leaf>],
+         [fruit, pole, fruit],
+         [null, pole, null]]
+    );
+}
+
+// ===== Additional Quern Recipes ===== //
+for rock in tfc_rock_types {
+    Quern.addRecipe("raw_to_cobble_" ~ rock, tfc_raws[rock], tfc_cobbles[rock]);
+    Quern.addRecipe("cobble_to_gravel_" ~ rock, tfc_cobbles[rock], tfc_gravels[rock]);
+    Quern.addRecipe("gravel_to_dirt_" ~ rock, tfc_gravels[rock], tfc_dirts[rock]);
+    Quern.addRecipe("dirt_to_sand_" ~ rock, tfc_dirts[rock], tfc_sands[rock]);
+}
+
+Quern.addRecipe("gravel_to_flint", <ore:gravel>, <minecraft:flint>);
+Quern.addRecipe("flint_to_graphite", <minecraft:flint>, <tfc:powder/graphite> * 3);
