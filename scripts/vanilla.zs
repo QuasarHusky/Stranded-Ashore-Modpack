@@ -104,3 +104,10 @@ Barrel.addRecipe("traditional_jungle_planks", <ore:plankWoodJungleLike>, <liquid
 Barrel.addRecipe("traditional_acacia_planks", <ore:plankWoodAcaciaLike>, <liquid:water> * 100, <minecraft:planks:4>, null, 1);
 Barrel.addRecipe("traditional_dark_oak_planks", <ore:plankWoodDarkOakLike>, <liquid:water> * 100, <minecraft:planks:5>, null, 1);
 
+// Brick Blocks
+recipes.remove(<minecraft:brick_block>);
+recipes.addShaped("brick_block", <minecraft:brick_block> * 24, [
+    [<ore:ingotBrick>, <ore :mortar>, <ore:ingotBrick>],
+    [<ore:mortar>, <ore:ingotBrick>, <ore  :mortar>],
+    [<ore:ingotBrick>, <ore :mortar>, <ore:ingotBrick>]
+]);
