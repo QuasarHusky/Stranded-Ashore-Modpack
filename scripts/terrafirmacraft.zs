@@ -114,6 +114,7 @@ for rock in tfc_rock_types {
         <minecraft:sand>
     ]);
 
+    Quern.addRecipe("grind_raw_" ~ rock, tfc_raws[rock], tfc_cobbles[rock]);
     Quern.addRecipe("grind_cobble_" ~ rock, tfc_cobbles[rock], tfc_gravels[rock]);
     Quern.addRecipe("grind_gravel_" ~ rock, tfc_gravels[rock], tfc_dirts[rock]);
     Quern.addRecipe("grind_dirt_" ~ rock, tfc_dirts[rock], tfc_sands[rock]);
@@ -171,14 +172,6 @@ for tree_fruit in tfc_tree_fruit_types {
 }
 
 // ===== Additional Quern Recipes ===== //
-for rock in tfc_rock_types {
-    Quern.addRecipe("raw_to_cobble_" ~ rock, tfc_raws[rock], tfc_cobbles[rock]);
-    Quern.addRecipe("cobble_to_gravel_" ~ rock, tfc_cobbles[rock], tfc_gravels[rock]);
-    Quern.addRecipe("gravel_to_dirt_" ~ rock, tfc_gravels[rock], tfc_dirts[rock]);
-    Quern.addRecipe("dirt_to_sand_" ~ rock, tfc_dirts[rock], tfc_sands[rock]);
-}
-
-Quern.addRecipe("gravel_to_flint", <ore:gravel>, <minecraft:flint>);
 Quern.addRecipe("flint_to_graphite", <minecraft:flint>, <tfc:powder/graphite> * 3);
 
 // ===== Jute Fiber ===== //
