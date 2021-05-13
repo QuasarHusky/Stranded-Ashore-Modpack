@@ -8,9 +8,16 @@ JEI.removeAndHide(<additionalpipes:pipe_fluids_switch>);
 JEI.removeAndHide(<additionalpipes:pipe_power_switch>);
 JEI.removeAndHide(<additionalpipes:pipe_fluids_water_pump>);
 
+// ===== Neolithic ===== //
+recipes.remove(<additionalpipes:pipe_items_closed>);
+recipes.addShaped("ap_pipe_items_closed", <additionalpipes:pipe_items_closed>, [
+    [<ore:lumber>, <ore:pipeItemBasic>, <ore:lumber>],
+    [<ore:lumber>, <ore:gearStone>, <ore:lumber>],
+    [<ore:lumber>, <ore:chest>, <ore:lumber>]
+]);
+
 // LOCKED: Steel Age
 JEI.removeAndHide(<additionalpipes:pipe_items_addition>);
-JEI.removeAndHide(<additionalpipes:pipe_items_closed>);
 
 // LOCKED: Industrial Revolution
 JEI.removeAndHide(<additionalpipes:pipe_items_adv_wood>);
