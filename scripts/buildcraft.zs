@@ -27,13 +27,13 @@ recipes.remove(<buildcraftcore:gear_diamond>);
 recipes.remove(<buildcraftcore:engine:0>);
 recipes.remove(<buildcrafttransport:pipe_structure>);
 recipes.remove(<buildcrafttransport:waterproof>);
-recipes.removeByRecipeName("buildcrafttransport:pipe_wood_item_colorless");
-recipes.removeByRecipeName("buildcrafttransport:pipe_cobble_item_colorless");
-recipes.removeByRecipeName("buildcrafttransport:pipe_stone_item_colorless");
-recipes.removeByRecipeName("buildcrafttransport:pipe_quartz_item_colorless");
-recipes.removeByRecipeName("buildcrafttransport:pipe_iron_item_colorless");
-recipes.removeByRecipeName("buildcrafttransport:pipe_sandstone_item_colorless");
-recipes.removeByRecipeName("buildcrafttransport:pipe_obsidian_item_colorless");
+recipes.remove(<buildcrafttransport:pipe_wood_item:*>);
+recipes.remove(<buildcrafttransport:pipe_cobble_item:*>);
+recipes.remove(<buildcrafttransport:pipe_stone_item:*>);
+recipes.remove(<buildcrafttransport:pipe_quartz_item:*>);
+recipes.remove(<buildcrafttransport:pipe_iron_item:*>);
+recipes.remove(<buildcrafttransport:pipe_sandstone_item:*>);
+recipes.remove(<buildcrafttransport:pipe_obsidian_item:*>);
 
 recipes.addShaped("bc_redstone_engine", <buildcraftcore:engine:0>, 
     [[<ore:lumber>, <ore:gearWood>, <ore:lumber>],
@@ -88,10 +88,10 @@ JEI.removeAndHide(<buildcraftcore:engine:1>);
 JEI.removeAndHide(<buildcraftfactory:tank>);
 JEI.removeAndHide(<buildcraftfactory:chute>);
 
-JEI.removeAndHide(<buildcrafttransport:pipe_gold_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_clay_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_gold_fluid>);
-JEI.removeAndHide(<buildcrafttransport:pipe_clay_fluid>);
+JEI.removeAndHide(<buildcrafttransport:pipe_gold_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_clay_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_gold_fluid:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_clay_fluid:*>);
 
 // LOCKED: Industrial Revolution
 JEI.removeAndHide(<buildcraftcore:engine:2>);
@@ -103,17 +103,17 @@ JEI.removeAndHide(<buildcraftsilicon:assembly_table>);
 JEI.removeAndHide(<buildcraftsilicon:advanced_crafting_table>);
 JEI.removeAndHide(<buildcraftsilicon:redstone_chipset:*>);
 
-JEI.removeAndHide(<buildcrafttransport:pipe_diamond_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_diamond_wood_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_stripes_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_diamond_fluid>);
-JEI.removeAndHide(<buildcrafttransport:pipe_diamond_wood_fluid>);
-JEI.removeAndHide(<buildcrafttransport:pipe_wood_power>);
-JEI.removeAndHide(<buildcrafttransport:pipe_cobble_power>);
-JEI.removeAndHide(<buildcrafttransport:pipe_stone_power>);
-JEI.removeAndHide(<buildcrafttransport:pipe_quartz_power>);
-JEI.removeAndHide(<buildcrafttransport:pipe_gold_power>);
-JEI.removeAndHide(<buildcrafttransport:pipe_sandstone_power>);
+JEI.removeAndHide(<buildcrafttransport:pipe_diamond_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_diamond_wood_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_stripes_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_diamond_fluid:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_diamond_wood_fluid:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_wood_power:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_cobble_power:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_stone_power:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_quartz_power:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_gold_power:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_sandstone_power:*>);
 
 // LOCKED: Modern Era
 JEI.removeAndHide(<buildcraftsilicon:gate_copier>);
@@ -123,10 +123,10 @@ JEI.removeAndHide(<buildcraftsilicon:plug_pulsar>);
 JEI.removeAndHide(<buildcraftsilicon:plug_light_sensor>);
 JEI.removeAndHide(<buildcrafttransport:wire:*>);
 
-JEI.removeAndHide(<buildcrafttransport:pipe_void_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_lapis_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_daizuli_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_emzuli_item>);
-JEI.removeAndHide(<buildcrafttransport:pipe_void_fluid>);
+JEI.removeAndHide(<buildcrafttransport:pipe_void_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_lapis_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_daizuli_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_emzuli_item:*>);
+JEI.removeAndHide(<buildcrafttransport:pipe_void_fluid:*>);
 
 // LOCKED: Space Age
