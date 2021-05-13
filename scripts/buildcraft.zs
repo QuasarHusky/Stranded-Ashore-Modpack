@@ -46,9 +46,9 @@ recipes.addShaped("bc_pipe_structure", <buildcrafttransport:pipe_structure> * 8,
 );
 
 recipes.addShaped("bc_pipe_wood_item", <buildcrafttransport:pipe_wood_item> * 2, 
-    [[<ore:gearWood>, <ore:stickWood>, <ore:stickWood>],
-     [<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
-     [<ore:gearWood>, <ore:stickWood>, <ore:stickWood>]]
+    [[<ore:gearWood>, <ore:blockGlass>, <ore:gearWood>],
+     [<ore:stickWood>, <ore:blockGlass>, <ore:stickWood>],
+     [<ore:stickWood>, <ore:blockGlass>, <ore:stickWood>]]
 );
 
 recipes.addShaped("bc_pipe_cobble_item", <buildcrafttransport:pipe_cobble_item> * 8, 
