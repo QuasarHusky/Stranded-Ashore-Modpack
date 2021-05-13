@@ -3,6 +3,7 @@ import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Barrel;
 import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Heating;
+import mods.terrafirmacraft.Loom;
 
 // ===== Gem Growing ===== //
 for gem in tfc_gem_types {
@@ -179,3 +180,6 @@ for rock in tfc_rock_types {
 
 Quern.addRecipe("gravel_to_flint", <ore:gravel>, <minecraft:flint>);
 Quern.addRecipe("flint_to_graphite", <minecraft:flint>, <tfc:powder/graphite> * 3);
+
+// ===== Jute Fiber ===== //
+Loom.addRecipe("jute_fiber", <ore:straw> * 8, <tfc:crop/product/jute_fiber>, 8, "tfc:textures/blocks/devices/loom/product/burlap.png");
