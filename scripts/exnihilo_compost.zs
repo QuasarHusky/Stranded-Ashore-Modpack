@@ -34,5 +34,4 @@ Compost.addRecipe(<ore:categoryMeal>, 0.25, "ffffff", <minecraft:dirt:1>);
 
 Compost.addRecipe(<minecraft:brown_mushroom>, 0.02, "ffffff", <minecraft:mycelium>);
 Compost.addRecipe(<minecraft:red_mushroom>, 0.02, "ffffff", <minecraft:mycelium>);
-Compost.addRecipe(<botania:mushroom:*>, 0.05, "ffffff", <minecraft:mycelium>);
 Compost.addRecipe(<tfc:plants/porcini>, 0.02, "ffffff", <minecraft:mycelium>);
