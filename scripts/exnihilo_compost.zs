@@ -2,10 +2,12 @@ import mods.exnihilocreatio.Compost;
 
 Compost.removeAll();
 
-for rock in tfc_rock_types {
-    Compost.addRecipe(tfc_dirts[rock], 1.00, "ffffff", tfc_grass[rock]);
-    Compost.addRecipe(tfc_grass[rock], 1.00, "ffffff", tfc_dry_grass[rock]);
-    Compost.addRecipe(tfc_dry_grass[rock], 1.00, "ffffff", tfc_dirts[rock]);
+for name, rock in rocks {
+    if(!isNull(rock.dirt) && !isNull(rock.grass) && !isNull(rock.dry_grass)) {
+        Compost.addRecipe(rock.dirt, 1.00, "ffffff", rock.grass);
+        Compost.addRecipe(rock.dry_grass, 1.00, "ffffff", rock.dirt);
+        Compost.addRecipe(rock.grass, 1.00, "ffffff", rock.dry_grass);
+    }
 }
 
 Compost.addRecipe(<minecraft:dirt>, 1.00, "ffffff", <minecraft:grass>);

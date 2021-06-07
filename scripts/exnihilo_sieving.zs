@@ -7,37 +7,53 @@ import mods.exnihilocreatio.Sieve.addDiamondMeshRecipe as tier_4;
 Sieve.removeAll();
 
 // ===== Rock Type Dependent  ===== //
-for rock in tfc_rock_types {
-    tier_1(tfc_cobbles[rock], tfc_gravels[rock], 0.90);
-    tier_2(tfc_cobbles[rock], tfc_gravels[rock], 0.80);
-    tier_3(tfc_cobbles[rock], tfc_gravels[rock], 0.70);
+for name, rock in rocks {
+    if(!isNull(rock.cobble) && !isNull(rock.gravel) && !isNull(rock.dirt) && !isNull(rock.sand)) {
+        tier_1(rock.cobble, rock.gravel, 0.90);
+        tier_2(rock.cobble, rock.gravel, 0.80);
+        tier_3(rock.cobble, rock.gravel, 0.70);
 
-    tier_1(tfc_gravels[rock], tfc_dirts[rock],   0.80);
-    tier_2(tfc_gravels[rock], tfc_dirts[rock],   0.70);
-    tier_3(tfc_gravels[rock], tfc_dirts[rock],   0.60);
+        tier_1(rock.gravel, rock.dirt,   0.80);
+        tier_2(rock.gravel, rock.dirt,   0.70);
+        tier_3(rock.gravel, rock.dirt,   0.60);
 
-    tier_1(tfc_dirts[rock],   tfc_sands[rock],   0.70);
-    tier_2(tfc_dirts[rock],   tfc_sands[rock],   0.60);
-    tier_3(tfc_dirts[rock],   tfc_sands[rock],   0.50);
+        tier_1(rock.dirt,   rock.sand,   0.70);
+        tier_2(rock.dirt,   rock.sand,   0.60);
+        tier_3(rock.dirt,   rock.sand,   0.50);
 
-    tier_1(tfc_cobbles[rock], tfc_rocks[rock], 0.20);
-    tier_2(tfc_cobbles[rock], tfc_rocks[rock], 0.10);
+        tier_1(rock.cobble, rock.rock, 0.20);
+        tier_2(rock.cobble, rock.rock, 0.10);
+    }
 
-    tier_2(tfc_cobbles[rock], tfc_bricks[rock], 0.05);
+    if(!isNull(rock.cobble) && !isNull(rock.brick)) {
+        tier_2(rock.cobble, rock.brick, 0.05);
+    }
 }
 
 // ===== Gem Type Dependent  ===== //
-for gem in tfc_gem_types {
-    tier_2(<ore:cobblestone>, tfc_gems_flawed[gem], 0.01);
+for name, gem in gems {
+    if(!isNull(gem.chipped)) {
+        tier_4(<ore:sand>, gem.chipped, 0.05);
+    }
 
-    tier_3(<ore:cobblestone>, tfc_gems_normal[gem], 0.01);
-    tier_3(<ore:gravel>, tfc_gems_flawed[gem], 0.02);
+    if(!isNull(gem.flawed)) {
+        tier_2(<ore:cobblestone>, gem.flawed, 0.01);
+        tier_3(<ore:gravel>, gem.flawed, 0.02);
+        tier_4(<ore:dirt>, gem.flawed, 0.04);
+    }
 
-    tier_4(<ore:cobblestone>, tfc_gems_exquisite[gem], 0.01);
-    tier_4(<ore:cobblestone>, tfc_gems_flawless[gem], 0.02);
-    tier_4(<ore:gravel>, tfc_gems_normal[gem], 0.03);
-    tier_4(<ore:dirt>, tfc_gems_flawed[gem], 0.04);
-    tier_4(<ore:sand>, tfc_gems_chipped[gem], 0.05);
+    if(!isNull(gem.normal)) {
+        tier_3(<ore:cobblestone>, gem.normal, 0.01);
+        tier_4(<ore:gravel>, gem.normal, 0.03);
+    }
+
+    if(!isNull(gem.flawless)) {
+        tier_4(<ore:cobblestone>, gem.flawless, 0.02);
+    }
+
+    if(!isNull(gem.exquisite)) {
+        tier_4(<ore:cobblestone>, gem.exquisite, 0.01);
+    }
 }
 
 // ===== Cobblestone Loot Tables  ===== //

@@ -46,20 +46,38 @@ Carving.addGroup("tfc_sand");
 Carving.addGroup("tfc_gravel");
 Carving.addGroup("tfc_dirt");
 
-for rock in tfc_rock_types {
-    Carving.addVariation("tfc_rock", tfc_rocks[rock]);
-    Carving.addVariation("tfc_raw", tfc_raws[rock]);
-    Carving.addVariation("tfc_smooth", tfc_smooths[rock]);
-    Carving.addVariation("tfc_cobble", tfc_cobbles[rock]);
-    Carving.addVariation("tfc_brick", tfc_bricks[rock]);
-    Carving.addVariation("tfc_brick_block", tfc_brick_blocks[rock]);
-    Carving.addVariation("tfc_sand", tfc_sands[rock]);
-    Carving.addVariation("tfc_gravel", tfc_gravels[rock]);
-    Carving.addVariation("tfc_dirt", tfc_dirts[rock]);
+for name, rock in rocks {
+    if(!isNull(rock.rock)) {
+        Carving.addVariation("tfc_rock", rock.rock);
+    }
+    if(!isNull(rock.raw)) {
+        Carving.addVariation("tfc_raw", rock.raw);
+    }
+    if(!isNull(rock.smooth)) {
+        Carving.addVariation("tfc_smooth", rock.smooth);
+    }
+    if(!isNull(rock.cobble)) {
+        Carving.addVariation("tfc_cobble", rock.cobble);
+    }
+    if(!isNull(rock.brick)) {
+        Carving.addVariation("tfc_brick", rock.brick);
+    }
+    if(!isNull(rock.bricks)) {
+        Carving.addVariation("tfc_brick_block", rock.bricks);
+    }
+    if(!isNull(rock.sand)) {
+        Carving.addVariation("tfc_sand", rock.sand);
+    }
+    if(!isNull(rock.gravel)) {
+        Carving.addVariation("tfc_gravel", rock.gravel);
+    }
+    if(!isNull(rock.dirt)) {
+        Carving.addVariation("tfc_dirt", rock.dirt);
+    }
 }
 
 Carving.addGroup("tfc_log");
-Carving.addGroup("tfc_plank");
+Carving.addGroup("tfc_planks");
 Carving.addGroup("tfc_lumber");
 Carving.addGroup("tfc_workbench");
 Carving.addGroup("tfc_chest");
@@ -79,33 +97,75 @@ Carving.addGroup("tfc_bookshelf");
 Carving.addGroup("tfc_tool_rack");
 Carving.addGroup("tfc_loom");
 
-for wood in tfc_wood_types {
-    Carving.addVariation("tfc_log", tfc_logs[wood]);
-    Carving.addVariation("tfc_plank", tfc_planks[wood]);
-    Carving.addVariation("tfc_lumber", tfc_lumbers[wood]);
-    Carving.addVariation("tfc_workbench", tfc_workbenches[wood]);
-    Carving.addVariation("tfc_chest", tfc_chests[wood]);
-    Carving.addVariation("tfc_chest_trap", tfc_trapped_chests[wood]);
-    Carving.addVariation("tfc_support", tfc_supports[wood]);
-    Carving.addVariation("tfc_wood_stair", tfc_wood_stairs[wood]);
-    Carving.addVariation("tfc_fence", tfc_fences[wood]);
-    Carving.addVariation("tfc_button", tfc_buttons[wood]);
-    Carving.addVariation("tfc_wood_pressure_plate", tfc_wood_pressure_plates[wood]);
-    Carving.addVariation("tfc_fence_gate", tfc_fence_gates[wood]);
-    Carving.addVariation("tfc_wood_trapdoor", tfc_wood_trapdoors[wood]);
-    Carving.addVariation("tfc_barrel", tfc_barrels[wood]);
-    Carving.addVariation("tfc_wood_door", tfc_wood_doors[wood]);
-    Carving.addVariation("tfc_wood_slab", tfc_wood_slabs[wood]);
-    Carving.addVariation("tfc_boat", tfc_boats[wood]);
-    Carving.addVariation("tfc_bookshelf", tfc_bookshelves[wood]);
-    Carving.addVariation("tfc_tool_rack", tfc_tool_racks[wood]);
-    Carving.addVariation("tfc_loom", tfc_looms[wood]);
+for name, wood in woods {
+    if(!isNull(wood.log)) {
+        Carving.addVariation("tfc_log", wood.log);
+    }
+    if(!isNull(wood.planks)) {
+        Carving.addVariation("tfc_planks", wood.planks);
+    }
+    if(!isNull(wood.lumber)) {
+        Carving.addVariation("tfc_lumber", wood.lumber);
+    }
+    if(!isNull(wood.workbench)) {
+        Carving.addVariation("tfc_workbench", wood.workbench);
+    }
+    if(!isNull(wood.chest)) {
+        Carving.addVariation("tfc_chest", wood.chest);
+    }
+    if(!isNull(wood.chest_trapped)) {
+        Carving.addVariation("tfc_chest_trap", wood.chest_trapped);
+    }
+    if(!isNull(wood.support)) {
+        Carving.addVariation("tfc_support", wood.support);
+    }
+    if(!isNull(wood.stairs)) {
+        Carving.addVariation("tfc_wood_stair", wood.stairs);
+    }
+    if(!isNull(wood.fence)) {
+        Carving.addVariation("tfc_fence", wood.fence);
+    }
+    if(!isNull(wood.button)) {
+        Carving.addVariation("tfc_button", wood.button);
+    }
+    if(!isNull(wood.pressure_plate)) {
+        Carving.addVariation("tfc_wood_pressure_plate", wood.pressure_plate);
+    }
+    if(!isNull(wood.fence_gate)) {
+        Carving.addVariation("tfc_fence_gate", wood.fence_gate);
+    }
+    if(!isNull(wood.trapdoor)) {
+        Carving.addVariation("tfc_wood_trapdoor", wood.trapdoor);
+    }
+    if(!isNull(wood.barrel)) {
+        Carving.addVariation("tfc_barrel", wood.barrel);
+    }
+    if(!isNull(wood.door)) {
+        Carving.addVariation("tfc_wood_door", wood.door);
+    }
+    if(!isNull(wood.slab)) {
+        Carving.addVariation("tfc_wood_slab", wood.slab);
+    }
+    if(!isNull(wood.boat)) {
+        Carving.addVariation("tfc_boat", wood.boat);
+    }
+    if(!isNull(wood.bookshelf)) {
+        Carving.addVariation("tfc_bookshelf", wood.bookshelf);
+    }
+    if(!isNull(wood.tool_rack)) {
+        Carving.addVariation("tfc_tool_rack", wood.tool_rack);
+    }
+    if(!isNull(wood.loom)) {
+        Carving.addVariation("tfc_loom", wood.loom);
+    }
 }
 
 Carving.addGroup("tfc_gem_chipped");
 
-for gem in tfc_gem_types {
-    Carving.addVariation("tfc_gem_chipped", tfc_gems_chipped[gem]);
+for name, gem in gems {
+    if(!isNull(gem.chipped)) {
+        Carving.addVariation("tfc_gem_chipped", gem.chipped);
+    }
 }
 
 Carving.addGroup("tfc_flower");

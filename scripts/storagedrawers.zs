@@ -14,66 +14,69 @@ JEI.removeAndHide(<storagedrawers:upgrade_conversion>);
 JEI.removeAndHide(<storagedrawers:upgrade_creative:*>);
 JEI.removeAndHide(<storagedrawers:upgrade_redstone:*>);
 
-for wood in tfc_wood_types {
-    var lumber = tfc_lumbers[wood];
-    var plank = tfc_planks[wood];
-    var slab = tfc_wood_slabs[wood];
-    var log = tfc_logs[wood];
+for name, wood in woods {
+    if(!isNull(wood.lumber) && !isNull(wood.planks) && !isNull(wood.slab) && !isNull(wood.log)) {
+        var lumber = wood.lumber;
+        var plank = wood.planks;
+        var slab = wood.slab;
+        var log = wood.log;
 
-    var basicDrawer as IItemStack = <storagedrawers:customdrawers:0>.withTag({
-        MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
-        MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
-    );
+        var basicDrawer as IItemStack = <storagedrawers:customdrawers:0>.withTag({
+            MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
+            MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
+        );
 
-    var basicDrawer1x2 as IItemStack = <storagedrawers:customdrawers:1>.withTag({
-        MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
-        MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
-    );
+        var basicDrawer1x2 as IItemStack = <storagedrawers:customdrawers:1>.withTag({
+            MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
+            MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
+        );
 
-    var basicDrawer2x2 as IItemStack = <storagedrawers:customdrawers:2>.withTag({
-        MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
-        MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
-    );
+        var basicDrawer2x2 as IItemStack = <storagedrawers:customdrawers:2>.withTag({
+            MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
+            MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
+        );
 
-    var halfDrawer1x2 as IItemStack = <storagedrawers:customdrawers:3>.withTag({
-        MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
-        MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
-    );
+        var halfDrawer1x2 as IItemStack = <storagedrawers:customdrawers:3>.withTag({
+            MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
+            MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
+        );
 
-    var halfDrawer2x2 as IItemStack = <storagedrawers:customdrawers:4>.withTag({
-        MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
-        MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
-    );
+        var halfDrawer2x2 as IItemStack = <storagedrawers:customdrawers:4>.withTag({
+            MatT: {id: log.definition.id, Count: 1 as byte, Damage: 0 as short},
+            MatS: {id: plank.definition.id, Count: 1 as byte, Damage: 0 as short}}
+        );
 
-    recipes.addShaped("basic_drawer_" ~ wood, basicDrawer,
-        [[lumber, lumber, lumber],
-         [null, <ore:chestWood>, null],
-         [lumber, lumber, lumber]]
-    );
+        recipes.addShaped("basic_drawer_" ~ name, basicDrawer,
+            [[lumber, lumber, lumber],
+            [null, <ore:chestWood>, null],
+            [lumber, lumber, lumber]]
+        );
 
-    recipes.addShaped("basic_drawer_1x2_" ~ wood, basicDrawer1x2.withAmount(2),
-        [[lumber, <ore:chestWood>, lumber],
-         [lumber, plank, lumber],
-         [lumber, <ore:chestWood>, lumber]]
-    );
+        recipes.addShaped("basic_drawer_1x2_" ~ name, basicDrawer1x2.withAmount(2),
+            [[lumber, <ore:chestWood>, lumber],
+            [lumber, plank, lumber],
+            [lumber, <ore:chestWood>, lumber]]
+        );
 
-    recipes.addShaped("basic_drawer_2x2_" ~ wood, basicDrawer2x2.withAmount(4),
-        [[<ore:chestWood>, lumber, <ore:chestWood>],
-         [lumber, plank, lumber],
-         [<ore:chestWood>, lumber, <ore:chestWood>]]
-    );
+        recipes.addShaped("basic_drawer_2x2_" ~ name, basicDrawer2x2.withAmount(4),
+            [[<ore:chestWood>, lumber, <ore:chestWood>],
+            [lumber, plank, lumber],
+            [<ore:chestWood>, lumber, <ore:chestWood>]]
+        );
 
-    recipes.addShaped("half_drawer_1x2_" ~ wood, halfDrawer1x2.withAmount(2),
-        [[lumber, <ore:chestWood>, lumber],
-         [lumber, slab, lumber],
-         [lumber, <ore:chestWood>, lumber]]
-    );
+        recipes.addShaped("half_drawer_1x2_" ~ name, halfDrawer1x2.withAmount(2),
+            [[lumber, <ore:chestWood>, lumber],
+            [lumber, slab, lumber],
+            [lumber, <ore:chestWood>, lumber]]
+        );
 
-    recipes.addShaped("half_drawer_2x2_" ~ wood, halfDrawer2x2.withAmount(4),
-        [[<ore:chestWood>, lumber, <ore:chestWood>],
-         [lumber, slab, lumber],
-         [<ore:chestWood>, lumber, <ore:chestWood>]]
-    );
+        recipes.addShaped("half_drawer_2x2_" ~ name, halfDrawer2x2.withAmount(4),
+            [[<ore:chestWood>, lumber, <ore:chestWood>],
+            [lumber, slab, lumber],
+            [<ore:chestWood>, lumber, <ore:chestWood>]]
+        );
+
+    }
 }
 
 // ===== Framing Table ===== //
