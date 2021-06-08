@@ -43,3 +43,17 @@ Melting.removeRecipe(<liquid:constantan>);
 Melting.removeRecipe(<liquid:signalum>);
 Melting.removeRecipe(<liquid:lumium>);
 Melting.removeRecipe(<liquid:enderium>);
+
+// ===== TFC Ore Melting ===== //
+for id, oreType in oreStacks {
+    var metal = oreMetals[id];
+    
+    if(!isNull(liquids[metal]) && !isNull(liquids[metal]["normal"])) {
+        for variety, oreStack in oreType {
+            var mb = oreMillibuckets[variety];
+
+            // TODO: Make metals have proper melting temperatures
+            Melting.addRecipe(liquids[metal].normal * mb, oreStack, 69); 
+        }
+    }
+}
