@@ -1,9 +1,6 @@
-import mods.jei.JEI;
-
-JEI.removeAndHide(<microblockcbe:stone_rod>);
-JEI.removeAndHide(<microblockcbe:saw_stone>);
-JEI.removeAndHide(<microblockcbe:saw_iron>);
-
+recipes.remove(<microblockcbe:stone_rod>);
+recipes.remove(<microblockcbe:saw_stone>);
+recipes.remove(<microblockcbe:saw_iron>);
 recipes.remove(<microblockcbe:saw_diamond>);
 
 recipes.addShaped("microblocks_saw_diamond", <microblockcbe:saw_diamond>, 

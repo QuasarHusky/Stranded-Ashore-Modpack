@@ -1,13 +1,11 @@
-import mods.jei.JEI;
-
-JEI.removeAndHide(<computercraft:computer:*>);
-JEI.removeAndHide(<computercraft:command_computer>);
-JEI.removeAndHide(<computercraft:pocket_computer:*>);
-JEI.removeAndHide(<computercraft:turtle:*>);
-JEI.removeAndHide(<computercraft:turtle_expanded:*>);
-JEI.removeAndHide(<computercraft:turtle_advanced:*>);
-JEI.removeAndHide(<computercraft:disk_expanded:*>);
-JEI.removeAndHide(<computercraft:peripheral:*>);
-JEI.removeAndHide(<computercraft:advanced_modem:*>);
-JEI.removeAndHide(<computercraft:cable:*>);
-JEI.removeAndHide(<computercraft:wired_modem_full>);
+recipes.remove(<computercraft:computer:*>);
+recipes.remove(<computercraft:command_computer>);
+recipes.remove(<computercraft:pocket_computer:*>);
+recipes.remove(<computercraft:turtle:*>);
+recipes.remove(<computercraft:turtle_expanded:*>);
+recipes.remove(<computercraft:turtle_advanced:*>);
+recipes.remove(<computercraft:disk_expanded:*>);
+recipes.remove(<computercraft:peripheral:*>);
+recipes.remove(<computercraft:advanced_modem:*>);
+recipes.remove(<computercraft:cable:*>);
+recipes.remove(<computercraft:wired_modem_full>);

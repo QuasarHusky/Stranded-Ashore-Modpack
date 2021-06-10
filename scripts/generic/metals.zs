@@ -1,22 +1,140 @@
+#priority 50
+
 import crafttweaker.item.IItemStack;
+import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Quern;
+import mods.terrafirmacraft.Anvil;
+import mods.immersiveengineering.Crusher;
+
+function obliterateRecipes(item as IItemStack) as void {
+    recipes.remove(item);
+    Anvil.removeRecipe(item);
+    Quern.removeRecipe(item);
+    Crusher.removeRecipe(item);
+}
+
+var applyHeatsToMetals as string[] = [
+    "iridium",
+    "signalum",
+    "lumium",
+    "enderium",
+    "aluminum",
+    "mithril",
+    "electrum",
+    "invar",
+    "constantan",
+    "cobalt",
+    "ardite",
+    "manyullyn",
+    "knightslime",
+    "pigiron",
+    "alubrass",
+    "hop_graphite",
+    "uranium",
+    "red_alloy",
+    "electrotine",
+    "corrupted",
+];
+
+for name in applyHeatsToMetals {
+    var metal = metals[name];
+    var heatCapacity = metalSpecificHeats[name];
+    var meltTemp = metalMeltingHeats[name];
+
+    // Register item heats for every variant
+    for variant, item in metal {
+        print("Registered TFC heat for metal: " ~ name ~ ", variant: " ~ variant);
+        ItemRegistry.registerItemHeat(item, heatCapacity, meltTemp, true);
+    }
+}
 
 for name, metal in metals {
-    // ===== Ingot to Scrap (Quern) ===== //
-    if(!isNull(metal.ingot) && !isNull(metal.scrap)) {
-        Quern.addRecipe(name ~ "_scrap", metal.ingot, metal.scrap);
+    print("===== Generic Recipes for Metal: " ~ name ~ " =====");
+
+    // ===== Unregister existing recipes ===== //
+    // To prevent dupes in the most inefficient way possible :D
+    for variant, item in metal {
+        obliterateRecipes(item);
+
+        // Remove by ore dict just to be sure :'3
+        for oreEntry in item.ores {
+            for oreItem in oreEntry.items {
+                obliterateRecipes(item);
+            }
+        }
     }
 
-    // ===== Scrap to Dust (Quern) ===== //
-    if(!isNull(metal.scrap) && !isNull(metal.dust)) {
-        Quern.addRecipe(name ~ "_dust", metal.scrap, metal.dust);
+    // ===== Ingot to Dust (Quern) ===== //
+    if(!isNull(metal.ingot) && !isNull(metal.dust)) {
+        print(" - Ingot to Dust (Quern)");
+        Quern.addRecipe("metal/" ~ name ~ "/dust", metal.ingot, metal.dust);
+    }
+
+    // ===== Ingot to Scrap (Crafting) ===== //
+    if(!isNull(metal["ingot"]) && !isNull(metal["scrap"])) {
+        print(" - Ingot to Scrap (Crafting)");
+        recipes.addShapeless("metal/" ~ name ~ "/scrap", metal.scrap, [
+            metal.ingot,
+            <ore:hammer>.transformDamage(1)
+        ]);
     }
 
     // ===== Ingot to Nuggets (Crafting) ===== //
     if(!isNull(metal["nugget"]) && !isNull(metal["ingot"])) {
-        recipes.addShapeless(name ~ "_nugget_unpack", metal.nugget * 9, [
+        print(" - Ingot to Nugget (Crafting)");
+        recipes.addShapeless("metal/" ~ name ~ "/nugget_unpack", metal.nugget * 9, [
             metal.ingot,
             <ore:chisel>.transformDamage(1)
         ]);
     }
+
+    // ===== Plates (Anvil) ===== //
+    if(!isNull(metal.ingot) && !isNull(metal.plate)) {
+        print(" - Plate (Anvil)");
+        Anvil.addRecipe(
+                "metal/" ~ name ~ "/plate",
+                metal.ingot,
+                metal.plate,
+                1,
+                "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
+        );
+    }
+
+    // ===== Wires (Anvil) ===== //
+    if(!isNull(metal.plate) && !isNull(metal.wire)) {
+        print(" - Wire (Anvil)");
+        Anvil.addRecipe(
+                "metal/" ~ name ~ "/wire",
+                metal.plate,
+                metal.wire * 3,
+                1,
+                "general", "DRAW_THIRD_LAST", "DRAW_SECOND_LAST", "DRAW_LAST"
+        );
+    }
+
+    // ===== Gears (Anvil) ===== //
+    if(!isNull(metal.gear) && !isNull(metal.plate)) {
+        print(" - Gear (Anvil)");
+        Anvil.addRecipe(
+                "metal/" ~ name ~ "/gear",
+                metal.plate,
+                metal.gear,
+                1,
+                "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
+        );
+    }
+
+    // ===== Rods (Anvil) ===== //
+    if(!isNull(metal.rod) && !isNull(metal.ingot)) {
+        print(" - Rod (Anvil)");
+        Anvil.addRecipe(
+                "metal/" ~ name ~ "/rod",
+                metal.ingot,
+                metal.rod * 2,
+                1,
+                "general", "DRAW_THIRD_LAST", "DRAW_SECOND_LAST", "DRAW_LAST"
+        );
+    }
 }
+
+print("All done with generic metals :D");

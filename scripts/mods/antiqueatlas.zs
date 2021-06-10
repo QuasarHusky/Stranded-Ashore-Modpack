@@ -1,5 +1,3 @@
-import mods.jei.JEI;
-
 recipes.remove(<antiqueatlas:empty_antique_atlas>);
 
 recipes.addShapeless("empty_antique_atlas", <antiqueatlas:empty_antique_atlas>, [

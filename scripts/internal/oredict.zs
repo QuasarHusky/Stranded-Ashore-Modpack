@@ -1,3 +1,14 @@
+#priority 90
+
+// ===== Fuck Chisel ===== //
+// Literally tho.. fuck Chisel
+
+for item in loadedMods["chisel"].items {
+    for entry in item.ores {
+        entry.remove(item);
+    }
+}
+
 // ===== Wrought Iron Fixes ===== //
 <ore:ingotIron>.addItems([ <tfc:metal/ingot/wrought_iron> ]);
 <ore:ingotDoubleIron>.addItems([ <tfc:metal/double_ingot/wrought_iron> ]);
@@ -9,6 +20,12 @@
 <ore:rodIron>.addItems([ <tfc:metal/rod/wrought_iron> ]);
 
 <ore:ingotWroughtIron>.addItems([ <minecraft:iron_ingot> ]);
+
+// ===== TFC Rods ===== //
+<ore:stickGold>.addItems([ <tfc:metal/rod/gold> ]);
+<ore:stickWroughtIron>.addItems([ <tfc:metal/rod/wrought_iron> ]);
+<ore:stickIron>.addItems([ <tfc:metal/rod/wrought_iron> ]);
+<ore:stickSteel>.addItems([ <tfc:metal/rod/steel> ]);
 
 // ===== Hide Types ===== //
 <ore:hide>.addItems([
@@ -377,3 +394,4 @@
     <tfc:crop/seeds/yellow_bell_pepper>,
     <tfc:crop/seeds/jute>
 ]);
+

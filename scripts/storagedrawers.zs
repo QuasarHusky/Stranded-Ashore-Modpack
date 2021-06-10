@@ -1,18 +1,17 @@
 import crafttweaker.item.IItemStack;
-import mods.jei.JEI;
 
 // ===== Storage Drawers ===== //
-JEI.removeAndHide(<storagedrawers:basicdrawers:*>);
-JEI.removeAndHide(<storagedrawers:trim:*>);
-JEI.removeAndHide(<storagedrawers:keybutton:*>);
-JEI.removeAndHide(<storagedrawers:compdrawers>);
-JEI.removeAndHide(<storagedrawers:controller>);
-JEI.removeAndHide(<storagedrawers:controllerslave>);
-JEI.removeAndHide(<storagedrawers:upgrade_status:*>);
-JEI.removeAndHide(<storagedrawers:upgrade_void>);
-JEI.removeAndHide(<storagedrawers:upgrade_conversion>);
-JEI.removeAndHide(<storagedrawers:upgrade_creative:*>);
-JEI.removeAndHide(<storagedrawers:upgrade_redstone:*>);
+recipes.remove(<storagedrawers:basicdrawers:*>);
+recipes.remove(<storagedrawers:trim:*>);
+recipes.remove(<storagedrawers:keybutton:*>);
+recipes.remove(<storagedrawers:compdrawers>);
+recipes.remove(<storagedrawers:controller>);
+recipes.remove(<storagedrawers:controllerslave>);
+recipes.remove(<storagedrawers:upgrade_status:*>);
+recipes.remove(<storagedrawers:upgrade_void>);
+recipes.remove(<storagedrawers:upgrade_conversion>);
+recipes.remove(<storagedrawers:upgrade_creative:*>);
+recipes.remove(<storagedrawers:upgrade_redstone:*>);
 
 for name, wood in woods {
     if(!isNull(wood.lumber) && !isNull(wood.planks) && !isNull(wood.slab) && !isNull(wood.log)) {

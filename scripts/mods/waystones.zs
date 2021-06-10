@@ -1,5 +1,3 @@
-import mods.jei.JEI;
-
 recipes.remove(<waystones:waystone>);
 recipes.remove(<waystones:return_scroll>);
 recipes.remove(<waystones:bound_scroll>);
