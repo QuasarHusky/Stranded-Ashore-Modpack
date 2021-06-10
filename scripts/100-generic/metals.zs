@@ -47,7 +47,7 @@ for name in applyHeatsToMetals {
 }
 
 for name, metal in metals {
-    // ===== Ingot to Dust (Querni & Crusher) ===== //
+    // ===== Ingot to Dust (Quern & Crusher) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.dust)) {
         print(" - Ingot to Dust (Quern)");
         Quern.addRecipe("metal/" ~ name ~ "/dust", metal.ingot, metal.dust);
