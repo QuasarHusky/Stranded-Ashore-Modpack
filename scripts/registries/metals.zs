@@ -52,6 +52,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:291>,
         "coin":                         <thermalfoundation:coin:99>,
         "plate":                        <thermalfoundation:material:355>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:3>,
     },
     "copper": {
         "ingot":                        <tfc:metal/ingot/copper>,
@@ -69,6 +70,7 @@ global metals as IItemStack[string][string] = {
         "coin":                         <thermalfoundation:coin:64>,
         "plate":                        <thermalfoundation:material:320>,
         "wire":                         <immersiveengineering:material:20>,
+        "hardened_glass":               <thermalfoundation:glass:0>,
     },
     "gold": {
         "ingot":                        <tfc:metal/ingot/gold>,
@@ -117,6 +119,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:261>,
         "coin":                         <thermalfoundation:coin:69>,
         "plate":                        <thermalfoundation:material:325>,
+        "hardened_glass":               <thermalfoundation:glass:5>,
     },
     "rose_gold": {
         "ingot":                        <tfc:metal/ingot/rose_gold>,
@@ -142,6 +145,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:258>,
         "coin":                         <thermalfoundation:coin:66>,
         "plate":                        <thermalfoundation:material:322>,
+        "hardened_glass":               <thermalfoundation:glass:2>,
     },
     "tin": {
         "ingot":                        <tfc:metal/ingot/tin>,
@@ -155,6 +159,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:257>,
         "coin":                         <thermalfoundation:coin:65>,
         "plate":                        <thermalfoundation:material:321>,
+        "hardened_glass":               <thermalfoundation:glass:1>,
     },
     "zinc": {
         "ingot":                        <tfc:metal/ingot/zinc>,
@@ -216,6 +221,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:288>,
         "coin":                         <thermalfoundation:coin:96>,
         "plate":                        <thermalfoundation:material:352>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:0>,
     },
     "platinum": {
         "ingot":                        <tfc:metal/ingot/platinum>,
@@ -229,6 +235,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:262>,
         "coin":                         <thermalfoundation:coin:70>,
         "plate":                        <thermalfoundation:material:326>,
+        "hardened_glass":               <thermalfoundation:glass:6>,
     },
     "black_steel": {
         "ingot":                        <tfc:metal/ingot/black_steel>,
@@ -290,6 +297,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:263>,
         "coin":                         <thermalfoundation:coin:71>,
         "plate":                        <thermalfoundation:material:327>,
+        "hardened_glass":               <thermalfoundation:glass:7>,
     },
     "signalum": {
         "ingot":                        <thermalfoundation:material:165>,
@@ -299,6 +307,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:293>,
         "coin":                         <thermalfoundation:coin:101>,
         "plate":                        <thermalfoundation:material:357>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:5>,
     },
     "lumium": {
         "ingot":                        <thermalfoundation:material:166>,
@@ -308,6 +317,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:294>,
         "coin":                         <thermalfoundation:coin:102>,
         "plate":                        <thermalfoundation:material:358>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:6>,
     },
     "enderium": {
         "ingot":                        <thermalfoundation:material:167>,
@@ -317,6 +327,7 @@ global metals as IItemStack[string][string] = {
         "coin":                         <thermalfoundation:coin:103>,
         "plate":                        <thermalfoundation:material:359>,
         "block":                        <thermalfoundation:storage_alloy:7>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:7>,
     },
     "aluminum": {
         "ingot":                        <thermalfoundation:material:132>,
@@ -331,6 +342,7 @@ global metals as IItemStack[string][string] = {
         "scaffolding":                  <immersiveengineering:metal_decoration1:5>,
         "rod":                          <immersiveengineering:material:3>,
         "wire":                         <immersiveengineering:material:22>,
+        "hardened_glass":               <thermalfoundation:glass:4>,
     },
     "mithril": {
         "ingot":                        <thermalfoundation:material:136>,
@@ -340,6 +352,7 @@ global metals as IItemStack[string][string] = {
         "gear":                         <thermalfoundation:material:264>,
         "coin":                         <thermalfoundation:coin:72>,
         "plate":                        <thermalfoundation:material:328>,
+        "hardened_glass":               <thermalfoundation:glass:8>,
     },
     "electrum": {
         "ingot":                        <thermalfoundation:material:161>,
@@ -353,6 +366,7 @@ global metals as IItemStack[string][string] = {
         "wire":                         <immersiveengineering:material:21>,
         "fence":                        <immersiveposts:fence_electrum>,
         "rod":                          <immersiveposts:metal_rods:6>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:1>,
     },
     "invar": {
         "ingot":                        <thermalfoundation:material:162>,
@@ -362,6 +376,7 @@ global metals as IItemStack[string][string] = {
         "plate":                        <thermalfoundation:material:354>,
         "block":                        <thermalfoundation:storage_alloy:2>,
         "coin":                         <thermalfoundation:coin:98>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:2>,
     },
     "constantan": {
         "ingot":                        <thermalfoundation:material:164>,
@@ -374,6 +389,7 @@ global metals as IItemStack[string][string] = {
         "fence":                        <immersiveposts:fence_constantan>,
         "rod":                          <immersiveposts:metal_rods:5>,
         "coin":                         <thermalfoundation:coin:100>,
+        "hardened_glass":               <thermalfoundation:glass_alloy:4>,
     },
     // ===== Tinkers' Construct ===== //
     "cobalt": {
@@ -470,7 +486,7 @@ global metalMeltingHeats as int[string] = {
     "iridium":                      1100,
     "signalum":                      780,
     "lumium":                        460,
-    "enderium":                     1910,
+    "enderium":                     3250,
     "aluminum":                      660,
     "mithril":                       270,
     "electrum":                     1769,
@@ -482,7 +498,7 @@ global metalMeltingHeats as int[string] = {
     "knightslime":                   140,
     "pigiron":                       100,
     "alubrass":                      900,
-    "hop_graphite":                 3600,
+    "hop_graphite":                 2001,
     "uranium":                      1132,
     "red_alloy":                     480,
     "electrotine":                   960,

@@ -1,18 +1,32 @@
-#priority -50
+#priority -40
 
 import crafttweaker.item.IItemStack;
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Anvil;
 import mods.immersiveengineering.Crusher;
+import mods.immersiveengineering.ArcFurnace;
 import mods.immersiveengineering.AlloySmelter;
 import mods.immersiveengineering.BlastFurnace;
+import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
 
-function obliterateRecipes(item as IItemStack) as void {
+function obliterateRecipes(name as string, item as IItemStack) as void {
     recipes.remove(item);
     Anvil.removeRecipe(item);
     Quern.removeRecipe(item);
-    Crusher.removeRecipe(item);
+    ArcFurnace.removeRecipe(item);
+    Crusher.removeRecipesForInput(item);
+    Casting.removeTableRecipe(item);
+    Casting.removeBasinRecipe(item);
+
+    if(!isNull(liquids[name]) && !isNull(liquids[name].normal)) {
+        Melting.removeRecipe(liquids[name].normal, item);
+
+        if(name == "wrought_iron" || name == "iron") {
+            Melting.removeRecipe(<liquid:iron>, item);
+        }
+    }
 }
 
 var applyHeatsToMetals as string[] = [
@@ -56,17 +70,17 @@ for name, metal in metals {
     // ===== Unregister existing recipes ===== //
     // To prevent dupes in the most inefficient way possible :D
     for variant, item in metal {
-        obliterateRecipes(item);
+        obliterateRecipes(name, item);
 
         // Remove by ore dict just to be sure :'3
         for oreEntry in item.ores {
             for oreItem in oreEntry.items {
-                obliterateRecipes(item);
+                obliterateRecipes(name, item);
             }
         }
     }
 
-    // ===== Ingot to Dust (Quern) ===== //
+    // ===== Ingot to Dust (Querni & Crusher) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.dust)) {
         print(" - Ingot to Dust (Quern)");
         Quern.addRecipe("metal/" ~ name ~ "/dust", metal.ingot, metal.dust);
@@ -138,6 +152,26 @@ for name, metal in metals {
         );
     }
 
+    // ===== Sheetmetal (Crafting) ===== //
+    if(!isNull(metal["sheetmetal"]) && !isNull(metal["plate"]) && !isNull(metal["rod"])) {
+        print(" - Sheetmetal (Crafting)");
+        recipes.addShaped("metal/" ~ name ~ "/sheetmetal", metal.sheetmetal * 4, [
+            [null, metal.plate, null],
+            [metal.plate, metal.rod, metal.plate],
+            [null, metal.plate, null]
+        ]);
+    }
+
+    // ===== Scaffolding (Crafting) ===== //
+    if(!isNull(metal["scaffolding"]) && !isNull(metal["plate"]) && !isNull(metal["rod"])) {
+        print(" - Scaffolding (Crafting)");
+        recipes.addShaped("metal/" ~ name ~ "/scaffolding", metal.scaffolding * 6, [
+            [metal.plate, metal.plate, metal.plate],
+            [null, metal.rod, null],
+            [metal.rod, null, metal.rod]
+        ]);
+    }
+
     // ===== Double Ingots (Alloy Kiln) ===== //
     if(!isNull(metal.double_ingot) && !isNull(metal.ingot)) {
         AlloySmelter.addRecipe(metal.double_ingot, metal.ingot, metal.ingot, 30 * 20);
@@ -156,6 +190,79 @@ for name, metal in metals {
     // ===== Dust to Ingot (IE Blast Furnace) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.dust)) {
         BlastFurnace.addRecipe(metal.ingot, metal.dust, 10 * 20, materials.slag.item);
+    }
+
+    // ===== Smeltery Melting ===== //
+    if(!isNull(liquids[name]) && !isNull(liquids[name].normal)) {
+        var molten = liquids[name].normal;
+        var meltTemp = metalMeltingHeats[name] + 300;
+
+        if(!isNull(metal.ingot)) {
+            Melting.addRecipe(molten * 144, metal.ingot, meltTemp);
+        }
+        if(!isNull(metal.double_ingot)) {
+            Melting.addRecipe(molten * 288, metal.double_ingot, meltTemp);
+        }
+        if(!isNull(metal.sheet)) {
+            Melting.addRecipe(molten * 288, metal.sheet, meltTemp);
+        }
+        if(!isNull(metal.double_sheet)) {
+            Melting.addRecipe(molten * 576, metal.double_sheet, meltTemp);
+        }
+        if(!isNull(metal.plate)) {
+            Melting.addRecipe(molten * 144, metal.plate, meltTemp);
+        }
+        if(!isNull(metal.dust)) {
+            Melting.addRecipe(molten * 144, metal.dust, meltTemp);
+        }
+        if(!isNull(metal.scrap)) {
+            Melting.addRecipe(molten * 144, metal.scrap, meltTemp);
+        }
+        if(!isNull(metal.nugget)) {
+            Melting.addRecipe(molten * 16, metal.nugget, meltTemp);
+        }
+        if(!isNull(metal.gear)) {
+            Melting.addRecipe(molten * 144, metal.gear, meltTemp);
+        }
+        if(!isNull(metal.block)) {
+            Melting.addRecipe(molten * 1296, metal.block, meltTemp);
+        }
+        if(!isNull(metal.rod)) {
+            Melting.addRecipe(molten * 72, metal.rod, meltTemp);
+        }
+        if(!isNull(metal.wire)) {
+            Melting.addRecipe(molten * 48, metal.wire, meltTemp);
+        }
+        if(!isNull(metal.sheetmetal)) {
+            Melting.addRecipe(molten * 162, metal.sheetmetal, meltTemp);
+        }
+        if(!isNull(metal.scaffolding)) {
+            Melting.addRecipe(molten * 108, metal.scaffolding, meltTemp);
+        }
+    }
+
+    // ===== Smeltery Casting ===== //
+    if(!isNull(liquids[name]) && !isNull(liquids[name].normal)) {
+        var molten = liquids[name].normal;
+
+        if(!isNull(metal.ingot)) {
+            Casting.addTableRecipe(metal.ingot, <tconstruct:cast_custom:0>, molten, 144, false, 20 * 6);
+        }
+        if(!isNull(metal.plate)) {
+            Casting.addTableRecipe(metal.plate, <tconstruct:cast_custom:3>, molten, 144, false, 20 * 12);
+        }
+        if(!isNull(metal.nugget)) {
+            Casting.addTableRecipe(metal.nugget, <tconstruct:cast_custom:1>, molten, 16, false, 20 * 1);
+        }
+        if(!isNull(metal.gear)) {
+            Casting.addTableRecipe(metal.gear, <tconstruct:cast_custom:4>, molten, 144, false, 20 * 18);
+        }
+        if(!isNull(metal.block)) {
+            Casting.addBasinRecipe(metal.block, null, molten, 1296, false, 20 * 30);
+        }
+        if(!isNull(metal.hardened_glass)) {
+            Casting.addBasinRecipe(metal.hardened_glass, materials.hardened_glass.block, molten, 144, true, 20 * 20);
+        }
     }
 }
 

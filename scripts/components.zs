@@ -21,26 +21,6 @@ recipes.addShaped("gear/stone", <thermalfoundation:material:23>,
      [null, <ore:rock>, null]]
 );
 
-// ===== Kiln Brick ===== //
-recipes.addShapedMirrored("ie_kiln_brick", <immersiveengineering:stone_decoration:10> * 2, [
-    [<ore:plateSteel>, <minecraft:brick_block>],
-    [<minecraft:brick_block>, <ore:plateSteel>],
-]);
-
-// ===== Coke Brick ===== //
-recipes.addShaped("ie_coke_brick", <immersiveengineering:stone_decoration:0> * 3, [
-    [<minecraft:brick_block>, <ore:plateInvar>, <minecraft:brick_block>],
-    [<ore:plateInvar>, null, <ore:plateInvar>],
-    [<minecraft:brick_block>, <ore:plateInvar>, <minecraft:brick_block>]
-]);
-
-// ===== Blast Brick ===== //
-recipes.addShaped("ie_blast_brick", <immersiveengineering:stone_decoration:1> * 9, [
-    [<immersiveengineering:stone_decoration:0>, <ore:plankTreatedWood>, <immersiveengineering:stone_decoration:0>],
-    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
-    [<immersiveengineering:stone_decoration:0>, <ore:plankTreatedWood>, <immersiveengineering:stone_decoration:0>]
-]);
-
 // ===== Iron Mechanical Component ===== //
 Blueprint.addRecipe("components", <immersiveengineering:material:8> * 2, [
     <ore:plateIron> * 4,
@@ -52,6 +32,13 @@ Blueprint.addRecipe("components", <immersiveengineering:material:9> * 2, [
     <ore:plateSteel> * 4,
     <ore:gearInvar> * 2,
     <ore:gearElectrum>,
+]);
+
+// ===== Motor ===== //
+recipes.addShaped("projectred/motor", components.motor * 2, [
+    [null, <ore:stickIron>, null],
+    [<ore:plateAluminum>, <ore:gearInvar>, <ore:plateAluminum>],
+    [<ore:plateAluminum>, <immersiveengineering:metal_decoration0:0>, <ore:plateAluminum>]
 ]);
 
 // ===== Redstone Engineering Block ===== //

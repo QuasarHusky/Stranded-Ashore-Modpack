@@ -17,6 +17,9 @@ global liquids as ILiquidStack[string][string] = {
         "normal":                   <liquid:steam>,
         "exhaust":                  <liquid:exhauststeam>,
     },
+    "pyrotheum": {
+        "normal":                   <liquid:pyrotheum>,
+    },
     "bismuth": {
         "normal":                   <liquid:bismuth>,
     },
@@ -115,5 +118,38 @@ global liquids as ILiquidStack[string][string] = {
     },
     "enderium": {
         "normal":                   <liquid:enderium>,
+    },
+    "aluminum": {
+        "normal":                   <liquid:aluminum>,
+    },
+    "mithril": {
+        "normal":                   <liquid:mana>,
+    },
+    "electrum": {
+        "normal":                   <liquid:electrum>,
+    },
+    "invar": {
+        "normal":                   <liquid:invar>,
+    },
+    "constantan": {
+        "normal":                   <liquid:constantan>,
+    },
+    "cobalt": {
+        "normal":                   <liquid:cobalt>,
+    },
+    "ardite": {
+        "normal":                   <liquid:ardite>,
+    },
+    "manyullyn": {
+        "normal":                   <liquid:manyullyn>,
+    },
+    "knightslime": {
+        "normal":                   <liquid:knightslime>,
+    },
+    "pigiron": {
+        "normal":                   <liquid:pigiron>,
+    },
+    "alubrass": {
+        "normal":                   <liquid:alubrass>,
     },
 };

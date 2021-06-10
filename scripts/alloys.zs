@@ -3,37 +3,21 @@
 import mods.tconstruct.Alloy;
 import mods.immersiveengineering.AlloySmelter;
 
-// ===== Remove Recipes ===== //
-// Tinkers' Construct Smeltery
-Alloy.removeRecipe(<liquid:bismuth_bronze>);
-Alloy.removeRecipe(<liquid:black_bronze>);
-Alloy.removeRecipe(<liquid:rose_gold>);
-Alloy.removeRecipe(<liquid:sterling_silver>);
-Alloy.removeRecipe(<liquid:weak_steel>);
-Alloy.removeRecipe(<liquid:weak_blue_steel>);
-Alloy.removeRecipe(<liquid:weak_red_steel>);
-Alloy.removeRecipe(<liquid:invar>);
-Alloy.removeRecipe(<liquid:constantan>);
-Alloy.removeRecipe(<liquid:signalum>);
-Alloy.removeRecipe(<liquid:lumium>);
-Alloy.removeRecipe(<liquid:enderium>);
-Alloy.removeRecipe(<liquid:obsidian>);
-Alloy.removeRecipe(<liquid:knightslime>);
-Alloy.removeRecipe(<liquid:pigiron>);
-Alloy.removeRecipe(<liquid:manyullyn>);
-Alloy.removeRecipe(<liquid:bronze>);
-Alloy.removeRecipe(<liquid:electrum>);
-Alloy.removeRecipe(<liquid:alubrass>);
-Alloy.removeRecipe(<liquid:brass>);
-
-// Immersive Engineering Alloy Kiln
-AlloySmelter.removeRecipe(<immersiveengineering:metal:6>);
-AlloySmelter.removeRecipe(<immersiveengineering:metal:7>);
-AlloySmelter.removeRecipe(<thermalfoundation:material:162>);
-AlloySmelter.removeRecipe(<thermalfoundation:material:163>);
-AlloySmelter.removeRecipe(<tfc:metal/ingot/brass>);
-
-
-
 // ===== Invar ===== //
-AlloySmelter.addRecipe(<thermalfoundation:material:162>, <ore:ingotWroughtIron>, <ore:ingotNickel>, 45 * 20);
+AlloySmelter.addRecipe(metals.invar.ingot, <ore:ingotWroughtIron>, <ore:ingotNickel>, 45 * 20);
+Alloy.addRecipe(liquids.invar.normal * 2, [liquids.wrought_iron.normal, liquids.nickel.normal]);
+
+// ===== Aluminum ===== //
+Alloy.addRecipe(liquids.aluminum.normal * 4, [liquids.wrought_iron.normal * 2, liquids.lead.normal, liquids.zinc.normal]);
+
+// ===== Red Alloy ===== //
+AlloySmelter.addRecipe(metals.red_alloy.ingot * 2, <ore:ingotSilver>, <ore:dustRedstone> * 6, 20 * 20);
+
+// ===== Electrotine Alloy ===== //
+AlloySmelter.addRecipe(metals.electrotine.ingot * 2, <ore:ingotTin>, <ore:dustBismuth>, 20 * 20);
+
+// ===== Red Iron Compound ===== //
+AlloySmelter.addRecipe(<projectred-core:resource_item:251> * 2, <ore:ingotWroughtIron>, <ore:ingotRedAlloy>, 30 * 20);
+
+// ===== Electrotine Iron Compound ===== //
+AlloySmelter.addRecipe(<projectred-core:resource_item:252> * 2, <ore:ingotWroughtIron>, <ore:ingotElectrotineAlloy>, 30 * 20);
