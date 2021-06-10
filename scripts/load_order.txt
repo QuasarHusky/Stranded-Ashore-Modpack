@@ -1,0 +1,6 @@
+PRIORITY    SCRIPT GROUP
+500         registries
+400         internal
+300         mods
+200         machines
+100         generic
