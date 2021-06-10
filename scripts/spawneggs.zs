@@ -2,14 +2,14 @@ import mods.terrafirmacraft.Barrel;
 
 var spawn_hours as int = 24;
 
-Barrel.addRecipe("witchwater", <ore:soulSand>, <liquid:salt_water> * 1000, <soulshardstow:materials:2>, <liquid:witchwater> * 1000, 1);
-Barrel.addRecipe("witchwater_spoil", <soulshardstow:materials:2>, <liquid:witchwater> * 1000, <tfc:powder/charcoal>, null, 1);
-Barrel.addRecipe("spawnegg_spoil", <minecraft:spawn_egg:*>, <liquid:witchwater> * 500, <soulshardstow:materials:2>, null, 12);
+Barrel.addRecipe("spawn_eggs/witchwater", <ore:soulSand>, <liquid:salt_water> * 1000, <soulshardstow:materials:2>, <liquid:witchwater> * 1000, 1);
+Barrel.addRecipe("spawn_eggs/witchwater_spoil", <soulshardstow:materials:2>, <liquid:witchwater> * 1000, <tfc:powder/charcoal>, null, 1);
+Barrel.addRecipe("spawn_eggs/any/spoil", <minecraft:spawn_egg:*>, <liquid:witchwater> * 500, <soulshardstow:materials:2>, null, 12);
 
 // ===== Farm Animals ===== //
 
 Barrel.addRecipe(
-    "spawnegg_chicken", 
+    "spawn_eggs/chicken", 
     <tfc:food/chicken>, 
     <liquid:witchwater> * 2000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "tfc:chickentfc"}}),
@@ -18,7 +18,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_sheep", 
+    "spawn_eggs/sheep", 
     <tfc:food/mutton>, 
     <liquid:witchwater> * 2000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "tfc:sheeptfc"}}),
@@ -27,7 +27,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_cow", 
+    "spawn_eggs/cow", 
     <tfc:food/beef>, 
     <liquid:witchwater> * 2000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "tfc:cowtfc"}}),
@@ -36,7 +36,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_pig", 
+    "spawn_eggs/pig", 
     <tfc:food/pork>, 
     <liquid:witchwater> * 2000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "tfc:pigtfc"}}),
@@ -45,7 +45,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_wolf", 
+    "spawn_eggs/wolf", 
     <tfc:food/wolf>, 
     <liquid:witchwater> * 2000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "tfc:wolftfc"}}),
@@ -54,7 +54,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_rabbit", 
+    "spawn_eggs/rabbit", 
     <tfc:food/rabbit>, 
     <liquid:witchwater> * 2000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "tfc:rabbittfc"}}),
@@ -63,7 +63,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_horse", 
+    "spawn_eggs/horse", 
     <tfc:food/horse_meat>, 
     <liquid:witchwater> * 2000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "tfc:horsetfc"}}),
@@ -73,7 +73,7 @@ Barrel.addRecipe(
 
 // ===== Monsters ===== //
 Barrel.addRecipe(
-    "spawnegg_creeper", 
+    "spawn_eggs/creeper", 
     <minecraft:gunpowder>, 
     <liquid:witchwater> * 4000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:creeper"}}),
@@ -82,7 +82,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_enderman", 
+    "spawn_eggs/enderman", 
     <minecraft:ender_pearl>, 
     <liquid:witchwater> * 4000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:enderman"}}),
@@ -91,7 +91,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_skeleton", 
+    "spawn_eggs/skeleton", 
     <minecraft:bone>, 
     <liquid:witchwater> * 4000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:skeleton"}}),
@@ -100,7 +100,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_silverfish", 
+    "spawn_eggs/silverfish", 
     <ore:stone>, 
     <liquid:witchwater> * 500, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:silverfish"}}),
@@ -109,7 +109,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_witch", 
+    "spawn_eggs/witch", 
     <minecraft:sugar>, 
     <liquid:witchwater> * 4000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:witch"}}),
@@ -118,7 +118,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_zombie", 
+    "spawn_eggs/zombie", 
     <minecraft:rotten_flesh>, 
     <liquid:witchwater> * 4000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:zombie"}}),
@@ -127,7 +127,7 @@ Barrel.addRecipe(
 );
 
 Barrel.addRecipe(
-    "spawnegg_slime", 
+    "spawn_eggs/slime", 
     <minecraft:slime_ball>, 
     <liquid:witchwater> * 4000, 
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:slime"}}),

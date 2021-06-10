@@ -60,7 +60,7 @@ Barrel.addRecipe("traditional_dark_oak_planks", <ore:plankWoodDarkOakLike>, <liq
 
 // Brick Blocks
 recipes.remove(<minecraft:brick_block>);
-recipes.addShaped("brick_block", <minecraft:brick_block> * 24, [
+recipes.addShaped("vanilla/brick_block", <minecraft:brick_block> * 24, [
     [<ore:ingotBrick>, <ore:mortar>, <ore:ingotBrick>],
     [<ore:mortar>, <ore:ingotBrick>, <ore:mortar>],
     [<ore:ingotBrick>, <ore:mortar>, <ore:ingotBrick>]
@@ -68,7 +68,7 @@ recipes.addShaped("brick_block", <minecraft:brick_block> * 24, [
 
 // Signs
 recipes.remove(<minecraft:sign>);
-recipes.addShaped("sign", <minecraft:sign> * 3, [
+recipes.addShaped("vanilla/sign", <minecraft:sign> * 3, [
     [<ore:lumber>, <ore:lumber>, <ore:lumber>],
     [<ore:lumber>, <ore:lumber>, <ore:lumber>],
     [null, <ore:stickWood>, null]

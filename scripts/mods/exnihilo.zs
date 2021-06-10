@@ -54,7 +54,7 @@ recipes.remove(<exnihilocreatio:block_dust>);
 // Wooden Barrel
 recipes.remove(<exnihilocreatio:block_barrel0>);
 
-recipes.addShaped("barrel_wood", <exnihilocreatio:block_barrel0>, 
+recipes.addShaped("exnihilo/barrel_wood", <exnihilocreatio:block_barrel0>, 
    [[<ore:lumber>, null, <ore:lumber>],
     [<ore:lumber>, <ore:dirt>, <ore:lumber>],
     [<ore:lumber>, <ore:lumber>, <ore:lumber>]]
@@ -63,7 +63,7 @@ recipes.addShaped("barrel_wood", <exnihilocreatio:block_barrel0>,
 // Stone Barrel
 recipes.remove(<exnihilocreatio:block_barrel1>);
 
-recipes.addShaped("barrel_stone", <exnihilocreatio:block_barrel1>, 
+recipes.addShaped("exnihilo/barrel_stone", <exnihilocreatio:block_barrel1>, 
    [[<ore:stone>, null, <ore:stone>],
     [<ore:stone>, <ore:dirt>, <ore:stone>],
     [<ore:stone>, <ore:stone>, <ore:stone>]]
@@ -72,7 +72,7 @@ recipes.addShaped("barrel_stone", <exnihilocreatio:block_barrel1>,
 // Stone Crook
 recipes.remove(<exnihilocreatio:crook_stone>);
 
-StoneKnapping.addRecipe("crook_stone", [<exnihilocreatio:crook_stone>], ["all"], 
+StoneKnapping.addRecipe("exnihilo/crook_stone", [<exnihilocreatio:crook_stone>], ["all"], 
     " XXX ", 
     " X X ",
     "   X ",
@@ -84,7 +84,7 @@ StoneKnapping.addRecipe("crook_stone", [<exnihilocreatio:crook_stone>], ["all"],
 // Clay Crook
 recipes.remove(<exnihilocreatio:crook_clay>);
 
-ClayKnapping.addRecipe("crook_clay", <exnihilocreatio:crook_clay>, 
+ClayKnapping.addRecipe("exnihilo/crook_clay", <exnihilocreatio:crook_clay>, 
     " XXX ", 
     " X X ",
     "   X ",
@@ -95,12 +95,12 @@ ClayKnapping.addRecipe("crook_clay", <exnihilocreatio:crook_clay>,
 // Iron Crook
 recipes.remove(<exnihilocreatio:crook_iron>);
 
-Anvil.addRecipe("crook_iron", <ore:ingotWroughtIron>, <exnihilocreatio:crook_iron>, 1, "tools", "HIT_ANY", "DRAW_ANY", "BEND_LAST");
+Anvil.addRecipe("exnihilo/crook_iron", <ore:ingotWroughtIron>, <exnihilocreatio:crook_iron>, 1, "tools", "HIT_ANY", "DRAW_ANY", "BEND_LAST");
 
 // Sieve
 recipes.remove(<exnihilocreatio:block_sieve>);
 
-recipes.addShaped("sieve", <exnihilocreatio:block_sieve>, 
+recipes.addShaped("exnihilo/sieve", <exnihilocreatio:block_sieve>, 
    [[<ore:plankWood>, null, <ore:plankWood>],
     [<ore:plankWood>, <ore:hideRaw>, <ore:plankWood>],
     [<ore:logWood>, null, <ore:logWood>]]
@@ -109,7 +109,7 @@ recipes.addShaped("sieve", <exnihilocreatio:block_sieve>,
 // String Mesh
 recipes.remove(<exnihilocreatio:item_mesh:1>);
 
-recipes.addShaped("string_mesh", <exnihilocreatio:item_mesh:1>, 
+recipes.addShaped("exnihilo/string_mesh", <exnihilocreatio:item_mesh:1>, 
    [[<ore:string>, <ore:stickWood>, <ore:string>],
     [<ore:stickWood>, <ore:string>, <ore:stickWood>],
     [<ore:string>, <ore:stickWood>, <ore:string>]]
@@ -118,7 +118,7 @@ recipes.addShaped("string_mesh", <exnihilocreatio:item_mesh:1>,
 // Flint Mesh
 recipes.remove(<exnihilocreatio:item_mesh:2>);
 
-recipes.addShaped("flint_mesh", <exnihilocreatio:item_mesh:2>, 
+recipes.addShaped("exnihilo/flint_mesh", <exnihilocreatio:item_mesh:2>, 
    [[<ore:logWood>, <ore:string>, <ore:logWood>],
     [<ore:hideSmall>, <ore:clothHighQuality>, <ore:hideSmall>],
     [<ore:logWood>, <ore:string>, <ore:logWood>]]
@@ -127,7 +127,7 @@ recipes.addShaped("flint_mesh", <exnihilocreatio:item_mesh:2>,
 // Iron Mesh
 recipes.remove(<exnihilocreatio:item_mesh:3>);
 
-recipes.addShaped("iron_mesh", <exnihilocreatio:item_mesh:3>, 
+recipes.addShaped("exnihilo/iron_mesh", <exnihilocreatio:item_mesh:3>, 
    [[<ore:logWood>, <ore:hideMedium>, <ore:logWood>],
     [<ore:rodWroughtIron>, <tfc:crop/product/burlap_cloth>, <ore:rodWroughtIron>],
     [<ore:logWood>, <ore:hideMedium>, <ore:logWood>]]
@@ -136,7 +136,7 @@ recipes.addShaped("iron_mesh", <exnihilocreatio:item_mesh:3>,
 // Diamond Mesh
 recipes.remove(<exnihilocreatio:item_mesh:4>);
 
-recipes.addShaped("diamond_mesh", <exnihilocreatio:item_mesh:4>, 
+recipes.addShaped("exnihilo/diamond_mesh", <exnihilocreatio:item_mesh:4>, 
    [[<ore:lumber>, <tfc:crop/product/jute_net>, <ore:lumber>],
     [<ore:gemFlawless>, <ore:ingotGold>, <ore:gemFlawless>],
     [<ore:lumber>, <tfc:crop/product/jute_net>, <ore:lumber>]]

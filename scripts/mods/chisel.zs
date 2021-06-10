@@ -9,27 +9,27 @@ recipes.remove(<chisel:auto_chisel>);
 
 recipes.removeByRecipeName("chisel:charcoal_uncraft");
 
-recipes.addShaped("chisel_iron", <chisel:chisel_iron>,
+recipes.addShaped("chisel/chisel_iron", <chisel:chisel_iron>,
     [[<ore:rock>],
      [<ore:stickWood>]]
 );
 
-recipes.addShaped("chisel_diamond", <chisel:chisel_diamond>,
+recipes.addShaped("chisel/chisel_diamond", <chisel:chisel_diamond>,
     [[<ore:ingotCopper>],
      [<ore:stickWood>]]
 );
 
-recipes.addShaped("chisel_offsettool", <chisel:offsettool>,
+recipes.addShaped("chisel/chisel_offsettool", <chisel:offsettool>,
     [[<tfc:glass_shard>],
      [<ore:stickWood>]]
 );
 
-recipes.addShaped("chisel_hitech", <chisel:chisel_hitech>,
+recipes.addShaped("chisel/chisel_hitech", <chisel:chisel_hitech>,
     [[<ore:gemExquisite>],
      [<ore:rodGold>]]
 );
 
-recipes.addShaped("auto_chisel", <chisel:auto_chisel>,
+recipes.addShaped("chisel/auto_chisel", <chisel:auto_chisel>,
     [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>],
      [<ore:blockGlass>, <chisel:chisel_iron>, <ore:blockGlass>],
      [<ore:ingotSteel>, <ore:ingotSteel>, <ore:ingotSteel>]]
