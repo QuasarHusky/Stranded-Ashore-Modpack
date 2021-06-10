@@ -1,3 +1,5 @@
+#priority -50
+
 import mods.terrafirmacraft.Quern;
 
 // ===== Rockify Dirt / Grass ===== //

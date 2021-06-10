@@ -395,3 +395,16 @@ for item in loadedMods["chisel"].items {
     <tfc:crop/seeds/jute>
 ]);
 
+// ===== BuildCraft Pipes ===== //
+<ore:pipeItemBasic>.addItems([
+    <buildcrafttransport:pipe_cobble_item>,
+    <buildcrafttransport:pipe_stone_item>,
+    <buildcrafttransport:pipe_quartz_item>,
+    <buildcrafttransport:pipe_sandstone_item>
+]);
+
+// ===== Treated Lumber ===== //
+<ore:lumberTreated>.addItems([ <firmalife:treated_lumber> ]);
+
+// ===== Coal Coke Dust ===== //
+<ore:dustCoke>.addItems([ <tfc:powder/coke> ]);

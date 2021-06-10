@@ -1,3 +1,5 @@
+#priority -50
+
 // ===== Fruit Tree Sapling Recipes ===== //
 for name, tree in fruit_trees {
     if(!isNull(tree.sapling) && !isNull(tree.pole) && !isNull(tree.fruit)) {

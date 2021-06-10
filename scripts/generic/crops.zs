@@ -1,3 +1,5 @@
+#priority -50
+
 import mods.terrafirmacraft.Barrel;
 
 for name, crop in crops {

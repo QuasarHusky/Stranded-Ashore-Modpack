@@ -1,10 +1,12 @@
-#priority 50
+#priority -50
 
 import crafttweaker.item.IItemStack;
 import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Quern;
 import mods.terrafirmacraft.Anvil;
 import mods.immersiveengineering.Crusher;
+import mods.immersiveengineering.AlloySmelter;
+import mods.immersiveengineering.BlastFurnace;
 
 function obliterateRecipes(item as IItemStack) as void {
     recipes.remove(item);
@@ -134,6 +136,26 @@ for name, metal in metals {
                 1,
                 "general", "DRAW_THIRD_LAST", "DRAW_SECOND_LAST", "DRAW_LAST"
         );
+    }
+
+    // ===== Double Ingots (Alloy Kiln) ===== //
+    if(!isNull(metal.double_ingot) && !isNull(metal.ingot)) {
+        AlloySmelter.addRecipe(metal.double_ingot, metal.ingot, metal.ingot, 30 * 20);
+    }
+
+    // ===== Double Sheets (Alloy Kiln) ===== //
+    if(!isNull(metal.double_sheet) && !isNull(metal.sheet)) {
+        AlloySmelter.addRecipe(metal.double_sheet, metal.sheet, metal.sheet, 30 * 20);
+    }
+
+    // ===== Scrap to Ingot (IE Blast Furnace) ===== //
+    if(!isNull(metal.ingot) && !isNull(metal.scrap)) {
+        BlastFurnace.addRecipe(metal.ingot, metal.scrap, 10 * 20, materials.slag.item);
+    }
+
+    // ===== Dust to Ingot (IE Blast Furnace) ===== //
+    if(!isNull(metal.ingot) && !isNull(metal.dust)) {
+        BlastFurnace.addRecipe(metal.ingot, metal.dust, 10 * 20, materials.slag.item);
     }
 }
 
