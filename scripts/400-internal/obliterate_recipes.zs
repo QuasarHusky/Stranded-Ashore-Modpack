@@ -10,6 +10,14 @@
 //
 // - QH
 
+import crafttweaker.item.IItemStack;
+import mods.terrafirmacraft.Anvil;
+import mods.terrafirmacraft.Quern;
+import mods.immersiveengineering.ArcFurnace;
+import mods.immersiveengineering.Crusher;
+import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
+
 function obliterateRecipes(name as string, item as IItemStack) as void {
     recipes.remove(item);
     Anvil.removeRecipe(item);
