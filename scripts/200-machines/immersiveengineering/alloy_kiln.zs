@@ -14,7 +14,7 @@ AlloySmelter.removeRecipe(<projectred-core:resource_item:104>);
 
 
 // ===== Invar ===== //
-AlloySmelter.addRecipe(metals.invar.ingot, <ore:ingotWroughtIron>, <ore:ingotNickel>, 45 * 20);
+AlloySmelter.addRecipe(metals.invar.ingot * 2, <ore:ingotWroughtIron>, <ore:dustNickel>, 45 * 20);
 
 // ===== Red Alloy ===== //
 AlloySmelter.addRecipe(metals.red_alloy.ingot * 2, <ore:ingotSilver>, <ore:dustRedstone> * 6, 20 * 20);
