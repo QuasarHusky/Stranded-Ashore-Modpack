@@ -312,6 +312,13 @@ recipes.addShaped("gear/stone", <thermalfoundation:material:23>,
      [null, <ore:rock>, null]]
 );
 
+// ===== Redstone Servo ===== //
+recipes.addShaped("component/servo", components.servo,
+    [[components.motor, <immersiveengineering:wirecoil:6>, components.motor],
+     [null, metals.invar.plate, null],
+     [components.motor, <immersiveengineering:wirecoil:6>, components.motor]]
+);
+
 // ===== Pigments ===== //
 recipes.addShapeless("pigment_0",  <thermalfoundation:dye:0>, [ <ore:dyeBlack> ]);
 recipes.addShapeless("pigment_1",  <thermalfoundation:dye:1>, [ <ore:dyeRed> ]);
