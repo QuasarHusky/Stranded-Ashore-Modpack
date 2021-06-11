@@ -10,7 +10,7 @@ global oreMetals as string[string] = {
     "native_silver":        "silver",
     "cassiterite":          "tin",
     "galena":               "lead",
-    "bismuthinite":           "bismuth",
+    "bismuthinite":         "bismuth",
     "garnierite":           "nickel",
     "malachite":            "copper",
     "magnetite":            "wrought_iron",
@@ -120,8 +120,8 @@ global oreStacks as IItemStack[string][string] = {
     },
 };
 
-// for id, ore in oreStacks {
-//     for variety, oreItem in ore {
-//         oreItem.addTooltip("[CT] " ~ (oreUnits[variety] as string) ~ " units of " ~ oreMetals[id]);
-//     }
-// }
+for id, ore in oreStacks {
+    for variety, oreItem in ore {
+        oreItem.addTooltip("[CT] " ~ (oreUnits[variety] as string) ~ " units of " ~ oreMetals[id]);
+    }
+}
