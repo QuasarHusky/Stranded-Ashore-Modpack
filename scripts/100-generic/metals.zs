@@ -41,7 +41,6 @@ for name in applyHeatsToMetals {
 
     // Register item heats for every variant
     for variant, item in metal {
-        print("Registered TFC heat for metal: " ~ name ~ ", variant: " ~ variant);
         ItemRegistry.registerItemHeat(item, heatCapacity, meltTemp, true);
     }
 }
@@ -49,13 +48,22 @@ for name in applyHeatsToMetals {
 for name, metal in metals {
     // ===== Ingot to Dust (Quern & Crusher) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.dust)) {
-        print(" - Ingot to Dust (Quern)");
         Quern.addRecipe("metal/" ~ name ~ "/dust", metal.ingot, metal.dust);
+        Crusher.addRecipe(metal.dust, metal.ingot, 1280);
+    }
+
+    // ===== Scrap to Dust (Crusher) ===== //
+    if(!isNull(metal.scrap) && !isNull(metal.dust)) {
+        Crusher.addRecipe(metal.dust * 2, metal.scrap, 960);
+    }
+
+    // ===== Double Ingot to Dust (Crusher) ===== //
+    if(!isNull(metal.double_ingot) && !isNull(metal.dust)) {
+        Crusher.addRecipe(metal.dust * 2, metal.double_ingot, 1920);
     }
 
     // ===== Ingot to Scrap (Crafting) ===== //
     if(!isNull(metal["ingot"]) && !isNull(metal["scrap"])) {
-        print(" - Ingot to Scrap (Crafting)");
         recipes.addShapeless("metal/" ~ name ~ "/scrap", metal.scrap, [
             metal.ingot,
             <ore:hammer>.transformDamage(1)
@@ -64,7 +72,6 @@ for name, metal in metals {
 
     // ===== Ingot to Nuggets (Crafting) ===== //
     if(!isNull(metal["nugget"]) && !isNull(metal["ingot"])) {
-        print(" - Ingot to Nugget (Crafting)");
         recipes.addShapeless("metal/" ~ name ~ "/nugget_unpack", metal.nugget * 9, [
             metal.ingot,
             <ore:chisel>.transformDamage(1)
@@ -73,7 +80,6 @@ for name, metal in metals {
 
     // ===== Plates (Anvil) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.plate)) {
-        print(" - Plate (Anvil)");
         Anvil.addRecipe(
                 "metal/" ~ name ~ "/plate",
                 metal.ingot,
@@ -85,7 +91,6 @@ for name, metal in metals {
 
     // ===== Wires (Anvil) ===== //
     if(!isNull(metal.plate) && !isNull(metal.wire)) {
-        print(" - Wire (Anvil)");
         Anvil.addRecipe(
                 "metal/" ~ name ~ "/wire",
                 metal.plate,
@@ -97,7 +102,6 @@ for name, metal in metals {
 
     // ===== Gears (Anvil) ===== //
     if(!isNull(metal.gear) && !isNull(metal.plate)) {
-        print(" - Gear (Anvil)");
         Anvil.addRecipe(
                 "metal/" ~ name ~ "/gear",
                 metal.plate,
@@ -109,7 +113,6 @@ for name, metal in metals {
 
     // ===== Rods (Anvil) ===== //
     if(!isNull(metal.rod) && !isNull(metal.ingot)) {
-        print(" - Rod (Anvil)");
         Anvil.addRecipe(
                 "metal/" ~ name ~ "/rod",
                 metal.ingot,
@@ -121,7 +124,6 @@ for name, metal in metals {
 
     // ===== Sheetmetal (Crafting) ===== //
     if(!isNull(metal["sheetmetal"]) && !isNull(metal["plate"]) && !isNull(metal["rod"])) {
-        print(" - Sheetmetal (Crafting)");
         recipes.addShaped("metal/" ~ name ~ "/sheetmetal", metal.sheetmetal * 4, [
             [null, metal.plate, null],
             [metal.plate, metal.rod, metal.plate],
@@ -131,7 +133,6 @@ for name, metal in metals {
 
     // ===== Scaffolding (Crafting) ===== //
     if(!isNull(metal["scaffolding"]) && !isNull(metal["plate"]) && !isNull(metal["rod"])) {
-        print(" - Scaffolding (Crafting)");
         recipes.addShaped("metal/" ~ name ~ "/scaffolding", metal.scaffolding * 6, [
             [metal.plate, metal.plate, metal.plate],
             [null, metal.rod, null],
@@ -232,5 +233,3 @@ for name, metal in metals {
         }
     }
 }
-
-print("All done with generic metals :D");
