@@ -4,6 +4,8 @@
 !/config/**
 !/resourcepacks/
 !/resourcepacks/**
+!/patchouli_books/
+!/patchouli_books/**
 !/resources/
 !/resources/**
 !/scripts/
