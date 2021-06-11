@@ -1,0 +1,10 @@
+{
+    "name": "Decocraft",
+    "icon": "props:props:0",
+    "category": "patchouli:neolithic",
+    "sortnum": 2100,
+    "advancement": "tfc:main/logging",
+    "pages": [
+        
+    ]
+}

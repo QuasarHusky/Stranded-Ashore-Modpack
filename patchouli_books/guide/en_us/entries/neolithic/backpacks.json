@@ -1,0 +1,19 @@
+{
+    "name": "Backpacks",
+    "icon": "wearablebackpacks:backpack",
+    "category": "patchouli:neolithic",
+    "sortnum": 600,
+    "advancement": "tfc:main/make_leather",
+    "pages": [
+        {
+            "type": "text",
+            "text": "A $(item)backpack$() allows you to store extra items on your person, up to 18 stacks, in fact!$(2br)Once crafted, it can be placed down in the world and equipped by $(thing)sneaking and holding left-click$() until it is picked up. It will then be placed in your $(thing)chestplate slot$().$(2br)To unequip the $(item)backpack$(), $(thing)shift right-click$() on the ground to place it back down."
+        },
+        {
+            "type": "crafting",
+            "recipe": "crafttweaker:backpack",
+            "title": "Backpack",
+            "text": "The $(item)backpack$() can be accessed while equipped by pressing $(thing)$(k:key.wearablebackpacks.open)$(), or by $(thing)right-clicking$() it when placed in the world.$(2br)$(l)Note:$() if a backpack is broken without $(thing)sneaking$(), all its contents will be dropped."
+        }
+    ]
+}

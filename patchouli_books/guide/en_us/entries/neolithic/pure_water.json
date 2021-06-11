@@ -1,0 +1,10 @@
+{
+    "name": "Water Purification",
+    "icon": "tfc:wood/barrel/oak",
+    "category": "patchouli:neolithic",
+    "sortnum": 2400,
+    "advancement": "tfc:main/logging",
+    "pages": [
+        
+    ]
+}

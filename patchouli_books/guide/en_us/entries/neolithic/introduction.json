@@ -1,0 +1,64 @@
+{
+    "name": "Introduction",
+    "icon": "tfc:food/maize",
+    "category": "patchouli:neolithic",
+    "sortnum": 100,
+    "pages": [
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/introduction/logo.png"
+            ],
+            "border": false,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "Welcome to Stranded Ashore! This is a modpack based around surviving in a hostile wilderness with nothing but the natural resources you can gather, eventually gaining more advanced technology and progressing through several different eras. $(2br)By the end, you'll have mastered $(thing)TerraFirmaCraft$()'s metallurgy, built an automation empire with $(thing)Immersive Engineering$(), and explored the furthest depths of space, all from humble beginnings."
+        },
+        {
+            "type": "text",
+            "text": "$(o)I've never been this close to nature before.$(2br)I've always liked the idea of a retreat into nature, somewhere I can be at peace for a while and soak in all that the world has to offer.$(2br)It seems like that dream has finally come true.$(2br)I think I'm gonna enjoy it here."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/introduction/shipwreck.png"
+            ],
+            "border": true,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "$(l)Important Note$()$(2br)This pack has been designed to be very slow, but very satisfying to progress through. Expect a very long playthrough if you want to get all the way to the end.$(2br)It's also best to play this with a few dedicated friends in $(thing)multiplayer$() so you can get more done together!"
+        },
+        {
+            "type": "text",
+            "text": "$(l)Setting Up$()$(2br)Throughout most of the game, exploration is designed to be a challenge, so it's recommended that coordinates are disabled. Use this command in $(thing)cheat mode$() on $(thing)singleplayer$() or as an $(thing)op$() on $(thing)multiplayer$() to hide your coordinates. This is optional, but highly recommended for the best and most difficult experience.$(2br)$(item)/gamerule reducedDebugInfo true$()"
+        },
+        {
+            "type": "text",
+            "text": "$(l)The Ages$()$(2br)Neolithic Age$(br)Magic & Spellcasting$(br)$(#AAA)Steel Age$()$(br)$(#AAA)Industrial Revolution$()$(br)$(#AAA)Modern Era$()$(br)$(#AAA)Space Age$()$(br)$(#AAA)Interstellar Age$()"
+        },
+        {
+            "type": "text",
+            "text": "$(o)This pack is a major work in progress, so it'll take time for all of the ages to get added."
+        },
+        {
+            "type": "text",
+            "text": "$(l)Dedicated To My Friends$()$(2br)This modpack wouldn't exist without my friends, who have always supported me and pushed me to do the things I love most. Making this a fun experience for us to play together was the aim, and it's turned out better than I could have ever imagined. They're the most amazing people in my life, and I will love and cherish them every day $(#ff0099)♥$()$(2br)                    $(thing)- Quasar$()"
+        },
+        {
+            "type": "text",
+            "text": "$(l)Credits$()$(2br)Created by$(br)   $(thing)QuasarHusky$()$(2br)Co-Creators$(br)   $(thing)SnykierZaerthaun$()$(br)   $(thing)Ambrince$()$(br)   $(thing)Ebonglow$()$(br)   $(thing)Sparks_Skywere$()$(br)   $(thing)StaticDutchie$()$(br)   $(thing)KorsatFox$()$(2br)Plus all of the $(thing)awesome mod creators$() who made all this possible!"
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "patchouli:neolithic/terrafirmacraft"
+            ],
+            "title": "Read Next",
+            "text": "Begin your adventure by learning about $(thing)TerraFirmaCraft$(), the main mod in this pack that you'll really want to get familiar with. Good luck!"
+        }
+    ]
+}

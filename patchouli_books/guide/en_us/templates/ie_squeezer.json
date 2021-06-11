@@ -1,0 +1,83 @@
+{
+	"components": [
+		{
+			"type": "header",
+			"text": "#title",
+			"x": 60,
+			"y": 0,
+			"centered": true
+		},
+		{
+			"type": "item",
+			"x": 10,
+			"y": 30,
+			"item": "#input",
+			"framed": true
+		},
+		{
+			"type": "item",
+			"x": 60,
+			"y": 30,
+			"item": "",
+			"framed": true
+		},
+		{
+			"type": "item",
+			"x": 90,
+			"y": 30,
+			"item": "#output",
+			"framed": true
+		},
+		{
+			"type": "image",
+			"x": 60,
+			"y": 30,
+			"image": "#fluid_texture",
+			"width": 32,
+			"height": 32,
+			"texture_width": 32,
+			"texture_height": 1024,
+			"scale": 0.5
+		},
+		{
+			"type": "tooltip",
+			"x": 60,
+			"y": 30,
+			"width": 16,
+			"height": 16,
+			"tooltip": [
+				"#fluid_name#",
+				"#fluid_mb#mb"
+			]
+		},
+		{
+			"type": "tooltip",
+			"guard": "#output->iexists->inv",
+			"x": 90,
+			"y": 30,
+			"width": 16,
+			"height": 16,
+			"tooltip": [
+				"No product"
+			]
+		},
+		{
+			"type": "image",
+			"x": 39,
+			"y": 33,
+			"image": "patchouli:textures/gui/crafting.png",
+			"width": 9,
+			"height": 9,
+			"u": 65,
+			"v": 27,
+			"texture_width": 128,
+			"texture_height": 128
+		},
+		{
+			"type": "text",
+			"text": "Squeezer",
+			"x": 44,
+			"y": 10
+		}
+	]
+}

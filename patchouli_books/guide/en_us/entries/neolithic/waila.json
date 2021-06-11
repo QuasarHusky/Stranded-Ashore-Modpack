@@ -1,0 +1,40 @@
+{
+    "name": "WAILA",
+    "icon": "astralsorcery:itemhandtelescope",
+    "category": "patchouli:neolithic",
+    "sortnum": 400,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        {
+            "type": "text",
+            "text": "As you're travelling around the world, you'll find a lot of new things that aren't always obvious as to what they are.$(br2)This is where $(thing)WAILA (What Am I Looking At)$() comes in!$(2br)Whenever you look at a block or mob in the world, a helpful tooltip will show up at the top of the screen with what the thing is, and which mod it's from."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/waila/basic.png",
+                "modpack:guide/neolithic/waila/mob.png"
+            ],
+            "border": true,
+            "text": ""
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/waila/details.png"
+            ],
+            "border": true,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "For many blocks, $(thing)WAILA$() shows additional information, such as the items they contain and the progress of the crafting recipe being created.$(2br)When looking at $(item)grass$() or $(item)dirt$() blocks in the world, it will show you the $(thing)air temperature$() and $(thing)rainfall$() for the area, which can be useful when deciding which crops to plant."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "patchouli:neolithic/jei"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "name": "TerraFirmaCraft",
+    "icon": "tfc:rock/granite",
+    "category": "patchouli:neolithic",
+    "sortnum": 200,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(thing)TerraFirmaCraft$() is one of the core mods in this pack, and it replaces almost everything about $(thing)vanilla Minecraft$().$(2br)You may have already noticed there are a plentiful amount of $(item)rocks$() and $(item)sticks$() strewn across the ground. These can be picked up by $(thing)right-clicking$() them."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/terrafirmacraft/sticks_and_rocks.png"
+            ],
+            "border": true,
+            "text": ""
+        },
+        {
+            "type": "crafting",
+            "recipe": "crafttweaker:tfc_guide_book",
+            "title": "Guide Book"
+        },
+        {
+            "type": "text",
+            "text": "One of the first things to craft is $(thing)TerraFirmaCraft$()'s guide book. This is an additional book which explains the new progression and systems added by the mod, such as $(thing)knapping$(), $(thing)heating$(), and $(thing)anvils$().$(2br)Keep it with you for reference on your adventures, as the information inside is crucial to your survival."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "patchouli:neolithic/jei",
+                "patchouli:neolithic/waila"
+            ],
+            "title": "Read Next"
+        }
+    ]
+}

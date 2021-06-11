@@ -1,0 +1,10 @@
+{
+    "name": "XP Tomes",
+    "icon": "xpbook:xp_tome",
+    "category": "patchouli:neolithic",
+    "sortnum": 1300,
+    "advancement": "tfc:main/iron_age",
+    "pages": [
+        
+    ]
+}

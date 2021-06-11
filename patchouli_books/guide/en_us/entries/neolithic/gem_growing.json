@@ -1,0 +1,10 @@
+{
+    "name": "Gem Growing",
+    "icon": "tfc:gem/diamond:4",
+    "category": "patchouli:neolithic",
+    "sortnum": 2600,
+    "advancement": "tfc:main/logging",
+    "pages": [
+        
+    ]
+}

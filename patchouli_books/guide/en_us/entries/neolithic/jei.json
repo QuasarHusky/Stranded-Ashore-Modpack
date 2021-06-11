@@ -1,0 +1,43 @@
+{
+    "name": "Just Enough Items",
+    "icon": "computercraft:printout:0",
+    "category": "patchouli:neolithic",
+    "sortnum": 300,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(thing)Just Enough Items$(), also known as $(thing)JEI$(), is a mod which shows a list of every item in the game on the right side of the screen whenever your inventory is open or when you have a container open (such as a $(item)chest$(), $(item)workbench$(), or $(item)firepit$(), for example)."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/jei/item_list.png"
+            ],
+            "border": true,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "By $(thing)left-clicking$() or hovering over and pressing $(thing)$(k:key.jei.showRecipe)$() on an item in the list, you can lookup the recipes used to make it.$(2br)The tabs along the top show which $(thing)crafters$() can be used to create the item. It's worth checking each tab, as $(thing)JEI$() won't always show the best recipes first.$(2br)You can also lookup the recipe for items used in recipes in the same way."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/jei/recipe_lookup.png"
+            ],
+            "border": false,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "If you want to know which recipes an item can be $(o)used$() in, $(thing)right-click$() or press $(thing)$(k:key.jei.showUses)$() on an item.$(2br)When looking up recipes, pressing $(thing)$(k:key.jei.recipeBack)$() will take you back to the previous step."
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "patchouli:neolithic/waila"
+            ]
+        }
+    ]
+}

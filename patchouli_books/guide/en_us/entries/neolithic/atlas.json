@@ -1,0 +1,43 @@
+{
+    "name": "Antique Atlas",
+    "icon": "antiqueatlas:antique_atlas",
+    "category": "patchouli:neolithic",
+    "sortnum": 500,
+    "advancement": "tfc:main/scraped_hide",
+    "pages": [
+        {
+            "type": "text",
+            "text": "When you're out exploring, you'll need some way to keep track of where you are, where you've been, and how to get back home at the end of the day.$(2br)An $(item)antique atlas$() allows you to map out wherever you travel, and place $(thing)waypoints$() for important locations."
+        },
+        {
+            "type": "crafting",
+            "recipe": "crafttweaker:antiqueatlas/empty_antique_atlas",
+            "title": "Antique Atlas",
+            "text": "After crafting an $(item)atlas$(), $(thing)right-click$() it in your hand to activate it. You will then be able to see a $(thing)minimap$() in the $(thing)top-right$() corner and the item will be given a number, just like a normal vanilla map."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/atlas/atlas.png"
+            ],
+            "border": false,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "The fullscreen map can be opened by $(thing)right-clicking$() an active $(item)atlas$(). This view allows you to see everything held within the atlas, as well as place $(thing)waypoints$().$(2br)To place a $(thing)waypoint$(), click the top button on the right side of the map, then click again to place it on the map. You will then be prompted to set a name and icon."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/atlas/atlas.png"
+            ],
+            "border": false,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "To delete a $(thing)waypoint$(), select the second button, and click the $(thing)waypoint$() you wish to remove.$(2br)Clicking the third button will show or hide all of the $(thing)waypoints$(), which is useful when you only want to see the terrain.$(2br)Maps can also be $(thing)exported as an image$() by clicking the final button, where it will be saved to your $(thing)screenshots folder$()."
+        }
+    ]
+}

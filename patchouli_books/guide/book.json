@@ -1,0 +1,10 @@
+{
+    "name": "Guide of the Ages",
+    "version": 1,
+    "landing_text": "This book serves as a guide to surviving and thriving across the ages, from your first night alone on the beach, to building an industrial empire, and launching off into space.",
+    "book_texture": "patchouli:textures/gui/book_blue.png",
+    "model": "patchouli:book_blue",
+    "show_progress": false,
+    "creative_tab": "misc",
+    "use_blocky_font": false
+}

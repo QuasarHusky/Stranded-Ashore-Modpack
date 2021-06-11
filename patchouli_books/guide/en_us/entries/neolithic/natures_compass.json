@@ -1,0 +1,10 @@
+{
+    "name": "Nature's Compass",
+    "icon": "naturescompass:naturescompass",
+    "category": "patchouli:neolithic",
+    "sortnum": 2300,
+    "advancement": "tfc:main/logging",
+    "pages": [
+        
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Coke Oven",
+    "icon": "thermalfoundation:material:802",
+    "category": "patchouli:steel",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:ie_coke_oven",
+            "title": "Charcoal",
+            "input": "ore:logWood",
+            "output": "minecraft:coal:1",
+            "time": "30s"
+        },
+        {
+            "type": "patchouli:ie_coke_oven",
+            "title": "Creosote Oil",
+            "input": "minecraft:coal:1",
+            "output": "thermalfoundation:material:802",
+            "fluid_mb": 500,
+            "time": "20s"
+        },
+        {
+            "type": "patchouli:ie_coke_oven",
+            "title": "Coal Coke",
+            "input": "tfc:ore/bituminous_coal",
+            "output": "thermalfoundation:material:802",
+            "fluid_mb": 100,
+            "time": "30s"
+        }
+    ]
+}
