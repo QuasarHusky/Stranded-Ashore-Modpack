@@ -4,6 +4,7 @@ recipes.remove(<firmalife:greenhouse_wall>);
 recipes.remove(<firmalife:greenhouse_roof>);
 recipes.remove(<firmalife:greenhouse_door>);
 recipes.remove(<firmalife:climate_station>);
+recipes.remove(<firmalife:treated_lumber>);
 
 recipes.addShaped("firmalife/greenhouse_wall", <firmalife:greenhouse_wall> * 8,
     [[<ore:lumber>, <ore:stickWood>, <ore:lumber>],

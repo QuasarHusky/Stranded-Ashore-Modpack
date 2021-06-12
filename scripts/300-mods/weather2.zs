@@ -1,8 +1,5 @@
 #priority 300
 
-import mods.terrafirmacraft.ItemRegistry;
-import mods.terrafirmacraft.Anvil;
-
 recipes.remove(<weather2:weather_item>);
 recipes.remove(<weather2:pocket_sand>);
 recipes.remove(<weather2:wind_vane>);
@@ -13,12 +10,6 @@ recipes.remove(<weather2:tornado_siren_manual>);
 recipes.remove(<weather2:weather_forecast>);
 recipes.remove(<weather2:weather_machine>);
 recipes.remove(<weather2:weather_deflector>);
-
-ItemRegistry.registerItemHeat(<weather2:anemometer>, 0.35, 1100, false);
-ItemRegistry.registerItemHeat(<weather2:wind_vane>, 0.35, 1100, false);
-
-Anvil.addRecipe("weather2/anemometer", <ore:ingotDoubleCopper>, <weather2:anemometer>, 1, "general", "DRAW_ANY", "HIT_ANY", "HIT_LAST");
-Anvil.addRecipe("weather2/wind_vane", <ore:ingotDoubleCopper>, <weather2:wind_vane>, 1, "general", "DRAW_ANY", "HIT_ANY", "HIT_LAST");
 
 recipes.addShapedMirrored("weather2/tornado_sensor", <weather2:tornado_sensor>, 
     [[<weather2:wind_vane>, <ore:dustRedstone>, <weather2:anemometer>],

@@ -3,7 +3,6 @@
 import mods.terrafirmacraft.StoneKnapping;
 import mods.terrafirmacraft.ClayKnapping;
 import mods.terrafirmacraft.Heating;
-import mods.terrafirmacraft.Anvil;
 
 // Remove and hide unused items
 recipes.remove(<exnihilocreatio:hammer_wood>);
@@ -96,8 +95,6 @@ ClayKnapping.addRecipe("exnihilo/crook_clay", <exnihilocreatio:crook_clay>,
 
 // Iron Crook
 recipes.remove(<exnihilocreatio:crook_iron>);
-
-Anvil.addRecipe("exnihilo/crook_iron", <ore:ingotWroughtIron>, <exnihilocreatio:crook_iron>, 1, "tools", "HIT_ANY", "DRAW_ANY", "BEND_LAST");
 
 // Sieve
 recipes.remove(<exnihilocreatio:block_sieve>);

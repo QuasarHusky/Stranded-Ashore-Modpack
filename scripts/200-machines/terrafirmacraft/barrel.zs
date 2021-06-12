@@ -2,6 +2,9 @@
 
 import mods.terrafirmacraft.Barrel;
 
+// ===== Remove Recipes ===== //
+Barrel.removeRecipe(<firmalife:treated_lumber>);
+
 // ===== Treated Lumber ===== //
 Barrel.addRecipe("lumber_treating", <ore:lumber>, <liquid:creosote> * 125, <firmalife:treated_lumber>, null, 8);
 

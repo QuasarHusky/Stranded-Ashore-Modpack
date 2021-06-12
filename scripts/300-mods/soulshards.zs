@@ -1,17 +1,11 @@
 #priority 300
 
-import mods.terrafirmacraft.ItemRegistry;
-import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Quern;
 
 recipes.remove(<soulshardstow:soul_shard>);
 recipes.remove(<soulshardstow:materials:*>);
 recipes.remove(<soulshardstow:vile_sword>);
 recipes.remove(<soulshardstow:cage>);
-
-ItemRegistry.registerItemHeat(<soulshardstow:materials:0>, metalSpecificHeats.corrupted, metalMeltingHeats.corrupted, true);
-ItemRegistry.registerItemHeat(<soulshardstow:vile_sword>,  metalSpecificHeats.corrupted, metalMeltingHeats.corrupted, false);
-Anvil.addRecipe("soulshardstow/vile_sword", <soulshardstow:materials:0>, <soulshardstow:vile_sword>, 1, "weapons", "DRAW_ANY", "PUNCH_SECOND_LAST", "UPSET_LAST");
 
 Quern.addRecipe("soulshardstow/vile_dust", <minecraft:soul_sand>, <soulshardstow:materials:2>);
 

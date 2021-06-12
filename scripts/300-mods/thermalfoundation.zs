@@ -319,6 +319,13 @@ recipes.addShaped("component/servo", components.servo,
      [components.motor, <immersiveengineering:wirecoil:6>, components.motor]]
 );
 
+// ===== Flywheel ===== //
+recipes.addShaped("component/flywheel", components.flywheel * 3, [
+    [<ore:ingotWroughtIron>, <ore:ingotDoubleWroughtIron>, <ore:ingotWroughtIron>],
+    [<ore:ingotDoubleWroughtIron>, <immersiveengineering:material:8>, <ore:ingotDoubleWroughtIron>],
+    [<ore:ingotWroughtIron>, <ore:ingotDoubleWroughtIron>, <ore:ingotWroughtIron>]
+]);
+
 // ===== Pigments ===== //
 recipes.addShapeless("pigment_0",  <thermalfoundation:dye:0>, [ <ore:dyeBlack> ]);
 recipes.addShapeless("pigment_1",  <thermalfoundation:dye:1>, [ <ore:dyeRed> ]);

@@ -78,6 +78,14 @@ for name, metal in metals {
         ]);
     }
 
+    // ===== Fence (Crafting) ===== //
+    if(!isNull(metal["fence"]) && !isNull(metal["ingot"]) && !isNull(metal["rod"])) {
+        recipes.addShaped("metal/" ~ name ~ "/fence", metal.fence * 8, [
+            [metal.ingot, metal.rod, metal.ingot],
+            [metal.ingot, metal.rod, metal.ingot]
+        ]);
+    }
+
     // ===== Plates (Anvil) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.plate)) {
         Anvil.addRecipe(

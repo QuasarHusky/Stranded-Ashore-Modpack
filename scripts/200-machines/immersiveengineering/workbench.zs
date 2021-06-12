@@ -135,17 +135,17 @@ Blueprint.addRecipe("components", <immersiveengineering:metal_decoration0:3>, [
 Blueprint.addRecipe("components", <immersiveengineering:metal_decoration0:4>, [
     <immersiveengineering:sheetmetal:9>,
     <immersiveengineering:material:8>,
-    <ore:ingotTin>,
-    <ore:nuggetNickel>,
+    <ore:nuggetTin>,
+    <ore:nuggetAluminum>,
 ]);
 
 // ===== Heavy Engineering Block ===== //
-Blueprint.addRecipe("components", <immersiveengineering:metal_decoration0:5>, [
-    <immersiveengineering:sheetmetal:8>,
-    <immersiveengineering:material:9>,
-    <ore:ingotDoublePigIron>,
-    <ore:sheetBronze>,
-]);
+// Blueprint.addRecipe("components", <immersiveengineering:metal_decoration0:5>, [
+//     <immersiveengineering:sheetmetal:8>,
+//     <immersiveengineering:material:9>,
+//     <ore:ingotDoublePigIron>,
+//     <ore:sheetBronze>,
+// ]);
 
 // ===== Circuit Plate ===== //
 recipes.addShapeless("projectred/circuit_plate", <projectred-core:resource_item:0> * 4, [

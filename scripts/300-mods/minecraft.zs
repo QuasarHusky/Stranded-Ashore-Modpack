@@ -5,6 +5,7 @@ recipes.remove(<minecraft:ender_chest>);
 recipes.remove(<minecraft:noteblock>);
 recipes.remove(<minecraft:brick_block>);
 recipes.remove(<minecraft:sign>);
+recipes.remove(<minecraft:torch>);
 
 
 

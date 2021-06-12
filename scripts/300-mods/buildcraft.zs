@@ -49,6 +49,9 @@ recipes.remove(<buildcrafttransport:pipe_iron_item:*>);
 recipes.remove(<buildcrafttransport:pipe_sandstone_item:*>);
 recipes.remove(<buildcrafttransport:pipe_obsidian_item:*>);
 recipes.remove(<additionalpipes:pipe_items_closed>);
+recipes.remove(<additionalpipes:pipe_items_addition>);
+recipes.remove(<buildcrafttransport:pipe_gold_item:*>);
+recipes.remove(<buildcrafttransport:pipe_clay_item:*>);
 
 
 
@@ -105,12 +108,26 @@ recipes.addShaped("pipe/transport/items_closed", <additionalpipes:pipe_items_clo
     [<ore:lumber>, <ore:chest>, <ore:lumber>]
 ]);
 
-// LOCKED: Steel Age
-recipes.remove(<additionalpipes:pipe_items_addition>);
-recipes.remove(<buildcrafttransport:pipe_gold_item:*>);
-recipes.remove(<buildcrafttransport:pipe_clay_item:*>);
-recipes.remove(<buildcrafttransport:pipe_gold_fluid:*>);
-recipes.remove(<buildcrafttransport:pipe_clay_fluid:*>);
+// ===== Gold Transport Pipe ===== //
+recipes.addShaped("pipe/transport/gold", <buildcrafttransport:pipe_gold_item> * 8, [
+    [<ore:stickTreatedWood>, <ore:blockGlass>, <ore:stickTreatedWood>],
+    [<ore:stickGold>, components.flywheel, <ore:stickGold>],
+    [<ore:stickTreatedWood>, <ore:blockGlass>, <ore:stickTreatedWood>]
+]);
+
+// ===== Clay Transport Pipe ==== //
+recipes.addShaped("pipe/transport/clay", <buildcrafttransport:pipe_clay_item> * 3, [
+    [<ore:lumberTreated>, components.motor, <ore:lumberTreated>],
+    [<ore:pipeItemBasic>, <ore:stickTreatedWood>, <ore:pipeItemBasic>],
+    [<ore:lumberTreated>, <minecraft:hopper>, <ore:lumberTreated>]
+]);
+
+// ===== Addition Transport Pipe ==== //
+recipes.addShaped("pipe/transport/addition", <additionalpipes:pipe_items_addition> * 3, [
+    [<ore:stickAluminum>, components.servo, <ore:stickAluminum>],
+    [<ore:pipeItemBasic>, <ore:gearCopper>, <ore:pipeItemBasic>],
+    [<ore:stickAluminum>, <minecraft:hopper>, <ore:stickAluminum>]
+]);
 
 // LOCKED: Industrial Revolution
 recipes.remove(<additionalpipes:pipe_items_adv_wood>);
