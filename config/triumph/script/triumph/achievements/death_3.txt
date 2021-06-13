@@ -1,0 +1,9 @@
+setIcon(<tconstruct:sharpening_kit, nbt:{Material:"ardite"}>)
+setTitle("Stupid Deaths")
+setDescription("Die 200 times")
+
+setFrameType("challenge")
+addParent("triumph:achievements/death_2")
+
+criteria = addCriteria("death", "triumph:player_death")
+criteria.setCount(5)

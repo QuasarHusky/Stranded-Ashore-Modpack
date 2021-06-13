@@ -1,0 +1,9 @@
+setIcon(<tfc:metal/ingot/wrought_iron>)
+setTitle("Iron Age")
+setDescription("Obtain a Wrought Iron Ingot")
+
+addParent("triumph:main/bronze_age")
+
+setFrameType("goal")
+
+addCriteria("impossible", "minecraft:impossible")

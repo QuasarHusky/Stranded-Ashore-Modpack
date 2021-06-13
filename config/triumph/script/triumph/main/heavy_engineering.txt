@@ -1,0 +1,9 @@
+setIcon(<immersiveengineering:metal_decoration0:5>)
+setTitle("Heavy Engineering")
+setDescription("Craft a Heavy Engineering Block")
+
+addParent("triumph:main/industrial_revolution")
+
+setFrameType("goal")
+
+addCriteria("impossible", "minecraft:impossible")

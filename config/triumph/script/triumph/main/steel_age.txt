@@ -1,0 +1,9 @@
+setIcon(<tfc:metal/ingot/steel>)
+setTitle("Steel Age")
+setDescription("Obtain a Steel Ingot")
+
+addParent("triumph:main/iron_age")
+
+setFrameType("challenge")
+
+addCriteria("impossible", "minecraft:impossible")
