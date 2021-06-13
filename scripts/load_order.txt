@@ -1,6 +1,9 @@
 PRIORITY    SCRIPT GROUP
-500         registries
-400         internal
-300         mods
-200         machines
-100         generic
+---         contenttweaker
+600         registries
+500         internal
+400         mods
+300         machines
+200         generic
+100         progression
+  0         debug
