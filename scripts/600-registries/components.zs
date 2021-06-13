@@ -8,4 +8,5 @@ global components as IItemStack[string] = {
     "conveyor_belt":            <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"}),
     "fluid_pipe":               <immersiveengineering:metal_device1:6>,
     "flywheel":                 <thermalfoundation:material:657>,
+    "tough_fabric":             <immersiveengineering:material:5>,
 };

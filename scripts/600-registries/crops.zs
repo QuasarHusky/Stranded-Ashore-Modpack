@@ -91,4 +91,8 @@ global crops as IItemStack[string][string] = {
         "seeds":                    <firmalife:crop/seeds/melon>,
         "produce":                  <firmalife:melon_fruit>,
     },
+    "hemp": {
+        "seeds":                    <immersiveengineering:seed:0>,
+        "produce":                  <immersiveengineering:material:4>,
+    },
 };
