@@ -9,4 +9,7 @@ global components as IItemStack[string] = {
     "fluid_pipe":               <immersiveengineering:metal_device1:6>,
     "flywheel":                 <thermalfoundation:material:657>,
     "tough_fabric":             <immersiveengineering:material:5>,
+    "windmill_sail":            <immersiveengineering:material:12>,
+    "bitumen":                  <immersivepetroleum:material:0>,
+    "dried_brick":              <tconstruct:materials:2>,
 };

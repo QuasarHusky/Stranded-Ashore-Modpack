@@ -59,6 +59,7 @@ recipes.remove(<immersiveengineering:steel_armor_legs>);
 recipes.remove(<immersiveengineering:steel_armor_chest>);
 recipes.remove(<immersiveengineering:steel_armor_head>);
 recipes.remove(<immersiveengineering:wirecoil:*>);
+recipes.remove(<immersiveengineering:wooden_device1:*>);
 recipes.remove(<immersivepetroleum:metal_device:0>);
 recipes.remove(<immersivepetroleum:stone_decoration:0>);
 recipes.remove(<immersiveposts:postbase>);
@@ -371,6 +372,12 @@ recipes.addShaped("immersiveengineering/windmill/blade", <immersiveengineering:m
     [<ore:fenceTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>]
 ]);
 
+recipes.addShaped("immersiveengineering/windmill/sail", <immersiveengineering:wooden_device1:1>, [
+    [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
+    [<immersiveengineering:material:11>, <immersiveengineering:material:8>, <immersiveengineering:material:11>],
+    [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]
+]);
+
 recipes.addShaped("immersiveengineering/windmill", <immersiveengineering:wooden_device1:1>, [
     [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
     [<immersiveengineering:material:11>, <immersiveengineering:material:8>, <immersiveengineering:material:11>],
@@ -388,4 +395,11 @@ recipes.addShaped("immersiveengineering/waterwheel", <immersiveengineering:woode
     [<immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>],
     [<immersiveengineering:material:10>, <immersiveengineering:material:8>, <immersiveengineering:material:10>],
     [<immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>]
+]);
+
+// ===== Post Base ===== //
+recipes.addShaped("immersiveposts/postbase", <immersiveposts:postbase> * 2, [
+    [<ore:stone>, <ore:brick>, <ore:stone>],
+    [<ore:stone>, <ore:brick>, <ore:stone>],
+    [<ore:stone>, <ore:brick>, <ore:stone>]
 ]);
