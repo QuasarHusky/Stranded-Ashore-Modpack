@@ -12,6 +12,29 @@ import mods.immersiveengineering.BlastFurnace;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Melting;
 
+/**
+
+Variant         Cost (ingots)   Cost (mb)
+-----------------------------------------
+Nugget                   1/9           16
+Wire                     1/6           24
+Rod                      0.25          36
+Plate                    0.5           72
+Ingot                    1            144
+Dust                     1            144
+Scrap                    1            144
+Coin                     1            144
+Double Ingot             2            288
+Sheet                    2            288
+Sheetmetal               2.25         324
+Scaffolding              2.25         324
+Double Sheet             4            576
+Gear                     4            576
+Block                    9           1296
+Fence                    9/16          81
+
+**/
+
 var applyHeatsToMetals as string[] = [
     "iridium",
     "signalum",
@@ -47,6 +70,12 @@ for name in applyHeatsToMetals {
 }
 
 for name, metal in metals {
+    var anvilTier = 0;
+
+    if(!isNull(metalAnvilTiers[name])) {
+        anvilTier = metalAnvilTiers[name];
+    }
+
     // ===== Ingot to Dust (Quern & Crusher) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.dust)) {
         Quern.addRecipe("metal/" ~ name ~ "/dust", metal.ingot, metal.dust);
@@ -94,7 +123,7 @@ for name, metal in metals {
                 metal.ingot,
                 metal.ingot,
                 metal.double_ingot,
-                1 // TODO: Re-implement metal tiers
+                anvilTier
         );
     }
 
@@ -104,7 +133,7 @@ for name, metal in metals {
                 "metal/" ~ name ~ "/sheet",
                 metal.double_ingot,
                 metal.sheet,
-                1, // TODO: Re-implement metal tiers
+                anvilTier,
                 "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
         );
     }
@@ -116,7 +145,7 @@ for name, metal in metals {
                 metal.sheet,
                 metal.sheet,
                 metal.double_sheet,
-                1 // TODO: Re-implement metal tiers
+                anvilTier
         );
     }
 
@@ -126,7 +155,7 @@ for name, metal in metals {
                 "metal/" ~ name ~ "/plate",
                 metal.ingot,
                 metal.plate * 2,
-                1, // TODO: Re-implement metal tiers
+                anvilTier,
                 "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
         );
     }
@@ -137,7 +166,7 @@ for name, metal in metals {
                 "metal/" ~ name ~ "/wire",
                 metal.plate,
                 metal.wire * 3,
-                1, // TODO: Re-implement metal tiers
+                anvilTier,
                 "general", "DRAW_THIRD_LAST", "DRAW_SECOND_LAST", "DRAW_LAST"
         );
     }
@@ -148,7 +177,7 @@ for name, metal in metals {
                 "metal/" ~ name ~ "/gear",
                 metal.double_sheet,
                 metal.gear,
-                1, // TODO: Re-implement metal tiers
+                anvilTier,
                 "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
         );
     }
@@ -159,8 +188,19 @@ for name, metal in metals {
                 "metal/" ~ name ~ "/rod",
                 metal.plate,
                 metal.rod * 2,
-                1, // TODO: Re-implement metal tiers
+                anvilTier,
                 "general", "DRAW_THIRD_LAST", "DRAW_SECOND_LAST", "DRAW_LAST"
+        );
+    }
+
+    // ===== Coins (Anvil) ===== //
+    if(!isNull(metal.ingot) && !isNull(metal.coin)) {
+        Anvil.addRecipe(
+                "metal/" ~ name ~ "/coin",
+                metal.coin,
+                metal.ingot,
+                anvilTier,
+                "general", "DRAW_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
         );
     }
 
@@ -220,7 +260,7 @@ for name, metal in metals {
             Melting.addRecipe(molten * 576, metal.double_sheet, meltTemp);
         }
         if(!isNull(metal.plate)) {
-            Melting.addRecipe(molten * 144, metal.plate, meltTemp);
+            Melting.addRecipe(molten * 72, metal.plate, meltTemp);
         }
         if(!isNull(metal.dust)) {
             Melting.addRecipe(molten * 144, metal.dust, meltTemp);
@@ -238,16 +278,19 @@ for name, metal in metals {
             Melting.addRecipe(molten * 1296, metal.block, meltTemp);
         }
         if(!isNull(metal.rod)) {
-            Melting.addRecipe(molten * 72, metal.rod, meltTemp);
+            Melting.addRecipe(molten * 36, metal.rod, meltTemp);
         }
         if(!isNull(metal.wire)) {
-            Melting.addRecipe(molten * 48, metal.wire, meltTemp);
+            Melting.addRecipe(molten * 24, metal.wire, meltTemp);
         }
         if(!isNull(metal.sheetmetal)) {
-            Melting.addRecipe(molten * 162, metal.sheetmetal, meltTemp);
+            Melting.addRecipe(molten * 324, metal.sheetmetal, meltTemp);
         }
         if(!isNull(metal.scaffolding)) {
-            Melting.addRecipe(molten * 108, metal.scaffolding, meltTemp);
+            Melting.addRecipe(molten * 324, metal.scaffolding, meltTemp);
+        }
+        if(!isNull(metal.fence)) {
+            Melting.addRecipe(molten * 81, metal.fence, meltTemp);
         }
     }
 
@@ -265,13 +308,13 @@ for name, metal in metals {
             Casting.addTableRecipe(metal.nugget, <tconstruct:cast_custom:1>, molten, 16, false, 20 * 1);
         }
         if(!isNull(metal.gear)) {
-            Casting.addTableRecipe(metal.gear, <tconstruct:cast_custom:4>, molten, 144, false, 20 * 18);
+            Casting.addTableRecipe(metal.gear, <tconstruct:cast_custom:4>, molten, 576, false, 20 * 18);
         }
         if(!isNull(metal.block)) {
             Casting.addBasinRecipe(metal.block, null, molten, 1296, false, 20 * 30);
         }
         if(!isNull(metal.hardened_glass)) {
-            Casting.addBasinRecipe(metal.hardened_glass, materials.hardened_glass.block, molten, 144, true, 20 * 20);
+            Casting.addBasinRecipe(metal.hardened_glass, materials.hardened_glass.block, molten, 288, true, 20 * 20);
         }
     }
 }
