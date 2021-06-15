@@ -9,6 +9,12 @@ itemToughSteel.rarity = "uncommon";
 itemToughSteel.creativeTab = <creativetab:misc>;
 itemToughSteel.register();
 
+// ===== Rail Segment ===== //
+var itemRailSegment = VanillaFactory.createItem("trainpart/rail_segment");
+itemRailSegment.rarity = "uncommon";
+itemRailSegment.creativeTab = <creativetab:misc>;
+itemRailSegment.register();
+
 // ===== Wheel ===== //
 var itemWheelSmall = VanillaFactory.createItem("trainpart/wheel/small");
 itemWheelSmall.rarity = "uncommon";

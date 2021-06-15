@@ -12,18 +12,18 @@ recipes.remove(<immersiverailroading:item_radio_control_card>);
 recipes.remove(<immersiverailroading:item_switch_key>);
 recipes.remove(<immersiverailroading:item_track_exchanger>);
 
+// ===== Large Wrench ===== //
+recipes.addShapedMirrored("immersiverailroading/large_wrench", <immersiverailroading:item_large_wrench>, [
+    [<ore:ingotDoubleSteel>, null, <ore:ingotDoubleSteel>],
+    [null, <ore:gearSteel>, null],
+    [null, <ore:ingotDoubleSteel>, null]
+]);
+
 // ===== Coupling Hook ===== //
 recipes.addShapedMirrored("immersiverailroading/coupling_hook", <immersiverailroading:item_hook>, [
     [<ore:nuggetSteel>, <ore:stickAluminum>, null],
     [null, <ore:stickAluminum>, null],
     [null, <ore:stickAluminum>, <ore:nuggetSteel>]
-]);
-
-// ===== Rail Segment ===== //
-recipes.addShaped("immersiverailroading/rail_segment/standard", <immersiverailroading:item_rail_part>.withTag({gauge: 1.435}) * 2, [
-    [<ore:plateSteel>, null, <ore:plateSteel>],
-    [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
-    [<ore:plateSteel>, null, <ore:plateSteel>]
 ]);
 
 // ===== Track Blueprint ===== //
