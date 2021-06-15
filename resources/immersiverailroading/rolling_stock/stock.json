@@ -1,0 +1,21 @@
+{
+    "freight": [
+        "cattle",
+        "flat",
+        "clay",
+        "lswrbrakevan"
+    ],
+    "locomotives": [
+        "cityclass",
+        "bulleid_q1"
+    ],
+    "passenger": [],
+    "tank": [
+        "tanker"
+    ],
+    "tender": [
+        "cityclasstender",
+        "bulleid_q1_tender"
+    ],
+    "hand_car": []
+}

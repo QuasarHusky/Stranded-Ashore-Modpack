@@ -110,6 +110,26 @@ recipes.addShapeless(
         ]
 );
 
+recipes.addShapeless(
+        "immersiveengineering/blueprint/basic_trains", 
+        <immersiveengineering:blueprint>.withTag({blueprint: "Basic Locomotives"}), 
+        [
+            <immersiverailroading:item_rail>.reuse(),
+            <ore:paper>,
+            <ore:ingotSteel>,
+        ]
+);
+
+recipes.addShapeless(
+        "immersiveengineering/blueprint/rolling_stock", 
+        <immersiveengineering:blueprint>.withTag({blueprint: "Rolling Stock"}), 
+        [
+            <immersiverailroading:item_rail>.reuse(),
+            <ore:paper>,
+            <ore:chestWood>,
+        ]
+);
+
 
 
 // ===== Iron Mechanical Component ===== //
@@ -460,4 +480,79 @@ Blueprint.addRecipe("Redstone Misc. Circuits", <projectred-integration:gate:33>,
     <projectred-core:resource_item:11> * 4,
     <projectred-core:resource_item:20> * 1,
     <projectred-core:resource_item:21> * 2,
+]);
+
+// ===== Basic Locomotives ===== //
+// Handcar
+Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/hand_car/hand_car_1.json", gauge: 1.435}), [
+    <ore:plankTreatedWood> * 8,
+    <ore:lumber> * 12,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <ore:stickAluminum> * 3
+]);
+
+// Firefly
+Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/locomotives/firefly.json", gauge: 1.435}), [
+    <ore:blockSteel> * 1,
+    <contenttweaker:trainpart/boiler/small>,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <contenttweaker:trainpart/wheel/normal> * 2,
+    <ore:stickAluminum> * 5
+]);
+
+// Iron Duke
+Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/locomotives/iron_duke.json", gauge: 1.435}), [
+    <ore:blockSteel> * 2,
+    <contenttweaker:trainpart/boiler/small>,
+    <contenttweaker:trainpart/wheel/small> * 6,
+    <contenttweaker:trainpart/wheel/normal> * 2,
+    <contenttweaker:trainpart/tough_steel> * 5,
+    <ore:stickAluminum> * 8
+]);
+
+// ===== Rolling Stock ===== //
+// Flat Wagon
+Blueprint.addRecipe("Rolling Stock", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/freight/flat.json", gauge: 1.435}), [
+    <ore:lumber> * 8,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <ore:plankTreatedWood> * 3,
+    <ore:stickAluminum> * 2,
+    <ore:chestWood> * 2
+]);
+
+// Clay Wagon
+Blueprint.addRecipe("Rolling Stock", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/freight/clay.json", gauge: 1.435}), [
+    <ore:lumber> * 8,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <ore:plankTreatedWood> * 3,
+    <ore:stickAluminum> * 2,
+    <ore:chestWood> * 2,
+    <ore:clothHighQuality> * 6
+]);
+
+// Cattle Wagon
+Blueprint.addRecipe("Rolling Stock", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/freight/cattle.json", gauge: 1.435}), [
+    <ore:lumber> * 24,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <ore:plankTreatedWood> * 8,
+    <ore:stickAluminum> * 2,
+    <ore:chestWood> * 2
+]);
+
+// Tanker Wagon
+Blueprint.addRecipe("Rolling Stock", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/tank/tanker.json", gauge: 1.435}), [
+    <ore:lumber> * 4,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <ore:stickAluminum> * 2,
+    <immersiveengineering:metal_device0:4> * 4
+]);
+
+// Brakevan
+Blueprint.addRecipe("Rolling Stock", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/freight/lswrbrakevan.json", gauge: 1.435}), [
+    <ore:lumber> * 24,
+    <ore:lumberTreated> * 12,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <ore:stickAluminum> * 2,
+    <ore:plateAluminum> * 8,
+    <ore:blockGlass> * 3
 ]);

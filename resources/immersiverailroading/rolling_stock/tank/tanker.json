@@ -1,0 +1,34 @@
+{
+  "name": "14 Ton Tanker Wagon",
+  "model": "immersiverailroading:models/rolling_stock/tank/tanker/tanker.obj",
+  "darken_model": "-0.05",
+  "modeler": "TheKnowItAll5",
+  "pack": "BoCo's British Pack",
+  "tex_variants": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4"
+  },
+  "properties": {
+    "weight_kg": 7116
+  },
+  "passenger": {
+    "slots": 4,
+    "center_x": 0,
+    "center_y": 1.4,
+    "length": 1.4,
+    "width": 2
+  },
+  "tank": {
+    "capacity_l": 50000
+  },
+  "trucks": {
+    "front": 1.4,
+    "rear": -1.4
+  },
+  "couplers": {
+    "front_offset": 0,
+    "rear_offset": 0
+  }
+}

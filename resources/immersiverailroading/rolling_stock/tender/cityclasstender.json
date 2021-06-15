@@ -1,0 +1,32 @@
+{
+  "name": "City Class 4-4-0 Tender",
+  "model": "immersiverailroading:models/rolling_stock/tender/cityclasstender/cityclasstender.obj",
+    "modeler": "TheKnowItAll5",
+    "pack": "BoCo's British Pack",
+  "darken_model": "-0.05",
+  "properties": {
+    "weight_kg": 22000
+  },
+  "passenger": {
+    "slots": 2,
+    "center_x": 3.35,
+    "center_y": 1.9,
+    "length": 0.377,
+    "width": 2.3
+  },
+  "tank": {
+    "capacity_l": 35000
+  },
+  "tender": {
+    "slots": 20,
+    "width": 5
+  },
+  "trucks": {
+    "front": 1.9,
+    "rear": -1.9
+  },
+  "couplers": {
+    "front_offset": -0.2,
+    "rear_offset": 0.01
+  }
+}

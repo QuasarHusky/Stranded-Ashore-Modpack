@@ -1,0 +1,60 @@
+{
+	"era": "steam",
+	"name": "Iron Duke",
+	"works": "Great Western Railway",
+	"model": "immersiverailroading:models/rolling_stock/locomotives/iron_duke/iron_duke.obj",
+	"darken_model": "-0.05",
+	"model_gauge_m": 2.17,
+	"properties": {
+		"max_psi": 100,
+		"water_capacity_l": 30000, 
+		"horsepower": 400,
+		"tractive_effort_lbf": 8000,
+		"max_speed_kmh": 70,
+		"valve_gear": "hidden",
+		"weight_kg": 20000
+	},
+	"firebox": {
+		"slots": 8,
+		"width": 4
+	},
+	"passenger": {
+		"slots": 3,
+		"center_x": -3.4,
+		"center_y": 1.7,
+		"length": 0.3,
+		"width": 2.0
+	},
+	"trucks": {
+		"front": 2, 
+		"rear": -2
+	},
+	"sounds": {
+		"whistle": "sounds/steam/whistle.ogg",
+		"idle": "sounds/steam/idle.ogg",
+		"chuff": "sounds/steam/chuff.ogg",
+		"quilling": [
+		  {
+			"pull_start": 0.15,
+			"pull_end": 0.45,
+			"pitch_start": 0.75,
+			"pitch_end": 0.85,
+			"sample": "sounds/steam/quill.ogg"
+		  },
+		  {
+			"pull_start": 0.35,
+			"pull_end": 0.55,
+			"pitch_start": 0.95,
+			"pitch_end": 1,
+			"sample": "sounds/steam/quill.ogg"
+		  },
+		  {
+			"pull_start": 0.6,
+			"pull_end": 0.7,
+			"pitch_start": 0.95,
+			"pitch_end": 1,
+			"sample": "sounds/steam/quill_high.ogg"
+		  }
+		]
+	  }
+}
