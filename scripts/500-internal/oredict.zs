@@ -408,3 +408,6 @@ for item in loadedMods["chisel"].items {
 
 // ===== Coal Coke Dust ===== //
 <ore:dustCoke>.addItems([ <tfc:powder/coke> ]);
+
+// ===== Immersive Railroading ===== //
+<ore:irRail>.addItems([ <contenttweaker:trainpart/rail_segment> ]);
