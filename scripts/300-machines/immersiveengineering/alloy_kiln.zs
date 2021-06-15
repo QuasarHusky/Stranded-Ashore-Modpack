@@ -13,6 +13,10 @@ AlloySmelter.removeRecipe(<projectred-core:resource_item:104>);
 
 
 
+// ===== High Carbon Steels ===== //
+AlloySmelter.addRecipe(<tfc:metal/ingot/high_carbon_blue_steel>, <tfc:metal/ingot/weak_blue_steel>, <tfc:metal/ingot/black_steel>, timing.minute * 2);
+AlloySmelter.addRecipe(<tfc:metal/ingot/high_carbon_red_steel>, <tfc:metal/ingot/weak_red_steel>, <tfc:metal/ingot/black_steel>, timing.minute * 2);
+
 // ===== Invar ===== //
 AlloySmelter.addRecipe(metals.invar.ingot * 2, <ore:ingotWroughtIron>, <ore:dustNickel>, 45 * 20);
 
