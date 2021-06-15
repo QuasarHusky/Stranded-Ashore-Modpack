@@ -1,0 +1,43 @@
+{
+    "name": "Wires & Connectors",
+    "icon": "immersiveengineering:wirecoil:0",
+    "category": "patchouli:reference",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Low Voltage",
+            "item": "immersiveengineering:wirecoil:0",
+            "text": "$(l)Max Length$()$(br)16m$(2br)$(l)Loss$()$(br)0.05% per 16m$(2br)$(l)Connectors$()$(br)256 IF/tick$(2br)$(l)Maximum Current$()$(br)2,048 IF/tick"
+        },
+        {
+            "type": "spotlight",
+            "title": "Medium Voltage",
+            "item": "immersiveengineering:wirecoil:1",
+            "text": "$(l)Max Length$()$(br)16m$(2br)$(l)Loss$()$(br)0.025% per 16m$(2br)$(l)Connectors$()$(br)1,024 IF/tick$(2br)$(l)Maximum Current$()$(br)8,192 IF/tick"
+        },
+        {
+            "type": "spotlight",
+            "title": "High Voltage",
+            "item": "immersiveengineering:wirecoil:2",
+            "text": "$(l)Max Length$()$(br)32m$(2br)$(l)Loss$()$(br)0.025% per 16m$(2br)$(l)Connectors$()$(br)4,096 IF/tick$(2br)$(l)Maximum Current$()$(br)32,768 IF/tick"
+        },
+        {
+            "type": "spotlight",
+            "title": "Redstone Wire",
+            "item": "immersiveengineering:wirecoil:5",
+            "text": "$(l)Max Length$()$(br)32m$(2br)$(thing)Currents up to 16 different redstone signals."
+        },
+        {
+            "type": "spotlight",
+            "title": "Hemp Rope",
+            "item": "immersiveengineering:wirecoil:3",
+            "text": "$(l)Max Length$()$(br)32m$(2br)$(thing)Used only for decoration and the Engineer's Skyhook."
+        },
+        {
+            "type": "spotlight",
+            "title": "Steel Cable",
+            "item": "immersiveengineering:wirecoil:4",
+            "text": "$(l)Max Length$()$(br)32m$(2br)$(thing)Used only for decoration and the Engineer's Skyhook."
+        }
+    ]
+}
