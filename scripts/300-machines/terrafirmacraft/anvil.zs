@@ -3,6 +3,25 @@
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Welding;
 
+// ===== Steel Ingot ===== //
+Anvil.addRecipe(
+        "ingot/high_carbon_steel/from_pig",
+        <tfc:metal/ingot/pig_iron>,
+        <tfc:metal/ingot/high_carbon_steel>,
+        3,
+        "general",
+        "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST"
+);
+
+Anvil.addRecipe(
+        "ingot/steel/from_high_carbon",
+        <tfc:metal/ingot/high_carbon_steel>,
+        <tfc:metal/ingot/steel>,
+        3,
+        "general",
+        "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST"
+);
+
 // ===== Black Steel Ingot ===== //
 Anvil.addRecipe(
         "ingot/black_steel/from_high_carbon",
