@@ -13,3 +13,6 @@ Casting.addBasinRecipe(<immersivepetroleum:stone_decoration:0>, components.bitum
 
 // ===== Brownstone ===== //
 Casting.addBasinRecipe(<tconstruct:brownstone:0>, components.dried_brick, <liquid:concrete>, 1000, true, timing.second * 20);
+
+// ===== Tough Steel ===== //
+Casting.addTableRecipe(<contenttweaker:trainpart/tough_steel>, <ore:plateSteel>, <liquid:black_steel>, 144, true, timing.second * 20);
