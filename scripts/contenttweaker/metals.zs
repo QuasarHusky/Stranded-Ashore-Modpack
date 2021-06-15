@@ -2,6 +2,7 @@
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.Block;
 
 var newTFCItems as string[] = [
     "uranium",
@@ -19,7 +20,29 @@ var newTFCItems as string[] = [
     "cobalt",
     "ardite",
     "manyullyn",
-    "alubrass"
+    "alubrass",
+];
+
+var newMetalBlocks as string[] = [
+    "bismuth",
+    "bismuth_bronze",
+    "black_bronze",
+    "brass",
+    "rose_gold",
+    "zinc",
+    "sterling_silver",
+    "pig_iron",
+    "black_steel",
+    "blue_steel",
+    "red_steel",
+    "weak_steel",
+    "weak_blue_steel",
+    "weak_red_steel",
+    "high_carbon_steel",
+    "high_carbon_blue_steel",
+    "high_carbon_red_steel",
+    "high_carbon_black_steel",
+    "unknown",
 ];
 
 for metal in newTFCItems {
@@ -42,4 +65,15 @@ for metal in newTFCItems {
     var itemScrap = VanillaFactory.createItem("metal/scrap/" ~ metal);
     itemScrap.creativeTab = <creativetab:misc>;
     itemScrap.register();
+}
+
+for metal in newMetalBlocks {
+    // ===== Metal Block ===== //
+    var blockMetal = VanillaFactory.createBlock("metal/block/" ~ metal, <blockmaterial:iron>);
+    blockMetal.setBlockHardness(5.0);
+    blockMetal.setBlockResistance(5.0);
+    blockMetal.setToolClass("pickaxe");
+    blockMetal.setToolLevel(2);
+    blockMetal.creativeTab = <creativetab:misc>;
+    blockMetal.register();
 }

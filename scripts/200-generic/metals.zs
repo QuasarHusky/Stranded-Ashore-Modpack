@@ -55,7 +55,7 @@ for name, metal in metals {
 
     // ===== Scrap to Dust (Crusher) ===== //
     if(!isNull(metal.scrap) && !isNull(metal.dust)) {
-        Crusher.addRecipe(metal.dust * 2, metal.scrap, 960);
+        Crusher.addRecipe(metal.dust, metal.scrap, 960);
     }
 
     // ===== Double Ingot to Dust (Crusher) ===== //

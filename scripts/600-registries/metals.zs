@@ -6,6 +6,7 @@ global metals as IItemStack[string][string] = {
     // ===== TerraFirmaCraft ===== //
     "bismuth": {
         "ingot":                        <tfc:metal/ingot/bismuth>,
+        "block":                        <contenttweaker:metal/block/bismuth>,
         "double_ingot":                 <tfc:metal/double_ingot/bismuth>,
         "scrap":                        <tfc:metal/scrap/bismuth>,
         "dust":                         <tfc:metal/dust/bismuth>,
@@ -15,6 +16,7 @@ global metals as IItemStack[string][string] = {
     },
     "bismuth_bronze": {
         "ingot":                        <tfc:metal/ingot/bismuth_bronze>,
+        "block":                        <contenttweaker:metal/block/bismuth_bronze>,
         "double_ingot":                 <tfc:metal/double_ingot/bismuth_bronze>,
         "scrap":                        <tfc:metal/scrap/bismuth_bronze>,
         "dust":                         <tfc:metal/dust/bismuth_bronze>,
@@ -24,6 +26,7 @@ global metals as IItemStack[string][string] = {
     },
     "black_bronze": {
         "ingot":                        <tfc:metal/ingot/black_bronze>,
+        "block":                        <contenttweaker:metal/block/black_bronze>,
         "double_ingot":                 <tfc:metal/double_ingot/black_bronze>,
         "scrap":                        <tfc:metal/scrap/black_bronze>,
         "dust":                         <tfc:metal/dust/black_bronze>,
@@ -33,6 +36,7 @@ global metals as IItemStack[string][string] = {
     },
     "brass": {
         "ingot":                        <tfc:metal/ingot/brass>,
+        "block":                        <contenttweaker:metal/block/brass>,
         "double_ingot":                 <tfc:metal/double_ingot/brass>,
         "scrap":                        <tfc:metal/scrap/brass>,
         "dust":                         <tfc:metal/dust/brass>,
@@ -123,6 +127,7 @@ global metals as IItemStack[string][string] = {
     },
     "rose_gold": {
         "ingot":                        <tfc:metal/ingot/rose_gold>,
+        "block":                        <contenttweaker:metal/block/rose_gold>,
         "double_ingot":                 <tfc:metal/double_ingot/rose_gold>,
         "scrap":                        <tfc:metal/scrap/rose_gold>,
         "dust":                         <tfc:metal/dust/rose_gold>,
@@ -163,6 +168,7 @@ global metals as IItemStack[string][string] = {
     },
     "zinc": {
         "ingot":                        <tfc:metal/ingot/zinc>,
+        "block":                        <contenttweaker:metal/block/zinc>,
         "double_ingot":                 <tfc:metal/double_ingot/zinc>,
         "scrap":                        <tfc:metal/scrap/zinc>,
         "dust":                         <tfc:metal/dust/zinc>,
@@ -172,6 +178,7 @@ global metals as IItemStack[string][string] = {
     },
     "sterling_silver": {
         "ingot":                        <tfc:metal/ingot/sterling_silver>,
+        "block":                        <contenttweaker:metal/block/sterling_silver>,
         "double_ingot":                 <tfc:metal/double_ingot/sterling_silver>,
         "scrap":                        <tfc:metal/scrap/sterling_silver>,
         "dust":                         <tfc:metal/dust/sterling_silver>,
@@ -197,6 +204,7 @@ global metals as IItemStack[string][string] = {
     },
     "pig_iron": {
         "ingot":                        <tfc:metal/ingot/pig_iron>,
+        "block":                        <contenttweaker:metal/block/pig_iron>,
         "double_ingot":                 <tfc:metal/double_ingot/pig_iron>,
         "scrap":                        <tfc:metal/scrap/pig_iron>,
         "dust":                         <tfc:metal/dust/pig_iron>,
@@ -239,6 +247,7 @@ global metals as IItemStack[string][string] = {
     },
     "black_steel": {
         "ingot":                        <tfc:metal/ingot/black_steel>,
+        "block":                        <contenttweaker:metal/block/black_steel>,
         "double_ingot":                 <tfc:metal/double_ingot/black_steel>,
         "scrap":                        <tfc:metal/scrap/black_steel>,
         "dust":                         <tfc:metal/dust/black_steel>,
@@ -248,6 +257,7 @@ global metals as IItemStack[string][string] = {
     },
     "blue_steel": {
         "ingot":                        <tfc:metal/ingot/blue_steel>,
+        "block":                        <contenttweaker:metal/block/blue_steel>,
         "double_ingot":                 <tfc:metal/double_ingot/blue_steel>,
         "scrap":                        <tfc:metal/scrap/blue_steel>,
         "dust":                         <tfc:metal/dust/blue_steel>,
@@ -257,6 +267,7 @@ global metals as IItemStack[string][string] = {
     },
     "red_steel": {
         "ingot":                        <tfc:metal/ingot/red_steel>,
+        "block":                        <contenttweaker:metal/block/red_steel>,
         "double_ingot":                 <tfc:metal/double_ingot/red_steel>,
         "scrap":                        <tfc:metal/scrap/red_steel>,
         "dust":                         <tfc:metal/dust/red_steel>,
@@ -265,28 +276,36 @@ global metals as IItemStack[string][string] = {
         "double_sheet":                 <tfc:metal/double_sheet/red_steel>,
     },
     "weak_steel": {
-        "ingot":                        <tfc:metal/ingot/weak_steel>
+        "ingot":                        <tfc:metal/ingot/weak_steel>,
+        "block":                        <contenttweaker:metal/block/weak_steel>,
     },
     "weak_blue_steel": {
-        "ingot":                        <tfc:metal/ingot/weak_blue_steel>
+        "ingot":                        <tfc:metal/ingot/weak_blue_steel>,
+        "block":                        <contenttweaker:metal/block/weak_blue_steel>,
     },
     "weak_red_steel": {
-        "ingot":                        <tfc:metal/ingot/weak_red_steel>
+        "ingot":                        <tfc:metal/ingot/weak_red_steel>,
+        "block":                        <contenttweaker:metal/block/weak_red_steel>,
     },
     "high_carbon_steel": {
-        "ingot":                        <tfc:metal/ingot/high_carbon_steel>
+        "ingot":                        <tfc:metal/ingot/high_carbon_steel>,
+        "block":                        <contenttweaker:metal/block/high_carbon_steel>,
     },
     "high_carbon_blue_steel": {
-        "ingot":                        <tfc:metal/ingot/high_carbon_blue_steel>
+        "ingot":                        <tfc:metal/ingot/high_carbon_blue_steel>,
+        "block":                        <contenttweaker:metal/block/high_carbon_blue_steel>,
     },
     "high_carbon_red_steel": {
-        "ingot":                        <tfc:metal/ingot/high_carbon_red_steel>
+        "ingot":                        <tfc:metal/ingot/high_carbon_red_steel>,
+        "block":                        <contenttweaker:metal/block/high_carbon_red_steel>,
     },
     "high_carbon_black_steel": {
-        "ingot":                        <tfc:metal/ingot/high_carbon_black_steel>
+        "ingot":                        <tfc:metal/ingot/high_carbon_black_steel>,
+        "block":                        <contenttweaker:metal/block/high_carbon_black_steel>,
     },
     "unknown": {
-        "ingot":                        <tfc:metal/ingot/unknown>
+        "ingot":                        <tfc:metal/ingot/unknown>,
+        "block":                        <contenttweaker:metal/block/unknown>,
     },
     // ===== Thermal Foundation ===== //
     "iridium": {
