@@ -12,69 +12,24 @@ import mods.immersiveengineering.BlastFurnace;
 import mods.tconstruct.Casting;
 import mods.tconstruct.Melting;
 
-/**
-
-Variant         Cost (ingots)   Cost (mb)
------------------------------------------
-Nugget                   1/9           16
-Wire                     1/6           24
-Rod                      0.25          36
-Plate                    0.5           72
-Ingot                    1            144
-Dust                     1            144
-Scrap                    1            144
-Coin                     1            144
-Double Ingot             2            288
-Sheet                    2            288
-Sheetmetal               2.25         324
-Scaffolding              2.25         324
-Double Sheet             4            576
-Gear                     4            576
-Block                    9           1296
-Fence                    9/16          81
-
-**/
-
-var applyHeatsToMetals as string[] = [
-    "iridium",
-    "signalum",
-    "lumium",
-    "enderium",
-    "aluminum",
-    "mithril",
-    "electrum",
-    "invar",
-    "constantan",
-    "cobalt",
-    "ardite",
-    "manyullyn",
-    "knightslime",
-    "pigiron",
-    "alubrass",
-    "hop_graphite",
-    "uranium",
-    "red_alloy",
-    "electrotine",
-    "corrupted",
-];
-
-for name in applyHeatsToMetals {
-    var metal = metals[name];
+for name, metal in metals {
     var heatCapacity = metalSpecificHeats[name];
     var meltTemp = metalMeltingHeats[name];
 
-    // Register item heats for every variant
-    for variant, item in metal {
-        ItemRegistry.registerItemHeat(item, heatCapacity, meltTemp, true);
+    if(!isNull(heatCapacity) && !isNull(meltTemp)) {
+        // Register item heats for every variant
+        for variant, item in metal {
+            if(item.definition.owner != "tfc") {
+                ItemRegistry.registerItemHeat(item, heatCapacity, meltTemp, true);
+            }
+        }
+    } else {
+        print("WARNING: Cannot register heat for metal " ~ name ~ " as it is missing a heat capacity or melting temperature");
     }
 }
 
 for name, metal in metals {
-    var anvilTier = 0;
-
-    if(!isNull(metalAnvilTiers[name])) {
-        anvilTier = metalAnvilTiers[name];
-    }
+    var anvilTier = metalAnvilTiers[name];
 
     // ===== Ingot to Dust (Quern & Crusher) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.dust)) {
