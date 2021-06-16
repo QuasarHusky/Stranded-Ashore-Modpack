@@ -84,7 +84,7 @@
             "text" : "Settings",
             "posX" : -76,
             "posY" : 43,
-            "width" : 86,
+            "width" : 74,
             "height" : 20,
             "alignment" : "center",
             "action" : 
@@ -97,15 +97,30 @@
         "mods":
         {
             "text" : "Mods",
-            "posX" : 14,
+            "posX" : 2,
             "posY" : 43,
-            "width" : 86,
+            "width" : 74,
             "height" : 20,
             "alignment" : "center",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "mods"
+            }
+        },
+
+        "credits":
+        {
+            "text" : "<3",
+            "posX" : 80,
+            "posY" : 43,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.credits"
             }
         },
         
@@ -151,7 +166,7 @@
             "alignment" : "bottom_right",
             "action": {
                 "type": "openLink",
-                "link": "https://www.youtube.com/watch?v=DVcDE3LiBgI"
+                "link": "https://www.youtube.com/watch?v=YgejmgLMDLA"
             }
         },
 
@@ -206,7 +221,13 @@
             "posX" : 35,
             "posY" : -28,
             "color": -1,
-            "alignment" : "bottom_left"
+            "hoverColor": 16776960,
+            "alignment" : "bottom_left",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.easteregg"
+            }
         },
 
         "playermessage":
