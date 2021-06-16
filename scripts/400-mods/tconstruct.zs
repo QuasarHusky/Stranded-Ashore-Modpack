@@ -6,6 +6,7 @@ import mods.tconstruct.Fuel;
 recipes.remove(<tconstruct:smeltery_controller>);
 recipes.remove(<tconstruct:seared_furnace_controller>);
 recipes.remove(<tconstruct:tinker_tank_controller>);
+recipes.remove(<tconstruct:materials:18>);
 
 // ===== Smeltery Fuels ===== //
 Fuel.registerFuel(liquids.lava.normal * 2, 300);
