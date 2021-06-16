@@ -152,8 +152,8 @@ for name, metal in metals {
     if(!isNull(metal.ingot) && !isNull(metal.coin)) {
         Anvil.addRecipe(
                 "metal/" ~ name ~ "/coin",
-                metal.coin,
                 metal.ingot,
+                metal.coin,
                 anvilTier,
                 "general", "DRAW_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
         );
