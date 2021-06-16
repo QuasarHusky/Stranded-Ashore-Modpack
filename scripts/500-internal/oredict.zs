@@ -1,4 +1,4 @@
-#priority 500
+#priority 590
 
 // ===== Fuck Chisel ===== //
 // Literally tho.. fuck Chisel
@@ -18,6 +18,7 @@ for item in loadedMods["chisel"].items {
 <ore:sheetIron>.addItems([ <tfc:metal/sheet/wrought_iron> ]);
 <ore:sheetDoubleIron>.addItems([ <tfc:metal/double_sheet/wrought_iron> ]);
 <ore:rodIron>.addItems([ <tfc:metal/rod/wrought_iron> ]);
+<ore:stickIron>.addItems([ <tfc:metal/rod/wrought_iron> ]);
 
 <ore:ingotWroughtIron>.addItems([ <minecraft:iron_ingot> ]);
 

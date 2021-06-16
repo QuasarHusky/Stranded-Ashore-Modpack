@@ -37,11 +37,11 @@ function obliterateRecipes(name as string, item as IItemStack) as void {
         }
     }
 }
-for name, metal in metals {
-    print("===== Generic Recipes for Metal: " ~ name ~ " =====");
 
+for name, metal in metals {
     // ===== Unregister existing recipes ===== //
     // To prevent dupes in the most inefficient way possible :D
+    
     for variant, item in metal {
         obliterateRecipes(name, item);
 
