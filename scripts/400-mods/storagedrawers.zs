@@ -100,39 +100,82 @@ recipes.addShaped("storagedrawers/upgrade_template", <storagedrawers:upgrade_tem
      [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]]
 );
 
-recipes.addShapeless("storagedrawers/upgrade_storage_1_extrusive", <storagedrawers:upgrade_storage:0>, [
-    <storagedrawers:upgrade_template>,
-    <ore:rockIgneousExtrusive>
+recipes.addShaped("storagedrawers/upgrade_storage/tier_1", <storagedrawers:upgrade_storage:0>, [
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:chestWood>, <storagedrawers:upgrade_template>, <ore:chestWood>],
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]
 ]);
 
-recipes.addShapeless("storagedrawers/upgrade_storage_1_intrusive", <storagedrawers:upgrade_storage:0>, [
-    <storagedrawers:upgrade_template>,
-    <ore:rockIgneousIntrusive>
+recipes.addShaped("storagedrawers/upgrade_storage/tier_2", <storagedrawers:upgrade_storage:1>, [
+    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+    [<storagedrawers:upgrade_storage:0>, <ore:chestWood>, <storagedrawers:upgrade_storage:0>],
+    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>]
 ]);
 
-recipes.addShapeless("storagedrawers/upgrade_storage_2", <storagedrawers:upgrade_storage:1>, [
-    <storagedrawers:upgrade_storage:0>,
-    <ore:ingotCopper>
+recipes.addShaped("storagedrawers/upgrade_storage/tier_3", <storagedrawers:upgrade_storage:2>, [
+    [<ore:ingotWroughtIron>, <ore:ingotWroughtIron>, <ore:ingotWroughtIron>],
+    [<storagedrawers:upgrade_storage:1>, <ore:chestWood>, <storagedrawers:upgrade_storage:1>],
+    [<ore:ingotWroughtIron>, <ore:ingotWroughtIron>, <ore:ingotWroughtIron>]
 ]);
 
-recipes.addShapeless("storagedrawers/upgrade_storage_3", <storagedrawers:upgrade_storage:2>, [
-    <storagedrawers:upgrade_storage:1>,
-    <ore:ingotWroughtIron>
+recipes.addShaped("storagedrawers/upgrade_storage/tier_4", <storagedrawers:upgrade_storage:3>, [
+    [<ore:scaffoldingTreatedWood>, <ore:ingotSteel>, <ore:scaffoldingTreatedWood>],
+    [<storagedrawers:upgrade_storage:2>, <immersiveengineering:wooden_device0:0>, <storagedrawers:upgrade_storage:2>],
+    [<ore:scaffoldingTreatedWood>, <ore:ingotSteel>, <ore:scaffoldingTreatedWood>]
 ]);
 
-recipes.addShapeless("storagedrawers/upgrade_storage_4", <storagedrawers:upgrade_storage:3>, [
-    <storagedrawers:upgrade_storage:2>,
-    <ore:ingotGold>
+recipes.addShaped("storagedrawers/upgrade_storage/tier_5", <storagedrawers:upgrade_storage:4>, [
+    [<ore:ingotAluminum>, <ore:plateInvar>, <ore:ingotAluminum>],
+    [<storagedrawers:upgrade_storage:3>, <immersiveengineering:wooden_device0:5>, <storagedrawers:upgrade_storage:3>],
+    [<ore:ingotAluminum>, <ore:plateInvar>, <ore:ingotAluminum>]
 ]);
 
-recipes.addShapeless("storagedrawers/upgrade_storage_5", <storagedrawers:upgrade_storage:4>, [
-    <storagedrawers:upgrade_storage:3>,
-    <ore:gemExquisite>
+recipes.addShaped("storagedrawers/upgrade_storage/infinite", <storagedrawers:upgrade_creative>, [
+    [<ore:blockEnderium>, <storagedrawers:upgrade_storage:4>, <ore:blockEnderium>],
+    [<storagedrawers:upgrade_storage:4>, <additionalpipes:pipe_items_teleport>, <storagedrawers:upgrade_storage:4>],
+    [<ore:blockEnderium>, <storagedrawers:upgrade_storage:4>, <ore:blockEnderium>]
 ]);
 
-recipes.addShapeless("storagedrawers/upgrade_storage_one_stack", <storagedrawers:upgrade_one_stack>, [
-    <storagedrawers:upgrade_template>,
-    <ore:gemChipped>
+recipes.addShaped("storagedrawers/upgrade_storage/tier_one_stack", <storagedrawers:upgrade_one_stack> * 3, [
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<minecraft:flint>, <storagedrawers:upgrade_template>, <minecraft:flint>],
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>]
+]);
+
+recipes.addShaped("storagedrawers/upgrade_storage/status_1", <storagedrawers:upgrade_status:0> * 2, [
+    [<ore:stickWood>, <ore:dustRedstone>, <ore:stickWood>],
+    [<ore:dustRedstone>, <storagedrawers:upgrade_template>, <ore:dustRedstone>],
+    [<ore:stickWood>, <minecraft:redstone_lamp>, <ore:stickWood>]
+]);
+
+recipes.addShaped("storagedrawers/upgrade_storage/status_2", <storagedrawers:upgrade_status:1> * 2, [
+    [<ore:stickTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:dustRedstone>, <storagedrawers:upgrade_status:0>, <ore:dustRedstone>],
+    [<projectred-core:resource_item:1>, <projectred-core:resource_item:12>, <projectred-core:resource_item:1>]
+]);
+
+recipes.addShaped("storagedrawers/upgrade_storage/void", <storagedrawers:upgrade_void> * 2, [
+    [<ore:stickWood>, <ore:plateLead>, <ore:stickWood>],
+    [<ore:plateLead>, <storagedrawers:upgrade_template>, <ore:plateLead>],
+    [<ore:stickWood>, <immersivetech:metal_trash:0>, <ore:stickWood>]
+]);
+
+recipes.addShaped("storagedrawers/upgrade_storage/redstone", <storagedrawers:upgrade_redstone:0> * 2, [
+    [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>],
+    [<ore:dustRedstone>, <storagedrawers:upgrade_template>, <ore:dustRedstone>],
+    [<ore:stickWood>, <minecraft:comparator>, <ore:stickWood>]
+]);
+
+recipes.addShaped("storagedrawers/upgrade_storage/redstone_max", <storagedrawers:upgrade_redstone:1>, [
+    [<ore:stickWood>, <minecraft:redstone_torch>, <ore:stickWood>],
+    [<ore:stickWood>, <storagedrawers:upgrade_redstone:0>, <ore:stickWood>],
+    [<ore:stickWood>, null, <ore:stickWood>]
+]);
+
+recipes.addShaped("storagedrawers/upgrade_storage/redstone_min", <storagedrawers:upgrade_redstone:2>, [
+    [<ore:stickWood>, null, <ore:stickWood>],
+    [<ore:stickWood>, <storagedrawers:upgrade_redstone:0>, <ore:stickWood>],
+    [<ore:stickWood>, <minecraft:redstone_torch>, <ore:stickWood>]
 ]);
 
 // ===== Keys ===== //
@@ -141,7 +184,7 @@ recipes.remove(<storagedrawers:shroud_key>, false);
 recipes.remove(<storagedrawers:personal_key>, false);
 recipes.remove(<storagedrawers:quantify_key>, false);
 
-recipes.addShaped("storagedrawers/drawer_key", <storagedrawers:drawer_key>, 
+recipes.addShapedMirrored("storagedrawers/drawer_key", <storagedrawers:drawer_key>, 
     [[<ore:rock>, <ore:lumber>],
      [null, <ore:lumber>],
      [null, <storagedrawers:upgrade_template>]]
