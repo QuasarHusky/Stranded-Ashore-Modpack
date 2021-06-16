@@ -6,6 +6,21 @@ recipes.remove(<minecraft:noteblock>);
 recipes.remove(<minecraft:brick_block>);
 recipes.remove(<minecraft:sign>);
 recipes.remove(<minecraft:torch>);
+recipes.remove(<minecraft:stone:*>);
+recipes.remove(<minecraft:cobblestone>);
+recipes.remove(<minecraft:dirt:0>);
+recipes.remove(<minecraft:dirt:2>);
+recipes.remove(<minecraft:grass>);
+recipes.remove(<minecraft:ice>);
+recipes.remove(<minecraft:packed_ice>);
+recipes.remove(<minecraft:snow>);
+recipes.remove(<minecraft:lit_pumpkin>);
+recipes.remove(<minecraft:mycelium>);
+recipes.remove(<minecraft:snow_layer>);
+recipes.remove(<minecraft:stone_button>);
+recipes.remove(<minecraft:coal:0>);
+recipes.remove(<minecraft:blaze_powder>);
+recipes.remove(<minecraft:quartz>);
 
 
 
@@ -68,14 +83,6 @@ recipes.addShaped("vanilla/sign", <minecraft:sign> * 3, [
     [<ore:lumber>, <ore:lumber>, <ore:lumber>],
     [null, <ore:stickWood>, null]
 ]);
-
-
-// ===== Brewing Stand ===== //
-recipes.addShaped("vanilla/brewing_stand", <minecraft:brewing_stand>, 
-    [[null, <ore:rodBlaze>, null],
-     [<minecraft:glass_bottle>, <ore:rodBlaze>, <minecraft:glass_bottle>],
-     [<ore:sheetWroughtIron>, <ore:ingotWroughtIron>, <ore:sheetWroughtIron>]]
-);
 
 // ===== Note Block ===== //
 recipes.addShaped("vanilla/noteblock", <minecraft:noteblock>, 
