@@ -1,6 +1,7 @@
 #priority 200
 
 import mods.terrafirmacraft.Quern;
+import mods.immersiveengineering.Crusher;
 
 // ===== Rockify Dirt / Grass ===== //
 for name, rock in rocks {
@@ -67,5 +68,10 @@ for name, rock in rocks {
             rock.sand,
             rock.rock
         ]);
+
+        Crusher.addRecipe(rock.cobble, rock.raw, 1024, rock.rock, 0.70);
+        Crusher.addRecipe(rock.gravel, rock.cobble, 1024, rock.rock, 0.70);
+        Crusher.addRecipe(rock.dirt, rock.gravel, 1024, rock.rock, 0.70);
+        Crusher.addRecipe(rock.sand, rock.dirt, 1024, rock.rock, 0.70);
     }
 }

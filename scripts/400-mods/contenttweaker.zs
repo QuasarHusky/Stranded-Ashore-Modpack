@@ -1,7 +1,7 @@
 #priority 400
 
 // ===== Train Parts ===== //
-recipes.addShaped("trainpart/rail_segment", <contenttweaker:trainpart/rail_segment> * 2, [
+recipes.addShaped("trainpart/rail_segment", <contenttweaker:trainpart/rail_segment>, [
     [<ore:plateSteel>, null, <ore:plateSteel>],
     [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
     [<ore:plateSteel>, null, <ore:plateSteel>]

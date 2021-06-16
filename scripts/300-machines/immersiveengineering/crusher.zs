@@ -73,3 +73,31 @@ Crusher.removeRecipe(<immersiveengineering:metal:19>);
 Crusher.removeRecipe(<thermalfoundation:material:65>);
 Crusher.removeRecipe(<thermalfoundation:material:70>);
 Crusher.removeRecipe(<thermalfoundation:material:99>);
+
+
+
+// ===== Grains ===== //
+Crusher.addRecipe(<tfc:food/barley_flour>, <tfc:food/barley_grain>, 512);
+Crusher.addRecipe(<tfc:food/oat_flour>, <tfc:food/oat_grain>, 512);
+Crusher.addRecipe(<tfc:food/rice_flour>, <tfc:food/rice_grain>, 512);
+Crusher.addRecipe(<tfc:food/rye_flour>, <tfc:food/rye_grain>, 512);
+Crusher.addRecipe(<tfc:food/wheat_flour>, <tfc:food/wheat_grain>, 512);
+Crusher.addRecipe(<tfc:food/cornmeal_flour>, <tfc:food/maize_grain>, 512);
+
+// ===== Olive ===== //
+Crusher.addRecipe(<tfc:food/olive_paste>, <tfc:food/olive>, 512);
+
+// ===== Flux ===== //
+Crusher.addRecipe(<tfc:powder/flux> * 2, <tfc:ore/borax>, 2048);
+Crusher.addRecipe(<tfc:powder/flux>, <ore:rock>, 512);
+
+// ===== Redstone ===== //
+Crusher.addRecipe(<minecraft:redstone> * 4, <tfc:ore/cinnabar>, 2048);
+Crusher.addRecipe(<minecraft:redstone> * 4, <tfc:ore/cryolite>, 2048);
+
+// ===== Bone Meal ===== //
+Crusher.addRecipe(<minecraft:dye:15> * 2, <ore:bone>, 512);
+Crusher.addRecipe(<minecraft:dye:15> * 9, <ore:blockBone>, 512);
+
+// ===== Blaze Powder ===== //
+Crusher.addRecipe(<minecraft:blaze_powder>, <ore:rodBlaze>, 512);

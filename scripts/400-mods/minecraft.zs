@@ -21,8 +21,15 @@ recipes.remove(<minecraft:stone_button>);
 recipes.remove(<minecraft:coal:0>);
 recipes.remove(<minecraft:blaze_powder>);
 recipes.remove(<minecraft:quartz>);
+recipes.removeByRecipeName("minecraft:stick");
 
 
+
+// ===== Stick ===== //
+recipes.addShapeless("vanilla/stick/saw", <immersiveengineering:material:0> * 3, [
+    <ore:lumber>,
+    <ore:saw>.transformDamage(1)
+]);
 
 // ===== Glass Bottle ===== //
 recipes.addShaped("vanilla/glass_bottle", <minecraft:glass_bottle> * 4, 
@@ -32,23 +39,23 @@ recipes.addShaped("vanilla/glass_bottle", <minecraft:glass_bottle> * 4,
 );
 
 // ===== Torch ===== //
-recipes.addShaped("vanilla/torch/charcoal/single", <minecraft:torch> * 3, [
-    [<minecraft:coal:1>],
+recipes.addShaped("vanilla/torch/charcoal/single", <minecraft:torch> * 2, [
+    [<minecraft:coal:1>, <tfc:firestarter>.transformDamage(1)],
     [<minecraft:stick>],
 ]);
 
-recipes.addShaped("vanilla/torch/charcoal/bunch", <minecraft:torch> * 27, [
-    [<minecraft:coal:1>],
+recipes.addShaped("vanilla/torch/charcoal/bunch", <minecraft:torch> * 18, [
+    [<minecraft:coal:1>, <tfc:firestarter>.transformDamage(1)],
     [<tfc:stick_bunch>]
 ]);
 
-recipes.addShaped("vanilla/torch/bituminous_coal/single", <minecraft:torch> * 2, [
-    [<ore:gemCoal>],
+recipes.addShaped("vanilla/torch/bituminous_coal/single", <minecraft:torch>, [
+    [<ore:gemCoal>, <tfc:firestarter>.transformDamage(2)],
     [<minecraft:stick>]
 ]);
 
-recipes.addShaped("vanilla/torch/bituminous_coal/bunch", <minecraft:torch> * 18, [
-    [<ore:gemCoal>],
+recipes.addShaped("vanilla/torch/bituminous_coal/bunch", <minecraft:torch> * 9, [
+    [<ore:gemCoal>, <tfc:firestarter>.transformDamage(2)],
     [<tfc:stick_bunch>]
 ]);
 

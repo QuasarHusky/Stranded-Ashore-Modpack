@@ -95,3 +95,17 @@ recipes.addShaped("projectred/motor", components.motor * 2, [
     [<ore:plateAluminum>, <ore:gearInvar>, <ore:plateAluminum>],
     [<ore:plateAluminum>, <immersiveengineering:metal_decoration0:0>, <ore:plateAluminum>]
 ]);
+
+// ===== Screwdriver ===== //
+recipes.addShapedMirrored("projectred/screwdriver", <projectred-core:screwdriver>, [
+    [null, null, <ore:stickIron>],
+    [null, <ore:ingotRedAlloy>, null],
+    [<ore:leather>, null, null]
+]);
+
+// ===== Multimeter ===== //
+recipes.addShapedMirrored("projectred/multimeter", <projectred-core:multimeter>, [
+    [<ore:ingotRedAlloy>, null, <ore:ingotElectrotineAlloy>],
+    [<ore:wireCopper>, <ore:plateIron>, <ore:wireCopper>],
+    [<ore:wireCopper>, <ore:plateIron>, <ore:wireCopper>]
+]);

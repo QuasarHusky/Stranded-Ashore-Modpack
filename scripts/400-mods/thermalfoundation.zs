@@ -313,11 +313,11 @@ recipes.addShaped("gear/stone", <thermalfoundation:material:23>,
 );
 
 // ===== Redstone Servo ===== //
-recipes.addShaped("component/servo", components.servo,
-    [[components.motor, <immersiveengineering:wirecoil:6>, components.motor],
-     [null, metals.invar.plate, null],
-     [components.motor, <immersiveengineering:wirecoil:6>, components.motor]]
-);
+recipes.addShaped("component/servo", components.servo, [
+    [null, <ore:stickAluminum>, null],
+    [<immersiveengineering:metal_decoration0:1>, <ore:gearSteel>, <immersiveengineering:metal_decoration0:1>],
+    [<immersiveengineering:metal_decoration0:1>, <ore:gearSteel>, <immersiveengineering:metal_decoration0:1>]
+]);
 
 // ===== Flywheel ===== //
 recipes.addShaped("component/flywheel", components.flywheel * 3, [

@@ -14,3 +14,6 @@ Mixer.addRecipe(<liquid:salt_water> * 25, <liquid:fresh_water> * 25, [<ore:dustS
 
 // ===== Liquid Concrete ===== //
 Mixer.addRecipe(<liquid:concrete> * 100, <liquid:fresh_water> * 500, [<tfc:aggregate>], 64);
+
+// ===== Tannin ===== //
+Mixer.addRecipe(<liquid:tannin> * 1000, <liquid:fresh_water> * 100, [<ore:logWood>], 64);

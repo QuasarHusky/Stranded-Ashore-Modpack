@@ -167,6 +167,13 @@ recipes.addShaped("buildcraft/redstone_engine", <buildcraftcore:engine:0>,
      [<ore:gearBronze>, <minecraft:piston>, <ore:gearBronze>]]
 );
 
+// ===== Stirling Engine ===== //
+recipes.addShaped("buildcraft/stirling_engine", <buildcraftcore:engine:1>, 
+    [[<ore:stone>, <ore:gearStone>, <ore:stone>],
+     [null, materials.hardened_glass.block, null],
+     [<ore:gearInvar>, <minecraft:piston>, <ore:gearInvar>]]
+);
+
 // ===== Waterproofing ===== //
 recipes.addShapeless("buildcraft/waterproof", <buildcrafttransport:waterproof> * 6, 
     [<ore:slimeball>, <ore:dye>]

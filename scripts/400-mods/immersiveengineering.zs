@@ -67,7 +67,7 @@ recipes.remove(<immersivetech:metal_device>);
 recipes.removeByRecipeName("immersivetech:stone_decoration/reinforced_cokebrick");
 
 // ===== Treated Stick ===== //
-recipes.addShapeless("immersiveengineering/treated_stick/saw", <immersiveengineering:material:0> * 6, [
+recipes.addShapeless("immersiveengineering/treated_stick/saw", <immersiveengineering:material:0> * 3, [
     <ore:lumberTreated>,
     <ore:saw>.transformDamage(1)
 ]);
@@ -79,20 +79,20 @@ recipes.addShaped("immersiveengineering/treated_planks", <immersiveengineering:t
 ]);
 
 // ===== Kiln Brick ===== //
-recipes.addShapedMirrored("immersiveengineering/kiln_brick", <immersiveengineering:stone_decoration:10> * 2, [
+recipes.addShapedMirrored("immersiveengineering/kiln_brick", <immersiveengineering:stone_decoration:10>, [
     [<ore:plateSteel>, <minecraft:brick_block>],
     [<minecraft:brick_block>, <ore:plateSteel>],
 ]);
 
 // ===== Coke Brick ===== //
-recipes.addShaped("immersiveengineering/coke_brick", <immersiveengineering:stone_decoration:0> * 3, [
+recipes.addShaped("immersiveengineering/coke_brick", <immersiveengineering:stone_decoration:0>, [
     [<minecraft:brick_block>, <ore:plateInvar>, <minecraft:brick_block>],
     [<ore:plateInvar>, null, <ore:plateInvar>],
     [<minecraft:brick_block>, <ore:plateInvar>, <minecraft:brick_block>]
 ]);
 
 // ===== Blast Brick ===== //
-recipes.addShaped("immersiveengineering/blast_brick", <immersiveengineering:stone_decoration:1> * 9, [
+recipes.addShaped("immersiveengineering/blast_brick", <immersiveengineering:stone_decoration:1> * 3, [
     [<immersiveengineering:stone_decoration:0>, <ore:plankTreatedWood>, <immersiveengineering:stone_decoration:0>],
     [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
     [<immersiveengineering:stone_decoration:0>, <ore:plankTreatedWood>, <immersiveengineering:stone_decoration:0>]
@@ -354,7 +354,7 @@ recipes.addShapedMirrored("immersiveengineering/fluid_pump", <immersiveengineeri
 // ===== Fluid Outlet ===== //
 recipes.addShapedMirrored("immersiveengineering/fluid_outlet", <immersiveengineering:metal_device0:6>, [
     [<ore:plateAluminum>, components.fluid_pipe, <ore:plateAluminum>],
-    [<tfc:wrought_iron_grill>, components.motor, <tfc:wrought_iron_grill>],
+    [<tfc:wrought_iron_grill>, null, <tfc:wrought_iron_grill>],
     [<ore:plateAluminum>, <tfc:wrought_iron_grill>, <ore:plateAluminum>]
 ]);
 
@@ -370,12 +370,6 @@ recipes.addShaped("immersiveengineering/windmill/blade", <immersiveengineering:m
     [<ore:fenceTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
     [<ore:fenceTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
     [<ore:fenceTreatedWood>, <ore:stickTreatedWood>, <ore:stickTreatedWood>]
-]);
-
-recipes.addShaped("immersiveengineering/windmill/sail", <immersiveengineering:wooden_device1:1>, [
-    [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
-    [<immersiveengineering:material:11>, <immersiveengineering:material:8>, <immersiveengineering:material:11>],
-    [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]
 ]);
 
 recipes.addShaped("immersiveengineering/windmill", <immersiveengineering:wooden_device1:1>, [
@@ -402,4 +396,31 @@ recipes.addShaped("immersiveposts/postbase", <immersiveposts:postbase> * 2, [
     [<ore:stone>, <ore:brick>, <ore:stone>],
     [<ore:stone>, <ore:brick>, <ore:stone>],
     [<ore:stone>, <ore:brick>, <ore:stone>]
+]);
+
+// ===== Powered Lantern ===== //
+recipes.addShaped("immersiveengineering/powered_lantern", <immersiveengineering:metal_device1:4>, [
+    [null, <ore:plateIron>, null],
+    [<ore:paneGlassColorless>, <ore:dustGlowstone>, <ore:paneGlassColorless>],
+    [<ore:plateIron>, <ore:wireCopper>, <ore:plateIron>]
+]);
+
+// ===== Floodlight ===== //
+recipes.addShaped("immersiveengineering/floodlight", <immersiveengineering:metal_device1:9>, [
+    [<ore:plateSilver>, <ore:plateSilver>, <ore:plateSilver>],
+    [<immersiveengineering:metal_device1:4>, <immersiveengineering:metal_device1:4>, <immersiveengineering:metal_device1:4>],
+    [<ore:blockSheetmetalAluminum>, <immersiveengineering:wirecoil:0>, <ore:blockSheetmetalAluminum>]
+]);
+
+// ===== Charging Station ===== //
+recipes.addShaped("immersiveengineering/charging_station", <immersiveengineering:metal_device1:5>, [
+    [<ore:plateAluminum>, <ore:blockGlass>, <ore:blockGlass>],
+    [<ore:plateAluminum>, <immersiveengineering:connector:0>, <ore:blockGlass>],
+    [<immersiveengineering:wirecoil:0>, <ore:plateAluminum>, <ore:plateAluminum>]
+]);
+
+// ===== Engineer's Manual ===== //
+recipes.addShapeless("immersiveengineering/manual", <immersiveengineering:tool:3>, [
+    <ore:book>,
+    <immersiveengineering:tool:0>.reuse()
 ]);
