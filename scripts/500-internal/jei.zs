@@ -6,6 +6,7 @@ import mods.jei.JEI;
 JEI.hideCategory("minecraft.fuel");
 JEI.hideCategory("minecraft.smelting");
 JEI.hideCategory("minecraft.anvil");
+JEI.hideCategory("minecraft.brewing");
 JEI.hideCategory("exnihilocreatio:fluid_on_top");
 JEI.hideCategory("exnihilocreatio:fluid_transform");
 JEI.hideCategory("exnihilocreatio:fluid_block_transform");
