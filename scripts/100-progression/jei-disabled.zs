@@ -1,8 +1,8 @@
-#priority 500
+#priority 100
+#packmode normal freeplay
 
 import mods.jei.JEI;
 
-// Hide JEI categories
 JEI.hideCategory("minecraft.fuel");
 JEI.hideCategory("minecraft.smelting");
 JEI.hideCategory("minecraft.anvil");
