@@ -1,0 +1,72 @@
+{
+    "images":
+    {
+        "pop_hoosk":
+        {
+            "image" : "modpack:textures/gui/pop_0.png",
+            "hoverImage" : "modpack:textures/gui/pop_1.png",
+            "posX" : -100,
+            "posY" : -200,
+            "width" : 200,
+            "height" : 200,
+            "alignment" : "bottom_center"
+        }
+    },
+    
+    "buttons": {
+        "back":
+        {
+            "text" : "Back",
+            "posX" : 10,
+            "posY" : 10,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "top_left",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui": "mainmenu"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "easter_egg":
+        {
+            "text" : "Oh wow, an Easter Egg!",
+            "posX" : 0,
+            "posY" : 20,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "artist":
+        {
+            "text" : "Artwork by Ambrince",
+            "posX" : 0,
+            "posY" : 34,
+            "anchor": "middle",
+            "color" : -1,
+            "hoverColor": 16776960,
+            "alignment" : "top_center",
+            "action": {
+                "type": "openLink",
+                "link": "https://twitter.com/DioctoDimension"
+            }
+        }
+    },
+    
+    "other":
+    {
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : false,
+            "synced": true
+        }
+    }
+}
