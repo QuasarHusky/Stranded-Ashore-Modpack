@@ -1,0 +1,9 @@
+PRIORITY    SCRIPT GROUP
+---         contenttweaker
+600         registries
+500         internal
+400         mods
+300         machines
+200         generic
+100         progression
+  0         debug

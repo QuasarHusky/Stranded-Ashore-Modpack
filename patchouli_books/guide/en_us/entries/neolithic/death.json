@@ -1,0 +1,33 @@
+{
+    "name": "Death",
+    "icon": "props:props:86",
+    "category": "patchouli:neolithic",
+    "sortnum": 1100,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Death in $(thing)Stranded Ashore$() is a punishing experience, especially if you die while out exploring. When you die, all of the items in your inventory will be dropped into the world as a $(item)totem of holding$(). This keeps them safe until you're able to return and get them back. $(thing)Left-clicking$() the $(item)totem$() will give a few of your items back each time."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/death/totem_of_holding.png"
+            ],
+            "border": true,
+            "text": ""
+        },
+        {
+            "type": "text",
+            "text": "$(l)Beware!$() If you die while your $(item)totem of holding$() still has items, all of the items will be dropped on the ground and left to despawn.$(2br)When playing in $(thing)multiplayer$(), only the person who died can claim their items back from the $(item)totem$(), so you can't send your friends on rescue missions unless you're with them too."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/death/totem_of_holding.png"
+            ],
+            "border": true,
+            "text": ""
+        }
+    ]
+}

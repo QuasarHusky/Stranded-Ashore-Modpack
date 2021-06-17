@@ -1,0 +1,10 @@
+{
+    "name": "Water Strainers",
+    "icon": "waterstrainer:strainer_survivalist",
+    "category": "patchouli:neolithic",
+    "sortnum": 1750,
+    "advancement": "tfc:main/iron_age",
+    "pages": [
+        
+    ]
+}

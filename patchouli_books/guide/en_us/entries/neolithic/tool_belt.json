@@ -1,0 +1,10 @@
+{
+    "name": "Tool Belts",
+    "icon": "toolbelt:belt",
+    "category": "patchouli:neolithic",
+    "sortnum": 700,
+    "advancement": "tfc:main/iron_age",
+    "pages": [
+        
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Flasks",
+    "icon": "waterflasks:leather_flask",
+    "category": "patchouli:neolithic",
+    "sortnum": 900,
+    "advancement": "tfc:main/logging",
+    "pages": [
+        
+    ]
+}

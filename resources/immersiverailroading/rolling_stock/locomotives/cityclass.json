@@ -1,0 +1,72 @@
+{
+    "era": "steam",
+    "name": "City Class 4-4-0",
+    "works": "GWR Swindon Works",
+    "model": "immersiverailroading:models/rolling_stock/locomotives/cityclass/cityclass.obj",
+        "modeler": "TheKnowItAll5",
+        "pack": "BoCo's British Pack",
+    "tex_variants": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4"
+    },
+    "darken_model": "-0.05",
+    "properties": {
+        "max_psi": 200,
+        "water_capacity_l": 5000,
+        "horsepower": 2500,
+        "tractive_effort_lbf": 20000,
+        "max_speed_kmh": 100,
+        "valve_gear": "stephenson",
+        "weight_kg": 50000
+    },
+    "firebox": {
+        "slots": 12,
+        "width": 4
+    },
+    "passenger": {
+        "slots": 2,
+        "center_x": -3,
+        "center_y": 2,
+        "length": 0.2,
+        "width": 2.35,
+        "should_sit": false
+    },
+    "trucks": {
+        "front": 2,
+        "rear": -1
+    },
+    "couplers": {
+        "front_offset": 0.1,
+        "rear_offset": 0
+    },
+    "sounds": {
+        "whistle": "sounds/steam/whistle.ogg",
+        "idle": "sounds/steam/idle.ogg",
+        "chuff": "sounds/steam/chuff.ogg",
+        "quilling": [
+            {
+                "pull_start": 0.15,
+                "pull_end": 0.45,
+                "pitch_start": 0.75,
+                "pitch_end": 0.85,
+                "sample": "sounds/steam/quill.ogg"
+            },
+            {
+                "pull_start": 0.35,
+                "pull_end": 0.55,
+                "pitch_start": 0.95,
+                "pitch_end": 1,
+                "sample": "sounds/steam/quill.ogg"
+            },
+            {
+                "pull_start": 0.6,
+                "pull_end": 0.7,
+                "pitch_start": 0.95,
+                "pitch_end": 1,
+                "sample": "sounds/steam/quill_high.ogg"
+            }
+        ]
+    }
+}

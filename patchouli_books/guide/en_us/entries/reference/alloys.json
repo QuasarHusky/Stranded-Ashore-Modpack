@@ -1,0 +1,103 @@
+{
+    "name": "Alloys",
+    "icon": "tfc:metal/ingot/bronze",
+    "category": "patchouli:reference",
+    "pages": [
+        {
+            "type": "spotlight",
+            "title": "Bronze",
+            "item": "tfc:metal/ingot/bronze",
+            "text": "$(l)Ratio$()$(br)88% - 92% Copper$(br)8% - 12% Tin$(2br)$(l)Recommended$()$(br)9x Copper$(br)1x Tin"
+        },
+        {
+            "type": "spotlight",
+            "title": "Bismuth Bronze",
+            "item": "tfc:metal/ingot/bismuth_bronze",
+            "text": "$(l)Ratio$()$(br)20% - 30% Zinc$(br)50% - 65% Copper$(br)10% - 20% Bismuth$(2br)$(l)Recommended$()$(br)2x Zinc$(br)5x Copper$(br)1x Bismuth"
+        },
+        {
+            "type": "spotlight",
+            "title": "Black Bronze",
+            "item": "tfc:metal/ingot/black_bronze",
+            "text": "$(l)Ratio$()$(br)50% - 70% Copper$(br)10% - 25% Silver$(br)10% - 25% Gold$(2br)$(l)Recommended$()$(br)2x Copper$(br)1x Silver$(br)1x Gold"
+        },
+        {
+            "type": "spotlight",
+            "title": "Brass",
+            "item": "tfc:metal/ingot/brass",
+            "text": "$(l)Ratio$()$(br)88% - 92% Copper$(br)8% - 12% Zinc$(2br)$(l)Recommended$()$(br)9x Copper$(br)1x Zinc"
+        },
+        {
+            "type": "spotlight",
+            "title": "Rose Gold",
+            "item": "tfc:metal/ingot/rose_gold",
+            "text": "$(l)Ratio$()$(br)15% - 30% Copper$(br)70% - 85% Gold$(2br)$(l)Recommended$()$(br)1x Copper$(br)4x Gold"
+        },
+        {
+            "type": "spotlight",
+            "title": "Sterling Silver",
+            "item": "tfc:metal/ingot/sterling_silver",
+            "text": "$(l)Ratio$()$(br)20% - 40% Copper$(br)60% - 80% Silver$(2br)$(l)Recommended$()$(br)3x Copper$(br)7x Silver"
+        },
+        {
+            "type": "spotlight",
+            "title": "Weak Steel",
+            "item": "tfc:metal/ingot/weak_steel",
+            "text": "$(l)Ratio$()$(br)50% - 70% Steel$(br)15% - 25% Nickel$(br)15% - 25% Black Bronze$(2br)$(l)Recommended$()$(br)3x Steel$(br)1x Nickel$(br)1x Black Bronze"
+        },
+        {
+            "type": "spotlight",
+            "title": "Weak Blue Steel",
+            "item": "tfc:metal/ingot/weak_blue_steel",
+            "text": "$(l)Ratio$()$(br)50% - 55% Black Steel$(br)20% - 25% Steel$(br)10% - 15% Bismuth Bronze$(br)10% - 15% Sterling Silver$(2br)$(l)Recommended$()$(br)10x Black Steel$(br)5x Steel$(br)2x Bismuth Bronze$(br)3x Sterling Silver"
+        },
+        {
+            "type": "spotlight",
+            "title": "Weak Red Steel",
+            "item": "tfc:metal/ingot/weak_red_steel",
+            "text": "$(l)Ratio$()$(br)50% - 55% Black Steel$(br)20% - 25% Steel$(br)10% - 15% Brass$(br)10% - 15% Rose Gold$(2br)$(l)Recommended$()$(br)10x Black Steel$(br)5x Steel$(br)2x Brass$(br)3x Rose Gold"
+        },
+        {
+            "type": "spotlight",
+            "title": "Invar",
+            "item": "thermalfoundation:material:162",
+            "text": "$(l)Ratio$()$(br)1x Wrought Iron$(br)1x Nickel$(2br)$(thing)Alloy Kiln & Smeltery Only"
+        },
+        {
+            "type": "spotlight",
+            "title": "Red Alloy",
+            "item": "projectred-core:resource_item:103",
+            "text": "$(l)Ratio$()$(br)1x Silver Ingot$(br)6x Redstone$(2br)$(thing)Alloy Kiln Only"
+        },
+        {
+            "type": "spotlight",
+            "title": "Red Iron Compound",
+            "item": "projectred-core:resource_item:251",
+            "text": "$(l)Ratio$()$(br)1x Wrought Iron Ingot$(br)1x Red Alloy Ingot$(2br)$(thing)Alloy Kiln Only"
+        },
+        {
+            "type": "spotlight",
+            "title": "Electrotine Alloy",
+            "item": "projectred-core:resource_item:104",
+            "text": "$(l)Ratio$()$(br)1x Tin Ingot$(br)1x Bismuth Dust$(2br)$(thing)Alloy Kiln Only"
+        },
+        {
+            "type": "spotlight",
+            "title": "Electrotine Iron",
+            "item": "projectred-core:resource_item:252",
+            "text": "$(l)Ratio$()$(br)1x Wrought Iron Ingot$(br)1x Electrotine Ingot$(2br)$(thing)Alloy Kiln Only"
+        },
+        {
+            "type": "spotlight",
+            "title": "Aluminum",
+            "item": "thermalfoundation:material:132",
+            "text": "$(l)Ratio$()$(br)2x Wrought Iron$(br)1x Lead$(br)1x Zinc$(2br)$(thing)Smeltery Only"
+        },
+        {
+            "type": "spotlight",
+            "title": "Aluminum Brass",
+            "item": "tconstruct:ingots:5",
+            "text": "$(l)Ratio$()$(br)2x Brass$(br)1x Aluminum$(2br)$(thing)Smeltery Only"
+        }
+    ]
+}

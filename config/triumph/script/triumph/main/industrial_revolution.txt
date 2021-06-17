@@ -1,0 +1,9 @@
+setIcon(<thermalfoundation:material:161>)
+setTitle("Industrial Revolution")
+setDescription("Obtain an Electrum Ingot")
+
+addParent("triumph:main/light_engineering")
+
+setFrameType("challenge")
+
+addCriteria("impossible", "minecraft:impossible")

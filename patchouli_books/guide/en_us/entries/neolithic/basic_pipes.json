@@ -1,0 +1,10 @@
+{
+    "name": "Basic Pipes",
+    "icon": "buildcrafttransport:pipe_stone_item",
+    "category": "patchouli:neolithic",
+    "sortnum": 2700,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        
+    ]
+}

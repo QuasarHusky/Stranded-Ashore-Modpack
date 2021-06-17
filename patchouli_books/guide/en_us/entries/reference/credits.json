@@ -1,0 +1,16 @@
+{
+    "name": "Credits",
+    "icon": "tfcthings:crown/gold_garnet",
+    "category": "patchouli:reference",
+    "sortnum": -100,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(l)Created By$()$(br)$(li)QuasarHusky$(2br)$(l)Co-Creators$()$(br)$(li)SnykierZaerthaun$(2br)$(l)Server Hosting$()$(br)$(li)Sparks_Skywere$(2br)$(l)Friends & Testers$()$(br)$(li)Ambrince$(br)$(li)Ebonglow$(br)$(li)KorsatFox$(br)$(li)StaticDutchie"
+        },
+        {
+            "type": "text",
+            "text": "$(l)Dedicated To My Friends$()$(2br)This modpack wouldn't exist without my friends, who have always supported me and pushed me to do the things I love most. Making this a fun experience for us to play together was the aim, and it's turned out better than I could have ever imagined. They're the most amazing people in my life, and I will love and cherish them every day $(#ff0099)♥$()$(2br)                    $(thing)- Quasar$()"
+        }
+    ]
+}

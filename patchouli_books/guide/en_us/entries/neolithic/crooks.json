@@ -1,0 +1,10 @@
+{
+    "name": "Crooks",
+    "icon": "exnihilocreatio:crook_stone",
+    "category": "patchouli:neolithic",
+    "sortnum": 1400,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Decorative Chisels",
+    "icon": "chisel:chisel_iron",
+    "category": "patchouli:neolithic",
+    "sortnum": 1900,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        
+    ]
+}

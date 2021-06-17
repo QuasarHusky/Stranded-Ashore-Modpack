@@ -84,7 +84,7 @@
             "text" : "Settings",
             "posX" : -76,
             "posY" : 43,
-            "width" : 86,
+            "width" : 74,
             "height" : 20,
             "alignment" : "center",
             "action" : 
@@ -97,15 +97,30 @@
         "mods":
         {
             "text" : "Mods",
-            "posX" : 14,
+            "posX" : 2,
             "posY" : 43,
-            "width" : 86,
+            "width" : 74,
             "height" : 20,
             "alignment" : "center",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "mods"
+            }
+        },
+
+        "credits":
+        {
+            "text" : "<3",
+            "posX" : 80,
+            "posY" : 43,
+            "width" : 20,
+            "height" : 20,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.credits"
             }
         },
         
@@ -142,22 +157,22 @@
     {
         "pack_version":
         {
-            "text" : "Stranded Ashore v1.2.0",
+            "text" : "Stranded Ashore\nv1.3.0 - Steel Age",
             "posX" : -10,
-            "posY" : -66,
+            "posY" : -75,
             "color" : -1,
             "hoverColor": 16776960,
             "anchor": "end",
             "alignment" : "bottom_right",
             "action": {
                 "type": "openLink",
-                "link": "https://www.youtube.com/watch?v=DVcDE3LiBgI"
+                "link": "https://www.youtube.com/watch?v=YgejmgLMDLA"
             }
         },
 
         "pack_update":
         {
-            "text" : "web:https://quasarhusky.uk/stranded-ashore/version-check?v=1.2.0",
+            "text" : "web:https://quasarhusky.uk/stranded-ashore/version-check?v=1.3.0",
             "posX" : 0,
             "posY" : 5,
             "color" : 16776960,
@@ -206,7 +221,13 @@
             "posX" : 35,
             "posY" : -28,
             "color": -1,
-            "alignment" : "bottom_left"
+            "hoverColor": 16776960,
+            "alignment" : "bottom_left",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.easteregg"
+            }
         },
 
         "playermessage":

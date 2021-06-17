@@ -1,0 +1,40 @@
+{
+    "name": "Lighting & Illumination",
+    "icon": "tfc:metal/lamp/silver",
+    "category": "patchouli:neolithic",
+    "sortnum": 1000,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        {
+            "type": "text",
+            "text": "During the night and in areas with no sunlight, it's nearly impossible to see anything through the darkness. You'll need to come prepared with a $(thing)light source$() if you want to adventure in the dark.$(2br)Holding a $(item)torch$() or other light-emitting item will light up the area around you as you move, allowing you to see in dark places."
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/light/cave.png"
+            ],
+            "border": true,
+            "text": ""
+        },
+        {
+            "type": "image",
+            "images": [
+                "modpack:guide/neolithic/light/full_moon.png",
+                "modpack:guide/neolithic/light/darkness.png"
+            ],
+            "border": true,
+            "text": "$(o)Light level on a full moon vs. normal nights"
+        },
+        {
+            "type": "text",
+            "text": "Only the light from a $(thing)full moon$() is strong enough to illuminate the world at night.$(2br)You never know what predators may be lurking in the shadows."
+        },
+        {
+            "type": "crafting",
+            "recipe": "crafttweaker:mining_helmet",
+            "title": "Mining Helmet",
+            "text": "A $(item)mining helmet$() acts as a wearable source of light. It goes into your $(thing)helmet$() slot like any other armor piece and keeps the area around you lit."
+        }
+    ]
+}

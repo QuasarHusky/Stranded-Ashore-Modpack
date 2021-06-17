@@ -1,0 +1,10 @@
+{
+    "name": "Silkworms",
+    "icon": "exnihilocreatio:item_material:2",
+    "category": "patchouli:neolithic",
+    "sortnum": 1700,
+    "advancement": "tfc:main/pick_rock",
+    "pages": [
+        
+    ]
+}

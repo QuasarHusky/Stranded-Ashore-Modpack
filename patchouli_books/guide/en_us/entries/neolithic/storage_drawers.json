@@ -1,0 +1,10 @@
+{
+    "name": "Storage Drawers",
+    "icon": "storagedrawers:basicdrawers:2",
+    "category": "patchouli:neolithic",
+    "sortnum": 1800,
+    "advancement": "tfc:main/logging",
+    "pages": [
+        
+    ]
+}

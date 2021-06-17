@@ -1,0 +1,9 @@
+setIcon(<tfcthings:crown/gold_topaz>)
+setTitle("Achievements")
+setDescription("Challenges for the most dedicated players to complete")
+setBackground("tfc:textures/blocks/stonetypes/bricks/chert.png")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("location", "minecraft:location")

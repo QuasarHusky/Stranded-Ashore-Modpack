@@ -1,0 +1,8 @@
+setIcon(<minecraft:iron_helmet>)
+setTitle("Hands-Free Technology")
+setDescription("Create a Mining Helmet, which acts as a personal source of light when worn")
+
+addParent("triumph:main/iron_age")
+
+criteria = addCriteria("inventory_changed", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:iron_helmet>)

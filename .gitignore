@@ -4,6 +4,8 @@
 !/config/**
 !/resourcepacks/
 !/resourcepacks/**
+!/patchouli_books/
+!/patchouli_books/**
 !/resources/
 !/resources/**
 !/scripts/
@@ -11,9 +13,6 @@
 !/background.png
 !/LICENSE
 !/manifest.json
-
-config/antiqueatlas/biome_textures.json
-config/splash.properties
-config/BlockDrops/modVersions.txt
-config/worldedit/worldedit.properties
-config/buildcraft/detailed.properties
+!/modlist.html
+/config/triumph/documentation/**
+/config/triumph/script-builtin/**

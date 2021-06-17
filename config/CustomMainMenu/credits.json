@@ -1,0 +1,156 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "modpack:textures/gui/logo.png",
+            "posX" : -70,
+            "posY" : 10,
+            "width" : 210,
+            "height" : 210,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons": {
+        "back":
+        {
+            "text" : "Back",
+            "posX" : -50,
+            "posY" : -30,
+            "width" : 100,
+            "height" : 20,
+            "alignment" : "bottom_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui": "mainmenu"
+            }
+        }
+    },
+    
+    "labels":
+    {
+        "title":
+        {
+            "text" : "Credits",
+            "posX" : 0,
+            "posY" : 65,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "author_title":
+        {
+            "text" : "Created By",
+            "posX" : 0,
+            "posY" : 85,
+            "anchor": "middle",
+            "color" : 16776960,
+            "alignment" : "top_center"
+        },
+        "author_1":
+        {
+            "text" : "QuasarHusky",
+            "posX" : 0,
+            "posY" : 95,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "cocreator_title":
+        {
+            "text" : "Co-Creators",
+            "posX" : 0,
+            "posY" : 115,
+            "anchor": "middle",
+            "color" : 16776960,
+            "alignment" : "top_center"
+        },
+        "cocreator_1":
+        {
+            "text" : "SnykierZaerthaun",
+            "posX" : 0,
+            "posY" : 125,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "hosting_title":
+        {
+            "text" : "Server Hosting",
+            "posX" : 0,
+            "posY" : 145,
+            "anchor": "middle",
+            "color" : 16776960,
+            "alignment" : "top_center"
+        },
+        "hosting_1":
+        {
+            "text" : "Sparks_Skywere",
+            "posX" : 0,
+            "posY" : 155,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "testers_title":
+        {
+            "text" : "Friends & Testers",
+            "posX" : 0,
+            "posY" : 175,
+            "anchor": "middle",
+            "color" : 16776960,
+            "alignment" : "top_center"
+        },
+        "testers_1":
+        {
+            "text" : "Ambrince",
+            "posX" : 0,
+            "posY" : 185,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "testers_2":
+        {
+            "text" : "Ebonglow",
+            "posX" : 0,
+            "posY" : 195,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "testers_3":
+        {
+            "text" : "KorsatFox",
+            "posX" : 0,
+            "posY" : 205,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        },
+        "testers_4":
+        {
+            "text" : "StaticDutchie",
+            "posX" : 0,
+            "posY" : 215,
+            "anchor": "middle",
+            "color" : -1,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "other":
+    {
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : false,
+            "synced": true
+        }
+    }
+}

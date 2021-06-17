@@ -1,0 +1,10 @@
+setIcon(<tfc:stone/axe/sedimentary>)
+setTitle("Stone Age")
+setDescription("Knap the rocks into an axe head and craft it with a stick to make a rock axe")
+
+addParent("triumph:main/sticks_and_stones")
+
+setFrameType("goal")
+
+criteria = addCriteria("inventory_changed", "minecraft:inventory_changed")
+criteria.addItem(<ore:axeStone>)

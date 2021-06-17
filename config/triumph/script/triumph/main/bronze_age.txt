@@ -1,0 +1,9 @@
+setIcon(<tfc:metal/ingot/bronze>)
+setTitle("Bronze Age")
+setDescription("Obtain a Bronze Ingot")
+
+addParent("triumph:main/copper_age")
+
+setFrameType("goal")
+
+addCriteria("impossible", "minecraft:impossible")

@@ -1,0 +1,10 @@
+setIcon(<tfcthings:crown/gold_topaz>)
+setTitle("Completionist")
+setDescription("100% complete every achievement")
+
+addParent("triumph:main/interstellar_age")
+
+setFrameType("challenge")
+setRewardExperience(50000)
+
+criteria = addCriteria("impossible", "minecraft:impossible")

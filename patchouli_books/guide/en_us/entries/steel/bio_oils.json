@@ -1,0 +1,35 @@
+{
+    "name": "Bio Oils",
+    "icon": "tfc:crop/seeds/tomato",
+    "category": "patchouli:steel",
+    "sortnum": -1,
+    "pages": [
+        {
+            "type": "patchouli:ie_squeezer",
+            "title": "Seed Oil",
+            "input": "ore:listAllseeds",
+            "output": "",
+            "fluid_name": "Seed Oil",
+            "fluid_texture": "thermalfoundation:textures/blocks/fluid/seed_oil_still.png",
+            "fluid_mb": 50
+        },
+        {
+            "type": "patchouli:ie_squeezer",
+            "title": "Plant Oil",
+            "input": "ore:categoryVegetable",
+            "output": "",
+            "fluid_name": "Plant Oil",
+            "fluid_texture": "immersiveengineering:textures/blocks/fluid/plantoil_still.png",
+            "fluid_mb": 50
+        },
+        {
+            "type": "patchouli:ie_squeezer",
+            "title": "Sap",
+            "input": "ore:treeSapling",
+            "output": "thermalfoundation:material:832",
+            "fluid_name": "Seed Oil",
+            "fluid_texture": "thermalfoundation:textures/blocks/fluid/sap_still.png",
+            "fluid_mb": 20
+        }
+    ]
+}

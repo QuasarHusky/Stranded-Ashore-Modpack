@@ -1,0 +1,11 @@
+setIcon(<tfc:rock/granite>)
+setTitle("Stranded Ashore")
+setDescription("")
+setBackground("tfc:textures/blocks/stonetypes/raw/granite.png")
+
+setFrameType("challenge")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("location", "minecraft:location")

@@ -1,0 +1,10 @@
+{
+    "name": "Waystones",
+    "icon": "waystones:waystone",
+    "category": "patchouli:neolithic",
+    "sortnum": 1200,
+    "advancement": "tfc:main/bronze_age",
+    "pages": [
+        
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "Composting",
+    "icon": "exnihilocreatio:block_barrel0",
+    "category": "patchouli:neolithic",
+    "sortnum": 1500,
+    "advancement": "tfc:main/logging",
+    "pages": [
+        
+    ]
+}
