@@ -13,7 +13,6 @@ JEI.hideCategory("exnihilocreatio:fluid_block_transform");
 JEI.hideCategory("exnihilocreatio:hammer");
 JEI.hideCategory("exnihilocreatio:crucible_wood");
 JEI.hideCategory("exnihilocreatio:crucible_stone");
-JEI.hideCategory("exnihilocreatio:heat_sources");
 JEI.hideCategory("buildcraft:category_heatable");
 JEI.hideCategory("buildcraft:category_distiller");
 JEI.hideCategory("buildcraft:category_coolable");

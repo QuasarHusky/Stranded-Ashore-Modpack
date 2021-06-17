@@ -140,3 +140,10 @@ recipes.addShaped("exnihilo/diamond_mesh", <exnihilocreatio:item_mesh:4>,
     [<ore:gemFlawless>, <ore:ingotGold>, <ore:gemFlawless>],
     [<ore:lumber>, <tfc:crop/product/jute_net>, <ore:lumber>]]
 );
+
+// Crucible
+recipes.addShaped("exnihilo/crucible", <exnihilocreatio:block_crucible:1>, [
+    [<tfc:ceramics/fired/fire_brick>, null, <tfc:ceramics/fired/fire_brick>],
+    [<tfc:ceramics/fired/fire_brick>, null, <tfc:ceramics/fired/fire_brick>],
+    [<tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>, <tfc:ceramics/fired/fire_brick>]
+]);

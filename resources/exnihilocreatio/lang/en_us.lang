@@ -5,3 +5,5 @@ item.item_mesh.1.name=String Mesh
 item.item_mesh.2.name=Cloth Mesh
 item.item_mesh.3.name=Wrought Iron Mesh
 item.item_mesh.4.name=Gold Mesh
+
+tile.block_crucible.1.name=Magma Crucible
