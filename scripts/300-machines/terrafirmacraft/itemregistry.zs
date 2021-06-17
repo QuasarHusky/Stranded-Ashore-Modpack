@@ -33,3 +33,17 @@ ItemRegistry.registerItemSize(<contenttweaker:trainpart/wheel/normal>, "LARGE", 
 ItemRegistry.registerItemSize(<contenttweaker:trainpart/bogie/normal>, "LARGE", "MEDIUM");
 ItemRegistry.registerItemSize(<contenttweaker:trainpart/boiler/small>, "NORMAL", "MEDIUM");
 ItemRegistry.registerItemSize(<contenttweaker:trainpart/boiler/normal>, "LARGE", "MEDIUM");
+
+// ===== Foods ===== //
+ItemRegistry.registerFood(
+        <minecraft:cookie>,
+        6,                  // Food
+        0.0,                // Water
+        3.0,                // Saturation
+        0.0,                // Decay 
+        0.5,                // Grain
+        0.1,                // Veg
+        0.8,                // Fruit
+        0.0,                // Meat
+        1.0                 // Dairy
+);

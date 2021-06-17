@@ -111,3 +111,16 @@ recipes.addShaped("vanilla/anvil", <minecraft:anvil>,
      [<ore:rodWroughtIron>, <ore:rodSteel>, <ore:rodWroughtIron>],
      [<ore:rodWroughtIron>, null, <ore:rodWroughtIron>]]
 );
+
+// ===== Cookie (Jaffa Cake) ===== //
+recipes.addShapeless("vanilla/cookie", <minecraft:cookie> , [
+    <firmalife:peel>.reuse(),
+    <ore:darkChocolate>,
+    <ore:sweetener>,
+    <ore:flour>,
+    <tfc:food/orange>,
+    <ore:egg>,
+    <liquid:seed_oil> * 100
+]);
+
+<minecraft:cookie>.addTooltip("§eThe Yogscast would be proud!");
