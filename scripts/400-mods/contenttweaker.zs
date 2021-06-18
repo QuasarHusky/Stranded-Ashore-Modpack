@@ -7,8 +7,6 @@ recipes.addShaped("trainpart/rail_segment", <contenttweaker:trainpart/rail_segme
     [<ore:plateSteel>, null, <ore:plateSteel>]
 ]);
 
-<contenttweaker:trainpart/rail_segment>.addTooltip("§eEmbrace the terrible pixel art!");
-
 recipes.addShaped("trainpart/wheel/small", <contenttweaker:trainpart/wheel/small>, [
     [<ore:nuggetSteel>, <ore:ingotSteel>, <ore:nuggetSteel>],
     [<ore:ingotSteel>, <contenttweaker:trainpart/tough_steel>, <ore:ingotSteel>],
