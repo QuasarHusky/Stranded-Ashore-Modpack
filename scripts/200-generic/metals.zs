@@ -104,26 +104,20 @@ for name, metal in metals {
         );
     }
 
-    // ===== Plates (Anvil) ===== //
+    // ===== Plates (Crafting) ===== //
     if(!isNull(metal.ingot) && !isNull(metal.plate)) {
-        Anvil.addRecipe(
-                "metal/" ~ name ~ "/plate",
-                metal.ingot,
-                metal.plate * 2,
-                anvilTier,
-                "general", "HIT_THIRD_LAST", "HIT_SECOND_LAST", "HIT_LAST"
-        );
+        recipes.addShapeless("metal/" ~ name ~ "/plate", metal.plate * 2, [
+            metal.ingot,
+            <ore:hammer>.transformDamage(1)
+        ]);
     }
 
     // ===== Wires (Anvil) ===== //
     if(!isNull(metal.plate) && !isNull(metal.wire)) {
-        Anvil.addRecipe(
-                "metal/" ~ name ~ "/wire",
-                metal.plate,
-                metal.wire * 3,
-                anvilTier,
-                "general", "DRAW_THIRD_LAST", "DRAW_SECOND_LAST", "DRAW_LAST"
-        );
+        recipes.addShapeless("metal/" ~ name ~ "/wire", metal.wire * 3, [
+            metal.plate,
+            <immersiveengineering:tool:1>.reuse()
+        ]);
     }
 
     // ===== Gears (Anvil) ===== //
@@ -139,13 +133,10 @@ for name, metal in metals {
 
     // ===== Rods (Anvil) ===== //
     if(!isNull(metal.rod) && !isNull(metal.plate)) {
-        Anvil.addRecipe(
-                "metal/" ~ name ~ "/rod",
-                metal.plate,
-                metal.rod * 2,
-                anvilTier,
-                "general", "DRAW_THIRD_LAST", "DRAW_SECOND_LAST", "DRAW_LAST"
-        );
+        recipes.addShapeless("metal/" ~ name ~ "/rod", metal.rod * 2, [
+            metal.plate,
+            <ore:hammer>.transformDamage(1)
+        ]);
     }
 
     // ===== Coins (Anvil) ===== //
