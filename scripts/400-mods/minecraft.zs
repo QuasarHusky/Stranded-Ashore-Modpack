@@ -22,6 +22,7 @@ recipes.remove(<minecraft:coal:0>);
 recipes.remove(<minecraft:blaze_powder>);
 recipes.remove(<minecraft:quartz>);
 recipes.removeByRecipeName("minecraft:stick");
+recipes.removeByRecipeName("thermalfoundation:paper");
 
 
 
@@ -124,3 +125,12 @@ recipes.addShapeless("vanilla/cookie", <minecraft:cookie> , [
 ]);
 
 <minecraft:cookie>.addTooltip("§eThe Yogscast would be proud!");
+
+// ===== Paper ===== //
+recipes.addShapeless("vanilla/paper/sawdust", <minecraft:paper> * 3, [
+    materials.sawdust.item,
+    materials.sawdust.item,
+    materials.sawdust.item,
+    materials.sawdust.item,
+    <liquid:fresh_water> * 1000
+]);
