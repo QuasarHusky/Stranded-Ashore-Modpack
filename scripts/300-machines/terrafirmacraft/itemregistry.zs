@@ -47,3 +47,9 @@ ItemRegistry.registerFood(
         0.0,                // Meat
         1.0                 // Dairy
 );
+
+// ===== Fuels ===== //
+// Coal Coke
+ItemRegistry.registerFuel(<thermalfoundation:material:802>, 2400, 2000, true, false);
+// Coal Coke Block
+ItemRegistry.registerFuel(<thermalfoundation:storage_resource:1>, 2400 * 9, 2000, true, false);
