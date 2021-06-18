@@ -26,7 +26,7 @@ recipes.removeByRecipeName("minecraft:stick");
 
 
 // ===== Stick ===== //
-recipes.addShapeless("vanilla/stick/saw", <immersiveengineering:material:0> * 3, [
+recipes.addShapeless("vanilla/stick/saw", <minecraft:stick> * 3, [
     <ore:lumber>,
     <ore:saw>.transformDamage(1)
 ]);
