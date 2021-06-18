@@ -3,10 +3,12 @@
 
 val material = mods.contenttweaker.tconstruct.MaterialBuilder.create("concrete");
 material.color = 0x7D736B;
-material.craftable = true;
+material.craftable = false;
 material.liquid = <liquid:concrete>;
 material.castable = true;
 material.representativeOre = <ore:concrete>;
+
+material.addItem(<ore:concrete>);
 
 material.addMaterialTrait("heavy", null);
 

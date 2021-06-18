@@ -8,11 +8,13 @@ material.liquid = <liquid:bismuth_bronze>;
 material.castable = true;
 material.representativeOre = <ore:ingotBismuthBronze>;
 
+material.addItem(<ore:ingotBismuthBronze>);
+
 material.addMaterialTrait("dense", null);
 
-material.addHeadMaterialStats(1200, 10.0, 4.0, 2);          // Durability, Mining Speed, Attack Damage, Harvest Level
-material.addExtraMaterialStats(200);                        // Durability
-material.addHandleMaterialStats(0.9, 200);                  // Modifier, Durability
+material.addHeadMaterialStats(900, 10.0, 4.0, 2);           // Durability, Mining Speed, Attack Damage, Harvest Level
+material.addExtraMaterialStats(100);                        // Durability
+material.addHandleMaterialStats(0.9, 150);                  // Modifier, Durability
 material.addBowMaterialStats(0.8, 1.0, 0.0);                // Draw Speed, Range, Bonus Damage
 material.addArrowShaftMaterialStats(0.4, 0.0);              // Modifier, Bonus Ammo
 material.addFletchingMaterialStats(0.8, 0.4);               // Accuracy, Modifier
