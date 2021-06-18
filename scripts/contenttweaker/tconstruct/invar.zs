@@ -3,12 +3,14 @@
 
 val material = mods.contenttweaker.tconstruct.MaterialBuilder.create("invar");
 material.color = 0xC3CDC2;
-material.craftable = true;
+material.craftable = false;
 material.liquid = <liquid:invar>;
 material.castable = true;
 material.representativeOre = <ore:ingotInvar>;
 
-// material.addMaterialTrait("magnetic", null);
+material.addItem(<ore:ingotInvar>);
+
+material.addMaterialTrait("magnetic1", null);
 
 material.addHeadMaterialStats(220, 7.0, 4.0, 2);          // Durability, Mining Speed, Attack Damage, Harvest Level
 material.addExtraMaterialStats(140);                        // Durability

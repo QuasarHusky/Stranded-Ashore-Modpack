@@ -3,54 +3,49 @@
 import mods.terrafirmacraft.Anvil;
 import mods.terrafirmacraft.Welding;
 
-// ===== Steel Ingot ===== //
-Anvil.addRecipe(
-        "ingot/high_carbon_steel/from_pig",
-        <tfc:metal/ingot/pig_iron>,
-        <tfc:metal/ingot/high_carbon_steel>,
-        3,
-        "general",
-        "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST"
-);
+// ===== Remove Recipes ===== //
+var tfcMetals as string[] = [
+    "bismuth",
+    "bismuth_bronze",
+    "black_bronze",
+    "brass",
+    "bronze",
+    "copper",
+    "gold",
+    "lead",
+    "nickel",
+    "rose_gold",
+    "silver",
+    "tin",
+    "zinc",
+    "sterling_silver",
+    "wrought_iron",
+    "pig_iron",
+    "steel",
+    "platinum",
+    "black_steel",
+    "blue_steel",
+    "red_steel",
+    "weak_steel",
+    "weak_blue_steel",
+    "weak_red_steel",
+    "high_carbon_steel",
+    "high_carbon_blue_steel",
+    "high_carbon_red_steel",
+    "high_carbon_black_steel",
+    "unknown",
+];
 
-Anvil.addRecipe(
-        "ingot/steel/from_high_carbon",
-        <tfc:metal/ingot/high_carbon_steel>,
-        <tfc:metal/ingot/steel>,
-        3,
-        "general",
-        "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST"
-);
+for name in tfcMetals {
+    var metal = metals[name];
 
-// ===== Black Steel Ingot ===== //
-Anvil.addRecipe(
-        "ingot/black_steel/from_high_carbon",
-        <tfc:metal/ingot/high_carbon_black_steel>,
-        <tfc:metal/ingot/black_steel>,
-        4,
-        "general",
-        "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST"
-);
-
-// ===== Blue Steel Ingot ===== //
-Anvil.addRecipe(
-        "ingot/blue_steel/from_high_carbon",
-        <tfc:metal/ingot/high_carbon_blue_steel>,
-        <tfc:metal/ingot/blue_steel>,
-        5,
-        "general",
-        "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST"
-);
-
-// ===== Red Steel Ingot ===== //
-Anvil.addRecipe(
-        "ingot/red_steel/from_high_carbon",
-        <tfc:metal/ingot/high_carbon_red_steel>,
-        <tfc:metal/ingot/red_steel>,
-        5,
-        "general",
-        "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST"
-);
+    for variant, item in metal {
+        if(variant != "ingot") {
+            Anvil.removeRecipe(item);
+            Welding.removeRecipe(item);
+        }
+    }
+}
 
 
 // ===== Iron Crook ===== //

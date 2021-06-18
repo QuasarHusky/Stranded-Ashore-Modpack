@@ -101,3 +101,6 @@ Crusher.addRecipe(<minecraft:dye:15> * 9, <ore:blockBone>, 512);
 
 // ===== Blaze Powder ===== //
 Crusher.addRecipe(<minecraft:blaze_powder>, <ore:rodBlaze>, 512);
+
+// ===== Sawdust ===== //
+Crusher.addRecipe(materials.sawdust.item * 6, <ore:lumber>, 1024);

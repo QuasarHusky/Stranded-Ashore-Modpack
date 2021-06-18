@@ -31,4 +31,8 @@ global materials as IItemStack[string][string] = {
         "rich":                         <thermalfoundation:bait:1>,
         "fluxed":                       <thermalfoundation:bait:2>,
     },
+    "sawdust": {
+        "item":                         <thermalfoundation:material:800>,
+        "compressed":                   <thermalfoundation:material:801>,
+    }
 };

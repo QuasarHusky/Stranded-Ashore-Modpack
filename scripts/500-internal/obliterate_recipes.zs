@@ -21,8 +21,6 @@ import mods.tconstruct.Melting;
 
 function obliterateRecipes(name as string, item as IItemStack) as void {
     recipes.remove(item);
-    Anvil.removeRecipe(item);
-    Welding.removeRecipe(item);
     Quern.removeRecipe(item);
     ArcFurnace.removeRecipe(item);
     Crusher.removeRecipesForInput(item);

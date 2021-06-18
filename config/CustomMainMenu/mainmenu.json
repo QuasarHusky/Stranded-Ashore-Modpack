@@ -111,12 +111,13 @@
 
         "credits":
         {
-            "text" : "<3",
+            "text" : "",
             "posX" : 80,
             "posY" : 43,
             "width" : 20,
             "height" : 20,
             "alignment" : "center",
+            "texture": "modpack:textures/gui/credits_buttons.png",
             "action" : 
             {
                 "type" : "openGui",
@@ -157,7 +158,7 @@
     {
         "pack_version":
         {
-            "text" : "Stranded Ashore\nv1.3.0 - Steel Age",
+            "text" : "Stranded Ashore\nv1.3.1 - Steel Age",
             "posX" : -10,
             "posY" : -75,
             "color" : -1,
@@ -172,7 +173,7 @@
 
         "pack_update":
         {
-            "text" : "web:https://quasarhusky.uk/stranded-ashore/version-check?v=1.3.0",
+            "text" : "web:https://quasarhusky.uk/stranded-ashore/version-check?v=1.3.1",
             "posX" : 0,
             "posY" : 5,
             "color" : 16776960,
@@ -181,7 +182,7 @@
             "alignment" : "top_center",
             "action": {
                 "type": "openLink",
-                "link": "https://github.com/QuasarHusky/Stranded-Ashore-Modpack/releases"
+                "link": "https://www.curseforge.com/minecraft/modpacks/stranded-ashore/files"
             }
         },
 
