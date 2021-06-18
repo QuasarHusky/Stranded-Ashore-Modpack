@@ -294,6 +294,7 @@ recipes.remove(<thermalfoundation:material:515>);
 recipes.remove(<thermalfoundation:material:640>);
 recipes.remove(<thermalfoundation:material:656>);
 recipes.remove(<thermalfoundation:material:657>);
+recipes.remove(<thermalfoundation:material:818>);
 recipes.remove(<thermalfoundation:glass:3>);
 
 
