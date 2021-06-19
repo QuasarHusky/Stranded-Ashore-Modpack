@@ -248,7 +248,7 @@ for name, metal in metals {
             Casting.addTableRecipe(metal.ingot, <tconstruct:cast_custom:0>, molten, 144, false, 20 * 6);
         }
         if(!isNull(metal.plate)) {
-            Casting.addTableRecipe(metal.plate, <tconstruct:cast_custom:3>, molten, 144, false, 20 * 12);
+            Casting.addTableRecipe(metal.plate, <tconstruct:cast_custom:3>, molten, 72, false, 20 * 12);
         }
         if(!isNull(metal.nugget)) {
             Casting.addTableRecipe(metal.nugget, <tconstruct:cast_custom:1>, molten, 16, false, 20 * 1);
