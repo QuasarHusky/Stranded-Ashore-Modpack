@@ -27,3 +27,7 @@ Drying.removeRecipe(<minecraft:deadbush>);
 
 // ===== Dried Brick ===== //
 Drying.addRecipe(<tconstruct:materials:2>, <ore:brick>, timing.ingame_hour * 8);
+Drying.addRecipe(<tconstruct:materials:2>, <tfc:ceramics/unfired/clay_brick>, timing.ingame_hour * 8);
+
+// ===== Dried Clay ===== //
+Drying.addRecipe(<tconstruct:dried_clay>, <ore:blockClay>, timing.ingame_hour * 3);

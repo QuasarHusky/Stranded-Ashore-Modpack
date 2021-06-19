@@ -51,7 +51,7 @@ for name, metal in metals {
     if(!isNull(metal["ingot"]) && !isNull(metal["scrap"])) {
         recipes.addShapeless("metal/" ~ name ~ "/scrap", metal.scrap, [
             metal.ingot,
-            <ore:hammer>.transformDamage(1)
+            <ore:mace>.transformDamage(1)
         ]);
     }
 
