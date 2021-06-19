@@ -27,7 +27,7 @@ Alloy.removeRecipe(<liquid:clay>);
 
 // ===== Bismuth Bronze ===== //
 Alloy.addRecipe(
-        liquids.bismuth_bronze.normal * 20, 
+        liquids.bismuth_bronze.normal * 9, 
         [
             liquids.zinc.normal * 5,
             liquids.bismuth.normal * 3,
