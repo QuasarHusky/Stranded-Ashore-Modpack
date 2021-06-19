@@ -61,7 +61,7 @@
             "type": "spotlight",
             "title": "Invar",
             "item": "thermalfoundation:material:162",
-            "text": "$(l)Ratio$()$(br)1x Wrought Iron$(br)1x Nickel$(2br)$(thing)Alloy Kiln & Smeltery Only"
+            "text": "$(l)Ratio$()$(br)2x Copper$(br)1x Wrought Iron$(2br)$(thing)Alloy Kiln & Smeltery Only"
         },
         {
             "type": "spotlight",

@@ -115,10 +115,10 @@ Alloy.addRecipe(
 
 // ===== Invar ===== //
 Alloy.addRecipe(
-        liquids.invar.normal * 2,
+        liquids.invar.normal * 3,
         [
+            liquids.copper.normal * 2,
             liquids.wrought_iron.normal * 1,
-            liquids.nickel.normal * 1,
         ]
 );
 
