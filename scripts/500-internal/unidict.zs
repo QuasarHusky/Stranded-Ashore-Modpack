@@ -5,3 +5,4 @@ mods.unidict.removalByKind.get("Crafting").remove("stick");
 mods.unidict.removalByKind.get("Crafting").remove("nugget");
 mods.unidict.removalByKind.get("Crafting").remove("ingot");
 mods.unidict.removalByKind.get("Crafting").remove("plate");
+mods.unidict.removalByKind.get("Crafting").remove("dust");
