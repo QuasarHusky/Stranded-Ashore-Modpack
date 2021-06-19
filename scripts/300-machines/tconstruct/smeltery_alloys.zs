@@ -23,6 +23,7 @@ Alloy.removeRecipe(<liquid:bronze>);
 Alloy.removeRecipe(<liquid:electrum>);
 Alloy.removeRecipe(<liquid:alubrass>);
 Alloy.removeRecipe(<liquid:brass>);
+Alloy.removeRecipe(<liquid:clay>);
 
 // ===== Bismuth Bronze ===== //
 Alloy.addRecipe(
