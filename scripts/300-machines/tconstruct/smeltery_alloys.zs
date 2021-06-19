@@ -23,6 +23,7 @@ Alloy.removeRecipe(<liquid:bronze>);
 Alloy.removeRecipe(<liquid:electrum>);
 Alloy.removeRecipe(<liquid:alubrass>);
 Alloy.removeRecipe(<liquid:brass>);
+Alloy.removeRecipe(<liquid:clay>);
 
 // ===== Bismuth Bronze ===== //
 Alloy.addRecipe(
@@ -114,10 +115,10 @@ Alloy.addRecipe(
 
 // ===== Invar ===== //
 Alloy.addRecipe(
-        liquids.invar.normal * 2,
+        liquids.invar.normal * 3,
         [
+            liquids.copper.normal * 2,
             liquids.wrought_iron.normal * 1,
-            liquids.nickel.normal * 1,
         ]
 );
 
@@ -137,5 +138,14 @@ Alloy.addRecipe(
         [
             liquids.brass.normal * 2,
             liquids.aluminum.normal * 1,
+        ]
+);
+
+// ===== Obsidian ===== //
+Alloy.addRecipe(
+        <liquid:obsidian> * 1,
+        [
+            liquids.water.fresh * 2,
+            liquids.lava.normal * 1,
         ]
 );

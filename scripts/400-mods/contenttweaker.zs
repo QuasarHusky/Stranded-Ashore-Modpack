@@ -1,21 +1,19 @@
 #priority 400
 
 // ===== Train Parts ===== //
-recipes.addShaped("trainpart/rail_segment", <contenttweaker:trainpart/rail_segment>, [
+recipes.addShaped("trainpart/rail_segment", <contenttweaker:trainpart/rail_segment> * 4, [
     [<ore:plateSteel>, null, <ore:plateSteel>],
     [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
     [<ore:plateSteel>, null, <ore:plateSteel>]
 ]);
 
-<contenttweaker:trainpart/rail_segment>.addTooltip("§eEmbrace the terrible pixel art!");
-
-recipes.addShaped("trainpart/wheel/small", <contenttweaker:trainpart/wheel/small>, [
+recipes.addShaped("trainpart/wheel/small", <contenttweaker:trainpart/wheel/small> * 2, [
     [<ore:nuggetSteel>, <ore:ingotSteel>, <ore:nuggetSteel>],
     [<ore:ingotSteel>, <contenttweaker:trainpart/tough_steel>, <ore:ingotSteel>],
     [<ore:nuggetSteel>, <ore:ingotSteel>, <ore:nuggetSteel>]
 ]);
 
-recipes.addShaped("trainpart/wheel/normal", <contenttweaker:trainpart/wheel/normal>, [
+recipes.addShaped("trainpart/wheel/normal", <contenttweaker:trainpart/wheel/normal> * 2, [
     [<ore:plateSteel>, <contenttweaker:trainpart/tough_steel>, <ore:plateSteel>],
     [<contenttweaker:trainpart/tough_steel>, <ore:sheetDoubleSteel>, <contenttweaker:trainpart/tough_steel>],
     [<ore:plateSteel>, <contenttweaker:trainpart/tough_steel>, <ore:plateSteel>]

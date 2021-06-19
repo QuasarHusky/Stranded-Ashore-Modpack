@@ -41,22 +41,22 @@ recipes.addShaped("vanilla/glass_bottle", <minecraft:glass_bottle> * 4,
 
 // ===== Torch ===== //
 recipes.addShaped("vanilla/torch/charcoal/single", <minecraft:torch> * 2, [
-    [<minecraft:coal:1>, <tfc:firestarter>.transformDamage(1)],
+    [<minecraft:coal:1>, <tfc:firestarter:*>.transformDamage(1)],
     [<minecraft:stick>],
 ]);
 
 recipes.addShaped("vanilla/torch/charcoal/bunch", <minecraft:torch> * 18, [
-    [<minecraft:coal:1>, <tfc:firestarter>.transformDamage(1)],
+    [<minecraft:coal:1>, <tfc:firestarter:*>.transformDamage(1)],
     [<tfc:stick_bunch>]
 ]);
 
 recipes.addShaped("vanilla/torch/bituminous_coal/single", <minecraft:torch>, [
-    [<ore:gemCoal>, <tfc:firestarter>.transformDamage(2)],
+    [<ore:gemCoal>, <tfc:firestarter:*>.transformDamage(2)],
     [<minecraft:stick>]
 ]);
 
 recipes.addShaped("vanilla/torch/bituminous_coal/bunch", <minecraft:torch> * 9, [
-    [<ore:gemCoal>, <tfc:firestarter>.transformDamage(2)],
+    [<ore:gemCoal>, <tfc:firestarter:*>.transformDamage(2)],
     [<tfc:stick_bunch>]
 ]);
 

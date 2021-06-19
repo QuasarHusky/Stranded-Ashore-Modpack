@@ -19,7 +19,7 @@ AlloySmelter.addRecipe(<tfc:metal/ingot/high_carbon_blue_steel>, <tfc:metal/ingo
 AlloySmelter.addRecipe(<tfc:metal/ingot/high_carbon_red_steel>, <tfc:metal/ingot/weak_red_steel>, <tfc:metal/ingot/black_steel>, timing.minute * 2);
 
 // ===== Invar ===== //
-AlloySmelter.addRecipe(metals.invar.ingot * 2, <ore:ingotWroughtIron>, <ore:dustNickel>, 45 * 20);
+AlloySmelter.addRecipe(metals.invar.ingot * 3, <ore:ingotWroughtIron>, <ore:ingotCopper> * 2, 45 * 20);
 
 // ===== Red Alloy ===== //
 AlloySmelter.addRecipe(metals.red_alloy.ingot * 2, <ore:ingotSilver>, <ore:dustRedstone> * 6, 20 * 20);

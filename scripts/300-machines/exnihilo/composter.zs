@@ -36,6 +36,6 @@ Compost.addRecipe(<ore:categoryDairy>, 0.10, "ffffff", <minecraft:dirt:1>);
 Compost.addRecipe(<ore:categoryOther>, 0.10, "ffffff", <minecraft:dirt:1>);
 Compost.addRecipe(<ore:categoryMeal>, 0.25, "ffffff", <minecraft:dirt:1>);
 
-Compost.addRecipe(<minecraft:brown_mushroom>, 0.02, "ffffff", <minecraft:mycelium>);
-Compost.addRecipe(<minecraft:red_mushroom>, 0.02, "ffffff", <minecraft:mycelium>);
-Compost.addRecipe(<tfc:plants/porcini>, 0.02, "ffffff", <minecraft:mycelium>);
+Compost.addRecipe(<tfc:plants/porcini>, 0.20, "ffffff", <minecraft:mycelium>);
+
+Compost.addRecipe(<ore:itemSlag>, 0.1, "ffffff", <tfc:cobble/conglomerate>);
