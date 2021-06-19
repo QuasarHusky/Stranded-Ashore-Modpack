@@ -33,6 +33,13 @@ recipes.addShaped("component/flywheel", components.flywheel * 3, [
     [<ore:ingotWroughtIron>, <ore:ingotDoubleWroughtIron>, <ore:ingotWroughtIron>]
 ]);
 
+// ===== Charcoal Block ===== //
+recipes.addShaped("thermalfoundation/charcoal_block", <thermalfoundation:storage_resource:0>, [
+    [<ore:charcoal>, <ore:charcoal>, <ore:charcoal>],
+    [<ore:charcoal>, <ore:charcoal>, <ore:charcoal>],
+    [<ore:charcoal>, <ore:charcoal>, <ore:charcoal>]
+]);
+
 // ===== Pigments ===== //
 recipes.addShapeless("pigment_0",  <thermalfoundation:dye:0>, [ <ore:dyeBlack> ]);
 recipes.addShapeless("pigment_1",  <thermalfoundation:dye:1>, [ <ore:dyeRed> ]);
