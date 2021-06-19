@@ -5,10 +5,10 @@
 	"model": "immersiverailroading:models/rolling_stock/hand_car/hand_car_1.obj",
 	"darken_model": "-0.05",
 	"properties": {
-		"weight_kg": 1000,
+		"weight_kg": 500,
 		"horsepower": 5,
-		"tractive_effort_lbf": 5000,
-		"max_speed_kmh": 20
+		"tractive_effort_lbf": 2000,
+		"max_speed_kmh": 30
 	},
 	"passenger": {
 		"slots": 2,

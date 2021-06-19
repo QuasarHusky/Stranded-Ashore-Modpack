@@ -20,7 +20,7 @@
         "water_capacity_l": 5000,
         "horsepower": 5000,
         "tractive_effort_lbf": 30000,
-        "max_speed_kmh": 100,
+        "max_speed_kmh": 70,
         "valve_gear": "stephenson",
         "weight_kg": 80000
     },
