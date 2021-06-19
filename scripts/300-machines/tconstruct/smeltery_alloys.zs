@@ -140,3 +140,12 @@ Alloy.addRecipe(
             liquids.aluminum.normal * 1,
         ]
 );
+
+// ===== Obsidian ===== //
+Alloy.addRecipe(
+        <liquid:obsidian> * 1,
+        [
+            liquids.water.fresh * 2,
+            liquids.lava.normal * 1,
+        ]
+);
