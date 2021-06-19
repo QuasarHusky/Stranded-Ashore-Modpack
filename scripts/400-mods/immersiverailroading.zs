@@ -30,7 +30,7 @@ recipes.addShapedMirrored("immersiverailroading/coupling_hook", <immersiverailro
 recipes.addShapeless("immersiverailroading/item_rail", <immersiverailroading:item_rail>, [
     <ore:paper>,
     <ore:gearAluminum>,
-    <immersiverailroading:item_rail_part:*>
+    <ore:irRail>
 ]);
 
 // ===== Track Exchanger ===== //
@@ -50,7 +50,7 @@ recipes.addShaped("immersiverailroading/golden_spike", <immersiverailroading:ite
 // ===== Paintbrush ===== //
 recipes.addShapeless("immersiverailroading/paintbrush", <immersiverailroading:item_paint_brush>, [
     <buildcraftcore:paintbrush:*>,
-    <immersiverailroading:item_rail>.reuse()
+    <immersiverailroading:item_large_wrench>.reuse()
 ]);
 
 // ===== Switch Key ===== //
