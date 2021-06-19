@@ -149,3 +149,86 @@ Alloy.addRecipe(
             liquids.lava.normal * 1,
         ]
 );
+
+// ===== Dyes ===== //
+Alloy.addRecipe(
+        <liquid:light_blue_dye> * 2,
+        [
+            <liquid:blue_dye> * 1,
+            <liquid:white_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:light_gray_dye> * 2,
+        [
+            <liquid:gray_dye> * 1,
+            <liquid:white_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:light_gray_dye> * 3,
+        [
+            <liquid:black_dye> * 1,
+            <liquid:white_dye> * 2,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:lime_dye> * 2,
+        [
+            <liquid:green_dye> * 1,
+            <liquid:white_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:magenta_dye> * 2,
+        [
+            <liquid:purple_dye> * 1,
+            <liquid:pink_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:magenta_dye> * 3,
+        [
+            <liquid:red_dye> * 1,
+            <liquid:blue_dye> * 1,
+            <liquid:pink_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:magenta_dye> * 4,
+        [
+            <liquid:red_dye> * 2,
+            <liquid:blue_dye> * 1,
+            <liquid:white_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:orange_dye> * 2,
+        [
+            <liquid:red_dye> * 1,
+            <liquid:yellow_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:cyan_dye> * 2,
+        [
+            <liquid:green_dye> * 1,
+            <liquid:blue_dye> * 1,
+        ]
+);
+
+Alloy.addRecipe(
+        <liquid:gray_dye> * 2,
+        [
+            <liquid:black_dye> * 1,
+            <liquid:white_dye> * 1,
+        ]
+);

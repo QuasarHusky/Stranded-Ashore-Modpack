@@ -134,3 +134,10 @@ recipes.addShapeless("vanilla/paper/sawdust", <minecraft:paper> * 3, [
     materials.sawdust.item,
     <liquid:fresh_water> * 1000
 ]);
+
+// ===== Slime Block ===== //
+recipes.addShaped("vanilla/slime_block", <minecraft:slime>, [
+    [<ore:slimeballGreen>, <ore:slimeballGreen>, <ore:slimeballGreen>],
+    [<ore:slimeballGreen>, <ore:slimeballGreen>, <ore:slimeballGreen>],
+    [<ore:slimeballGreen>, <ore:slimeballGreen>, <ore:slimeballGreen>]
+]);
