@@ -57,3 +57,6 @@ Casting.addBasinRecipe(<tconstruct:brownstone:0>, components.dried_brick, <liqui
 
 // ===== Tough Steel ===== //
 Casting.addTableRecipe(<contenttweaker:trainpart/tough_steel>, <ore:plateSteel>, <liquid:black_steel>, 144, true, timing.second * 20);
+
+// ===== Blaze Rod ===== //
+Casting.addTableRecipe(<minecraft:blaze_rod>, <ore:stickWood>, <liquid:lava>, 100, true, timing.second * 2);
