@@ -3,13 +3,7 @@
 import mods.chisel.Carving;
 
 // ===== Recipes ===== //
-recipes.remove(<chisel:chisel_iron>);
-recipes.remove(<chisel:chisel_diamond>);
-recipes.remove(<chisel:chisel_hitech>);
-recipes.remove(<chisel:offsettool>);
-recipes.remove(<chisel:auto_chisel>);
-
-recipes.removeByRecipeName("chisel:charcoal_uncraft");
+recipes.removeByMod("chisel");
 
 recipes.addShaped("chisel/chisel_iron", <chisel:chisel_iron>,
     [[<ore:rock>],
