@@ -296,6 +296,7 @@ recipes.remove(<thermalfoundation:material:656>);
 recipes.remove(<thermalfoundation:material:657>);
 recipes.remove(<thermalfoundation:material:818>);
 recipes.remove(<thermalfoundation:glass:3>);
+recipes.removeByRecipeName("thermalfoundation:clay_ball");
 
 
 
