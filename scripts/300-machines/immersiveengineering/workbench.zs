@@ -130,6 +130,16 @@ recipes.addShapeless(
         ]
 );
 
+recipes.addShapeless(
+        "immersiveengineering/blueprint/steam_locomotives", 
+        <immersiveengineering:blueprint>.withTag({blueprint: "Steam Locomotives"}), 
+        [
+            <immersiverailroading:item_rail>.reuse(),
+            <ore:paper>,
+            <contenttweaker:trainpart/tough_steel>,
+        ]
+);
+
 
 
 // ===== Iron Mechanical Component ===== //
@@ -491,25 +501,6 @@ Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stoc
     <ore:stickAluminum> * 3
 ]);
 
-// Firefly
-Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/locomotives/firefly.json", gauge: 1.435}), [
-    <ore:blockSteel> * 1,
-    <contenttweaker:trainpart/boiler/small>,
-    <contenttweaker:trainpart/wheel/small> * 4,
-    <contenttweaker:trainpart/wheel/normal> * 2,
-    <ore:stickAluminum> * 5
-]);
-
-// Iron Duke
-Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/locomotives/iron_duke.json", gauge: 1.435}), [
-    <ore:blockSteel> * 2,
-    <contenttweaker:trainpart/boiler/small>,
-    <contenttweaker:trainpart/wheel/small> * 6,
-    <contenttweaker:trainpart/wheel/normal> * 2,
-    <contenttweaker:trainpart/tough_steel> * 5,
-    <ore:stickAluminum> * 8
-]);
-
 // ===== Rolling Stock ===== //
 // Flat Wagon
 Blueprint.addRecipe("Rolling Stock", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/freight/flat.json", gauge: 1.435}), [
@@ -555,4 +546,34 @@ Blueprint.addRecipe("Rolling Stock", <immersiverailroading:item_rolling_stock>.w
     <ore:stickAluminum> * 2,
     <ore:plateAluminum> * 8,
     <ore:blockGlass> * 3
+]);
+
+// ===== Steam Locomotives ===== //
+// City Class 4-4-0
+Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/locomotives/cityclass.json", gauge: 1.435}), [
+    <contenttweaker:trainpart/boiler/normal>,
+    <contenttweaker:trainpart/wheel/normal> * 4,
+    <contenttweaker:trainpart/wheel/small> * 4,
+    <ore:ingotSteel> * 20,
+    <ore:ingotBrass> * 4,
+    <ore:stickAluminum> * 8
+]);
+
+Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/tender/cityclass.json", gauge: 1.435}), [
+    <contenttweaker:trainpart/wheel/small> * 6,
+    <ore:ingotSteel> * 16
+]);
+
+// Bulleid Q1
+Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/locomotives/bulleid_q1.json", gauge: 1.435}), [
+    <contenttweaker:trainpart/boiler/normal>,
+    <contenttweaker:trainpart/wheel/normal> * 6,
+    <ore:ingotSteel> * 42,
+    <ore:ingotRedSteel> * 3,
+    <ore:stickAluminum> * 8
+]);
+
+Blueprint.addRecipe("Basic Locomotives", <immersiverailroading:item_rolling_stock>.withTag({defID: "rolling_stock/tender/bulleid_q1.json", gauge: 1.435}), [
+    <contenttweaker:trainpart/wheel/small> * 6,
+    <ore:ingotSteel> * 28
 ]);
