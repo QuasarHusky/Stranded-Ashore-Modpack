@@ -65,6 +65,7 @@ recipes.remove(<immersivepetroleum:stone_decoration:0>);
 recipes.remove(<immersiveposts:postbase>);
 recipes.remove(<immersivetech:metal_device>);
 recipes.removeByRecipeName("immersivetech:stone_decoration/reinforced_cokebrick");
+recipes.removeByRecipeName("immersiveengineering:treated_wood/treated_wood_fence");
 
 // ===== Treated Stick ===== //
 recipes.addShapeless("immersiveengineering/treated_stick/saw", <immersiveengineering:material:0> * 3, [
@@ -423,4 +424,10 @@ recipes.addShaped("immersiveengineering/charging_station", <immersiveengineering
 recipes.addShapeless("immersiveengineering/manual", <immersiveengineering:tool:3>, [
     <ore:book>,
     <immersiveengineering:tool:0>.reuse()
+]);
+
+// ===== Treated Wood Fence ===== //
+recipes.addShaped("immersiveengineering/treated_wood/fence", <immersiveengineering:wooden_decoration:0> * 8, [
+    [<ore:plankTreatedWood>, <ore:lumberTreated>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:lumberTreated>, <ore:plankTreatedWood>]
 ]);
