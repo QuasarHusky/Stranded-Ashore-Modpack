@@ -1,0 +1,20 @@
+setIcon(<tfc:metal/anvil/bronze>)
+setTitle("Bronze Age")
+setDescription("Craft a Bronze Anvil")
+
+setParent("triumph:neolithic/copper_anvil")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Bronze", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/anvil/bronze>)
+
+criteria = addCriteria("Bismuth Bronze", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/anvil/bismuth_bronze>)
+
+criteria = addCriteria("Black Bronze", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/anvil/black_bronze>)
+
+setRequirements("any")

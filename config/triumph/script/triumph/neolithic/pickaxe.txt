@@ -1,0 +1,11 @@
+setIcon(<tfc:metal/pick/copper>)
+setTitle("Time to Mine!")
+setDescription("Craft a Pickaxe")
+
+setParent("triumph:neolithic/copper")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:pick>)

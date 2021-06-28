@@ -1,0 +1,11 @@
+setIcon(<minecraft:coal:1>)
+setTitle("A Better Fuel")
+setDescription("Make Charcoal by lighting some log piles in a pit and covering them")
+
+setParent("triumph:neolithic/logs")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:charcoal>)

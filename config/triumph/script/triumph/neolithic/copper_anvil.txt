@@ -1,0 +1,11 @@
+setIcon(<tfc:metal/anvil/copper>)
+setTitle("Dropping an Anvil")
+setDescription("Craft a Copper Anvil")
+
+setParent("triumph:neolithic/pickaxe")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/anvil/copper>)

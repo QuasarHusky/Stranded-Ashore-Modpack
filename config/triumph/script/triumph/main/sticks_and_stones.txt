@@ -1,9 +1,0 @@
-setIcon(<minecraft:stick>)
-setTitle("Sticks & Stones")
-setDescription("Collect a stick and a rock found on the ground")
-
-addParent("triumph:main/root")
-
-criteria = addCriteria("inventory_changed", "minecraft:inventory_changed")
-criteria.addItem(<ore:rock>)
-criteria.addItem(<minecraft:stick>)

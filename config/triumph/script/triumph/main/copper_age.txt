@@ -1,9 +1,0 @@
-setIcon(<tfc:metal/ingot/copper>)
-setTitle("Copper Age")
-setDescription("Obtain a Copper Ingot")
-
-addParent("triumph:main/stone_age")
-
-setFrameType("goal")
-
-addCriteria("impossible", "minecraft:impossible")

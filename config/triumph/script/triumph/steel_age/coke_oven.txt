@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:stone_decoration:0>)
+setTitle("Coke Oven")
+setDescription("Construct a Coke Oven")
+
+setParent("triumph:steel_age/invar_ingot")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:CokeOven")

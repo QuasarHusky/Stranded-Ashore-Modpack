@@ -1,0 +1,11 @@
+setIcon(<tfc:ceramics/fire_clay>)
+setTitle("Fireproof")
+setDescription("Craft some Fire Clay")
+
+setParent("triumph:neolithic/iron_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:fireClay>)

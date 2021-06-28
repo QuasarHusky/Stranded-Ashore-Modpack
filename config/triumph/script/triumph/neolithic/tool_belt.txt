@@ -1,0 +1,11 @@
+setIcon(<toolbelt:belt>)
+setTitle("Tool Belt")
+setDescription("Craft a Tool Belt")
+
+setParent("triumph:neolithic/iron_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<toolbelt:belt>)

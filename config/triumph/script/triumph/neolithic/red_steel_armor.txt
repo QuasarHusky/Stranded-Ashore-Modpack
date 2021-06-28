@@ -1,0 +1,21 @@
+setIcon(<tfc:metal/chestplate/red_steel>)
+setTitle("Expensive Outfit")
+setDescription("Craft a full set of Red Steel armor")
+
+setParent("triumph:neolithic/red_steel")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Helmet", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/helmet/red_steel>)
+
+criteria = addCriteria("Chestplate", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/chestplate/red_steel>)
+
+criteria = addCriteria("Greaves", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/greaves/red_steel>)
+
+criteria = addCriteria("Boots", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/boots/red_steel>)

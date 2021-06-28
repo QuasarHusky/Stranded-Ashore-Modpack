@@ -1,0 +1,11 @@
+setIcon(<immersivetech:metal_trash>)
+setTitle("What a Waste!")
+setDescription("Craft a Trash Can")
+
+setParent("triumph:neolithic/iron_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersivetech:metal_trash>)

@@ -1,0 +1,11 @@
+setIcon(<tfc:metal/ingot/steel>)
+setTitle("Master of Steel")
+setDescription("Complete the Steel Age")
+
+setParent("triumph:complete/neolithic_age")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:impossible")

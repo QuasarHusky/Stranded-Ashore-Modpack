@@ -1,0 +1,11 @@
+setIcon(<buildcrafttransport:pipe_stone_item>)
+setTitle("Pipe Dream")
+setDescription("Craft a basic Transport Pipe")
+
+setParent("triumph:neolithic/bronze_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:pipeItemBasic>)

@@ -1,0 +1,11 @@
+setIcon(<microblockcbe:saw_diamond>)
+setTitle("Microblocks")
+setDescription("Craft a Microblock Saw and use it to create a Microblock")
+
+setParent("triumph:neolithic/stone_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<microblockcbe:microblock>)

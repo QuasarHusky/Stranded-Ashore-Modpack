@@ -1,0 +1,11 @@
+setIcon(<storagedrawers:upgrade_one_stack>)
+setTitle("Less Storage...?")
+setDescription("Craft a Storage Downgrade")
+
+setParent("triumph:neolithic/storage_drawer")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<storagedrawers:upgrade_one_stack>)

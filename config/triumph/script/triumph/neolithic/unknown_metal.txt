@@ -1,0 +1,13 @@
+setIcon(<tfc:metal/ingot/unknown>)
+setTitle("Expensive Mistake")
+setDescription("Create an Unknown Metal Ingot by getting an alloy wrong")
+
+setParent("triumph:neolithic/pottery")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotUnknown>)
+
+setRequirements("any")

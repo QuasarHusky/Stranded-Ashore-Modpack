@@ -1,0 +1,11 @@
+setIcon(<tfc:metal/saw/copper>)
+setTitle("Carpentry")
+setDescription("Make any Copper tool")
+
+setParent("triumph:neolithic/copper")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:saw>)

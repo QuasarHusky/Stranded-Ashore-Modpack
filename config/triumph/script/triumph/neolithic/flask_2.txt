@@ -1,0 +1,11 @@
+setIcon(<waterflasks:iron_flask>)
+setTitle("Upgraded Water Storage")
+setDescription("Craft an Iron Flask")
+
+setParent("triumph:neolithic/flask_1")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<waterflasks:iron_flask>)

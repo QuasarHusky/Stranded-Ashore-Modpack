@@ -1,0 +1,11 @@
+setIcon(<tfc:bloom/unrefined>)
+setTitle("In Bloom")
+setDescription("Use the Bloomery to produce an Iron Bloom")
+
+setParent("triumph:neolithic/bloomery")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:bloom/unrefined>)

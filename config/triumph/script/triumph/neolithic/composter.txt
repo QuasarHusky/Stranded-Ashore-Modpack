@@ -1,0 +1,16 @@
+setIcon(<exnihilocreatio:block_barrel0>)
+setTitle("Natural Recycling")
+setDescription("Craft a Composter")
+
+setParent("triumph:neolithic/saw")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Wooden Composter", "minecraft:inventory_changed")
+criteria.addItem(<exnihilocreatio:block_barrel0>)
+
+criteria = addCriteria("Stone Composter", "minecraft:inventory_changed")
+criteria.addItem(<exnihilocreatio:block_barrel1>)
+
+setRequirements("any")

@@ -1,0 +1,11 @@
+setIcon(<antiqueatlas:antique_atlas>)
+setTitle("Mapping The World")
+setDescription("Craft an Antique Atlas and open it")
+
+setParent("triumph:neolithic/scraped_hide")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<antiqueatlas:antique_atlas>)

@@ -1,0 +1,11 @@
+setIcon(<projectred-transmission:wire:0>)
+setTitle("Long-Distance Redstone")
+setDescription("Craft some Red Alloy Wire")
+
+setParent("triumph:steel_age/alloy_kiln")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<projectred-transmission:wire:0>)

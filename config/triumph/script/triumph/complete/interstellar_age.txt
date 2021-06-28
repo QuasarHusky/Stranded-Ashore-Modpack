@@ -1,0 +1,11 @@
+setIcon(<minecraft:barrier>)
+setTitle("Master of The Interstellar")
+setDescription("Complete the Interstellar Age")
+
+setParent("triumph:complete/space_age")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:impossible")

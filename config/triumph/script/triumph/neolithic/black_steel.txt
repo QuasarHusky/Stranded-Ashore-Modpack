@@ -1,0 +1,12 @@
+setIcon(<tfc:metal/ingot/black_steel>)
+setTitle("Back in Black")
+setDescription("Get a Black Steel Ingot")
+
+setParent("triumph:neolithic/steel_age")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotBlackSteel>)

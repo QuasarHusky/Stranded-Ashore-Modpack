@@ -1,0 +1,11 @@
+setIcon(<tconstruct:materials:16>)
+setTitle("Smooth as Silk")
+setDescription("Create a Silky Jewel and upgrade your tool with it")
+
+setParent("triumph:steel_age/tinkers_tool")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:materials:16>)

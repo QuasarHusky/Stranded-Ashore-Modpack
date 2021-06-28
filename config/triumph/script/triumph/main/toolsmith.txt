@@ -1,9 +1,0 @@
-setIcon(<tconstruct:tooltables:3>)
-setTitle("Toolsmith")
-setDescription("Create a Tool Station")
-
-addParent("triumph:main/metallurgy")
-
-setFrameType("goal")
-
-addCriteria("impossible", "minecraft:impossible")

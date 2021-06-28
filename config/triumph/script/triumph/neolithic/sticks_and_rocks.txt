@@ -1,0 +1,14 @@
+setIcon(<minecraft:stick>)
+setTitle("Sticks and Stones")
+setDescription("Gather a Stick and a Rock found on the ground")
+
+setParent("triumph:neolithic/root")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Stick", "minecraft:inventory_changed")
+criteria.addItem(<ore:stickWood>)
+
+criteria = addCriteria("Rock", "minecraft:inventory_changed")
+criteria.addItem(<ore:rock>)

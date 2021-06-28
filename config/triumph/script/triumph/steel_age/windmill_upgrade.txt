@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:material:12>)
+setTitle("Even Windier Day")
+setDescription("Craft a Windmill Sail and use it to upgrade a Windmill")
+
+setParent("triumph:steel_age/windmill")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:material:12>)

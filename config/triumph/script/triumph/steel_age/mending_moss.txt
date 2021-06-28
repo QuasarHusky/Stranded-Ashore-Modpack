@@ -1,0 +1,11 @@
+setIcon(<tconstruct:materials:19>)
+setTitle("Magically Mending")
+setDescription("Create some Mending Moss and upgrade your tool with it")
+
+setParent("triumph:steel_age/tinkers_tool")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:materials:19>)

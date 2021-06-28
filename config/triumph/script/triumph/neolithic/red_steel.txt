@@ -1,0 +1,12 @@
+setIcon(<tfc:metal/ingot/red_steel>)
+setTitle("Red Ogre")
+setDescription("Get a Red Steel Ingot")
+
+setParent("triumph:neolithic/black_steel")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotRedSteel>)

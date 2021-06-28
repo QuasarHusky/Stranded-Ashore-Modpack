@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_multiblock:1>)
+setTitle("Crushed")
+setDescription("Construct the Crusher")
+
+setParent("triumph:steel_age/light_engineering_block")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:Crusher")

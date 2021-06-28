@@ -1,0 +1,14 @@
+setIcon(<tfc:metal/anvil/wrought_iron>)
+setTitle("Iron Age")
+setDescription("Create a Wrought Iron Ingot by refining an Iron Bloom in the Anvil")
+
+setParent("triumph:neolithic/bloom")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Bronze", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotWroughtIron>)
+
+setRequirements("any")

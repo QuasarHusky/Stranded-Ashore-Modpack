@@ -1,0 +1,11 @@
+setIcon(<exnihilocreatio:block_sieve>)
+setTitle("Sieving")
+setDescription("Craft a Sieve")
+
+setParent("triumph:neolithic/saw")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<exnihilocreatio:block_sieve>)

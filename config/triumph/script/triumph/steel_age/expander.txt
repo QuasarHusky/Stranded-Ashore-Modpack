@@ -1,0 +1,16 @@
+setIcon(<tconstruct:materials:12>)
+setTitle("Expansive")
+setDescription("Create an Expander and upgrade your tool with it")
+
+setParent("triumph:steel_age/tinkers_tool")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Horizontal", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:materials:12>)
+
+criteria = addCriteria("Vertical", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:materials:13>)
+
+setRequirements("any")

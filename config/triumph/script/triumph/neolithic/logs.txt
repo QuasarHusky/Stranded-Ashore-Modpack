@@ -1,0 +1,11 @@
+setIcon(<tfc:wood/log/oak>)
+setTitle("Timberrr!")
+setDescription("Chop down a tree and retrieve its Logs")
+
+setParent("triumph:neolithic/stone_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:logWood>)

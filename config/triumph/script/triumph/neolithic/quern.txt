@@ -1,0 +1,14 @@
+setIcon(<tfc:quern>)
+setTitle("The Grind")
+setDescription("Craft a Quern and Quern Handstone")
+
+setParent("triumph:neolithic/pickaxe")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Quern", "minecraft:inventory_changed")
+criteria.addItem(<tfc:quern>)
+
+criteria = addCriteria("Handstone", "minecraft:inventory_changed")
+criteria.addItem(<tfc:handstone>)

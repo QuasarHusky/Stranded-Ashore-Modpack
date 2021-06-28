@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:wooden_device1:0>)
+setTitle("Wheely Powerful")
+setDescription("Craft a Water Wheel")
+
+setParent("triumph:steel_age/kinetic_dynamo")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:wooden_device1:0>)

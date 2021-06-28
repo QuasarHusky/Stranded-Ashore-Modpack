@@ -1,0 +1,11 @@
+setIcon(<tfc:firestarter>)
+setTitle("Embers")
+setDescription("Craft a Firestarter from two Sticks")
+
+setParent("triumph:neolithic/sticks_and_rocks")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:firestarter>)

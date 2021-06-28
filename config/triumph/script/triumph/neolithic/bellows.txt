@@ -1,0 +1,12 @@
+setIcon(<tfc:bellows>)
+setTitle("Blow You Away")
+setDescription("Use Leather to make a Bellows")
+
+setParent("triumph:neolithic/leather")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:bellows>)

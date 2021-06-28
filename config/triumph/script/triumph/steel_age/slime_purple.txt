@@ -1,0 +1,11 @@
+setIcon(<tconstruct:edible:2>)
+setTitle("Purple Slime")
+setDescription("Create a Purple Slimeball")
+
+setParent("triumph:steel_age/slime_blue")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:edible:2>)

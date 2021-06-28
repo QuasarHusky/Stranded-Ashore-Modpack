@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_device0:0>)
+setTitle("Deferred Charge")
+setDescription("Craft a LV Capacitor")
+
+setParent("triumph:steel_age/lv_connector")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:metal_device0:0>)

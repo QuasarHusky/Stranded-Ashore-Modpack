@@ -1,0 +1,11 @@
+setIcon(<tfc:bloomery>)
+setTitle("Ironworks")
+setDescription("Craft a Bloomery")
+
+setParent("triumph:neolithic/bronze_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:bloomery>)

@@ -1,0 +1,12 @@
+setIcon(<minecraft:bucket>)
+setTitle("Ultimate Goal")
+setDescription("Craft a Bucket")
+
+setParent("triumph:neolithic/red_bucket")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:bucket>)

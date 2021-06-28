@@ -1,0 +1,11 @@
+setIcon(<minecraft:barrier>)
+setTitle("Master of Space Travel")
+setDescription("Complete the Space Age")
+
+setParent("triumph:complete/modern_era")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:impossible")

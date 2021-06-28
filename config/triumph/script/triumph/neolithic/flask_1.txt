@@ -1,0 +1,11 @@
+setIcon(<waterflasks:leather_flask>)
+setTitle("Water Storage")
+setDescription("Craft a Leather Flask")
+
+setParent("triumph:neolithic/leather")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<waterflasks:leather_flask>)

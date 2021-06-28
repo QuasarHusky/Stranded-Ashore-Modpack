@@ -1,0 +1,29 @@
+setIcon(<tfc:stone/javelin_head/igneous_intrusive>)
+setTitle("Paleolithic")
+setDescription("Create your first tool by knapping two Rocks")
+
+setParent("triumph:neolithic/sticks_and_rocks")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Rock Axe", "minecraft:inventory_changed")
+criteria.addItem(<ore:axeStone>)
+
+criteria = addCriteria("Rock Shovel", "minecraft:inventory_changed")
+criteria.addItem(<ore:shovelStone>)
+
+criteria = addCriteria("Rock Hoe", "minecraft:inventory_changed")
+criteria.addItem(<ore:hoeStone>)
+
+criteria = addCriteria("Rock Knife", "minecraft:inventory_changed")
+criteria.addItem(<ore:knifeStone>)
+
+criteria = addCriteria("Rock Javelin", "minecraft:inventory_changed")
+criteria.addItem(<ore:javelinStone>)
+
+criteria = addCriteria("Rock Hammer", "minecraft:inventory_changed")
+criteria.addItem(<ore:hammerStone>)
+
+setRequirements("any")

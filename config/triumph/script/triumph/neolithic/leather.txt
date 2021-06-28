@@ -1,0 +1,11 @@
+setIcon(<minecraft:leather>)
+setTitle("Genuine Leather")
+setDescription("Soak a Scraped Hide in Fresh Water, then again in Tannin, to produce Leather")
+
+setParent("triumph:neolithic/scraped_hide")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:leather>)

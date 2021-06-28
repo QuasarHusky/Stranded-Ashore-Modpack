@@ -1,9 +1,0 @@
-setIcon(<minecraft:barrier>)
-setTitle("Modern Era")
-setDescription("NYI")
-
-addParent("triumph:main/heavy_engineering")
-
-setFrameType("challenge")
-
-addCriteria("impossible", "minecraft:impossible")

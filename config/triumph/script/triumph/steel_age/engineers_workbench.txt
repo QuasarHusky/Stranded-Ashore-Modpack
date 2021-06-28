@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:wooden_device0:2>)
+setTitle("A True Engineer")
+setDescription("Craft the Engineer's Workbench")
+
+setParent("triumph:steel_age/treated_lumber")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:wooden_device0:2>)

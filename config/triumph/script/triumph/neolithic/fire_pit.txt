@@ -1,0 +1,11 @@
+setIcon(<tfc:firepit>)
+setTitle("The Fire Pit")
+setDescription("Throw a Log and three Sticks on the ground, then light them up")
+
+setParent("triumph:neolithic/firestarter")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "tfc:lit_device")
+criteria.addCondition('"block": "tfc:firepit"')

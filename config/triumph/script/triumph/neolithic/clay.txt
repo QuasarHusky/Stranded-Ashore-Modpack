@@ -1,0 +1,11 @@
+setIcon(<minecraft:clay_ball>)
+setTitle("Locating Clay")
+setDescription("Find and dig up Clay")
+
+setParent("triumph:neolithic/stone_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:clay>)

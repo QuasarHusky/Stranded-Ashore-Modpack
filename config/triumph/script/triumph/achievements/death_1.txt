@@ -1,8 +1,0 @@
-setIcon(<tconstruct:sharpening_kit, nbt:{Material:"wood"}>)
-setTitle("Oops!")
-setDescription("Die for the first time")
-
-addParent("triumph:achievements/root")
-
-criteria = addCriteria("death", "triumph:player_death")
-criteria.setCount(1)

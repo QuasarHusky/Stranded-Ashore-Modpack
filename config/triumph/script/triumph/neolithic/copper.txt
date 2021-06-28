@@ -1,0 +1,56 @@
+setIcon(<tfc:metal/ingot/copper>)
+setTitle("Copper Age")
+setDescription("Make any Copper tool")
+
+setParent("triumph:neolithic/pottery")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Hammer", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/hammer/copper>)
+
+criteria = addCriteria("Prospector's Pickaxe", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/propick/copper>)
+
+criteria = addCriteria("Knife", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/knife/copper>)
+
+criteria = addCriteria("Scythe", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/scythe/copper>)
+
+criteria = addCriteria("Shears", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/shears/copper>)
+
+criteria = addCriteria("Prospector's Hammer", "minecraft:inventory_changed")
+criteria.addItem(<tfcthings:prospectors_hammer/copper>)
+
+criteria = addCriteria("Pickaxe", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/pick/copper>)
+
+criteria = addCriteria("Shovel", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/shovel/copper>)
+
+criteria = addCriteria("Axe", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/axe/copper>)
+
+criteria = addCriteria("Hoe", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/hoe/copper>)
+
+criteria = addCriteria("Chisel", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/chisel/copper>)
+
+criteria = addCriteria("Sword", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/sword/copper>)
+
+criteria = addCriteria("Mace", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/mace/copper>)
+
+criteria = addCriteria("Saw", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/saw/copper>)
+
+criteria = addCriteria("Javelin", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/javelin/copper>)
+
+setRequirements("any")

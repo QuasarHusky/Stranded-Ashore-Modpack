@@ -1,0 +1,12 @@
+setIcon(<tfc:metal/bucket/red_steel>)
+setTitle("Handheld Tsunami")
+setDescription("Craft a Red Steel Bucket")
+
+setParent("triumph:neolithic/red_steel")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:metal/bucket/red_steel>)

@@ -1,0 +1,11 @@
+setIcon(<wearablebackpacks:backpack>)
+setTitle("Backpacking")
+setDescription("Craft a Backpack")
+
+setParent("triumph:neolithic/leather")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<wearablebackpacks:backpack>)

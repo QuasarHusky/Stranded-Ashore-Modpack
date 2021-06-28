@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_device1:2>)
+setTitle("Rotary Power")
+setDescription("Craft a Kinetic Dynamo")
+
+setParent("triumph:steel_age/lv_wire")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:metal_device1:2>)

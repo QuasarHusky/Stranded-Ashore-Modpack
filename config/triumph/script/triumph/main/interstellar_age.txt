@@ -1,9 +1,0 @@
-setIcon(<minecraft:barrier>)
-setTitle("Interstellar Age")
-setDescription("NYI")
-
-addParent("triumph:main/space_age")
-
-setFrameType("challenge")
-
-addCriteria("impossible", "minecraft:impossible")

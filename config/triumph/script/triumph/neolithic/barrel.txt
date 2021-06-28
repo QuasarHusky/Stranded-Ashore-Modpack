@@ -1,0 +1,11 @@
+setIcon(<tfc:wood/barrel/oak>)
+setTitle("Do a Barrel Roll!")
+setDescription("Craft a Barrel")
+
+setParent("triumph:neolithic/saw")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:barrel>)

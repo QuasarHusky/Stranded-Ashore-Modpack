@@ -1,0 +1,12 @@
+setIcon(<minecraft:flint_and_steel>)
+setTitle("Relight My Fire")
+setDescription("Craft a Flint and Steel")
+
+setParent("triumph:neolithic/steel_age")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:flint_and_steel>)

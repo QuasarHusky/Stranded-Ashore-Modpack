@@ -1,0 +1,20 @@
+setIcon(<exnihilocreatio:item_mesh:4>)
+setTitle("Mesh Network")
+setDescription("Craft each of the four types of Sieve Mesh")
+
+setParent("triumph:neolithic/sieve")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("String", "minecraft:inventory_changed")
+criteria.addItem(<exnihilocreatio:item_mesh:1>)
+
+criteria = addCriteria("Cloth", "minecraft:inventory_changed")
+criteria.addItem(<exnihilocreatio:item_mesh:2>)
+
+criteria = addCriteria("Wrought Iron", "minecraft:inventory_changed")
+criteria.addItem(<exnihilocreatio:item_mesh:3>)
+
+criteria = addCriteria("Gold", "minecraft:inventory_changed")
+criteria.addItem(<exnihilocreatio:item_mesh:4>)

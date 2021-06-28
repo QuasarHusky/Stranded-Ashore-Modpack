@@ -1,0 +1,11 @@
+setIcon(<tfc:fire_bricks>)
+setTitle("Making a Chimney")
+setDescription("Make Fire Bricks for constructing a Blast Furnace")
+
+setParent("triumph:neolithic/fire_clay")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:fire_bricks>)

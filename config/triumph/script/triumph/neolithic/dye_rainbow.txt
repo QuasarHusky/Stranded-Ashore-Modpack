@@ -1,0 +1,57 @@
+setIcon(<minecraft:dye:6>)
+setTitle("Rainbow Road")
+setDescription("Collect each type of Dye or Pigment")
+
+setParent("triumph:neolithic/quern")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("White", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeWhite>)
+
+criteria = addCriteria("Orange", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeOrange>)
+
+criteria = addCriteria("Magenta", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeMagenta>)
+
+criteria = addCriteria("Light Blue", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeLightBlue>)
+
+criteria = addCriteria("Yellow", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeYellow>)
+
+criteria = addCriteria("Lime", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeLime>)
+
+criteria = addCriteria("Pink", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyePink>)
+
+criteria = addCriteria("Gray", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeGray>)
+
+criteria = addCriteria("Light Gray", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeLightGray>)
+
+criteria = addCriteria("Cyan", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeCyan>)
+
+criteria = addCriteria("Purple", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyePurple>)
+
+criteria = addCriteria("Blue", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeBlue>)
+
+criteria = addCriteria("Brown", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeBrown>)
+
+criteria = addCriteria("Green", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeGreen>)
+
+criteria = addCriteria("Red", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeRed>)
+
+criteria = addCriteria("Black", "minecraft:inventory_changed")
+criteria.addItem(<ore:dyeBlack>)

@@ -1,9 +1,0 @@
-setIcon(<tconstruct:sharpening_kit, nbt:{Material:"iron"}>)
-setTitle("I'm Not Clumsy")
-setDescription("Die 50 times")
-
-setFrameType("goal")
-addParent("triumph:achievements/death_1")
-
-criteria = addCriteria("death", "triumph:player_death")
-criteria.setCount(3)

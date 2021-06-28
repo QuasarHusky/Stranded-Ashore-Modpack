@@ -1,0 +1,11 @@
+setIcon(<firmalife:treated_lumber>)
+setTitle("The Best Treatment")
+setDescription("Use Creosote Oil to treat Lumber")
+
+setParent("triumph:steel_age/coke_oven")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:lumberTreated>)

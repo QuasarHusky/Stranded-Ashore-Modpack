@@ -1,0 +1,11 @@
+setIcon(<storagedrawers:basicdrawers:2, nbt:{material:"oak"}>)
+setTitle("Compact Storage")
+setDescription("Craft a Storage Drawer")
+
+setParent("triumph:neolithic/saw")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<storagedrawers:customdrawers>)

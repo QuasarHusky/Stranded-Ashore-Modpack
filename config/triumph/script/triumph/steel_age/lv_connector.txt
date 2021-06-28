@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:connector:0>)
+setTitle("Connected")
+setDescription("Craft a LV Wire Connector")
+
+setParent("triumph:steel_age/lv_wire")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:connector:0>)

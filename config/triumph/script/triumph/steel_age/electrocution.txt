@@ -1,0 +1,12 @@
+setIcon(<immersiveengineering:metal_decoration0:1>)
+setTitle("Electrifying!")
+setDescription("Get shocked to death by a live wire")
+
+setParent("triumph:steel_age/lv_wire")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "triumph:player_death")
+criteria.damageType("ieWireShock")

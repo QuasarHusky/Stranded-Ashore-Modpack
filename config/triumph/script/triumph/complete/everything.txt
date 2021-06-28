@@ -1,0 +1,27 @@
+setIcon(<tfcthings:crown/gold_ruby>)
+setTitle("Completionist")
+setDescription("100% complete all ages in Stranded Ashore")
+
+setParent("triumph:complete/root")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Neolithic Age", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:complete/neolithic_age")
+
+criteria = addCriteria("Steel Age", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:complete/steel_age")
+
+criteria = addCriteria("Industrial Revolition", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:complete/industrial_revolution")
+
+criteria = addCriteria("Modern Era", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:complete/modern_era")
+
+criteria = addCriteria("Space Age", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:complete/space_age")
+
+criteria = addCriteria("Interstellar Age", "triumph:completed_advancement")
+criteria.setAdvancement("triumph:complete/interstellar_age")

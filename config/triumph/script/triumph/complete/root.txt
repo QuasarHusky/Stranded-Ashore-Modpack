@@ -1,0 +1,11 @@
+setIcon(<tfcthings:crown/platinum_ruby>)
+setTitle("100% Completion")
+setDescription("")
+setBackground("immersiveengineering:textures/blocks/stone_decoration_cokebrick.png")
+
+setFrameType("goal")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("location", "minecraft:location")

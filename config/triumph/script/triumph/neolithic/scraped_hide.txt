@@ -1,0 +1,11 @@
+setIcon(<tfc:hide/scraped/large>)
+setTitle("Soak and Scrape")
+setDescription("Soak a Raw Hide in Limewater, then scrape it on top of a log")
+
+setParent("triumph:neolithic/barrel")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:hideScraped>)

@@ -1,0 +1,13 @@
+setIcon(<tfc:blast_furnace>)
+setTitle("Blast Off!")
+setDescription("Craft a Blast Furnace")
+
+setParent("triumph:neolithic/fire_clay")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Bronze", "minecraft:inventory_changed")
+criteria.addItem(<tfc:blast_furnace>)
+
+setRequirements("any")

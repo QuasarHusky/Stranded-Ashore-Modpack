@@ -1,0 +1,11 @@
+setIcon(<storagedrawers:upgrade_void>)
+setTitle("Overflow Prevention")
+setDescription("Craft a Void Upgrade for Storage Drawers")
+
+setParent("triumph:neolithic/storage_drawer")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<storagedrawers:upgrade_void>)

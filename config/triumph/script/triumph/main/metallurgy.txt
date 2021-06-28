@@ -1,9 +1,0 @@
-setIcon(<tconstruct:smeltery_controller>)
-setTitle("Metallurgy")
-setDescription("Craft a Smeltery Controller and construct a Smeltery")
-
-addParent("triumph:main/steel_age")
-
-setFrameType("goal")
-
-addCriteria("impossible", "minecraft:impossible")

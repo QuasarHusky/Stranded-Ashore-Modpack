@@ -1,0 +1,11 @@
+setIcon(<tfc:powder/flux>)
+setTitle("In Flux")
+setDescription("Crush a Rock into Flux")
+
+setParent("triumph:neolithic/pickaxe")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:dustFlux>)

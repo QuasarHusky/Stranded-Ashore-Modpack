@@ -1,0 +1,12 @@
+setIcon(<tfc:metal/ingot/steel>)
+setTitle("Industrial Revolution")
+setDescription("")
+setBackground("immersiveengineering:textures/blocks/sheetmetal_steel.png")
+
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<thermalfoundation:material:161>)

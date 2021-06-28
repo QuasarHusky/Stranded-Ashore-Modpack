@@ -1,0 +1,12 @@
+setIcon(<minecraft:cookie>)
+setTitle("Jaffa Factory")
+setDescription("Make a Jaffa Cake")
+
+setParent("triumph:steel_age/machine_squeezer")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:cookie>)

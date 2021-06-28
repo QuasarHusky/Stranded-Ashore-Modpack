@@ -1,9 +1,0 @@
-setIcon(<immersiveengineering:metal_decoration0:4>)
-setTitle("Light Engineering")
-setDescription("Craft a Light Engineering Block")
-
-addParent("triumph:main/metallurgy")
-
-setFrameType("goal")
-
-addCriteria("impossible", "minecraft:impossible")

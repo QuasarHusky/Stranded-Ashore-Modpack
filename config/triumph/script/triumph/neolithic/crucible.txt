@@ -1,0 +1,11 @@
+setIcon(<tfc:crucible>)
+setTitle("Metallurgic!")
+setDescription("Knap a Crucible from Fire Clay")
+
+setParent("triumph:neolithic/fire_clay")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crucible>)

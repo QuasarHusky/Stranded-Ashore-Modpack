@@ -1,0 +1,11 @@
+setIcon(<tfc:ceramics/fired/vessel>)
+setTitle("Pottery Class")
+setDescription("Knap a Small Vessel from Clay and fire it in a Pit Kiln")
+
+setParent("triumph:neolithic/clay")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tfc:ceramics/fired/vessel>)

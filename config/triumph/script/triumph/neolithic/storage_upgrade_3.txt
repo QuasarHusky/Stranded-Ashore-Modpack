@@ -1,0 +1,11 @@
+setIcon(<storagedrawers:upgrade_storage:3>)
+setTitle("Crazy Big Storage")
+setDescription("Craft a Storage Upgrade (IV)")
+
+setParent("triumph:neolithic/storage_upgrade_2")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<storagedrawers:upgrade_storage:3>)

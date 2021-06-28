@@ -1,0 +1,12 @@
+setIcon(<tfc:metal/ingot/blue_steel>)
+setTitle("Blue Ogre")
+setDescription("Get a Blue Steel Ingot")
+
+setParent("triumph:neolithic/black_steel")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotBlueSteel>)

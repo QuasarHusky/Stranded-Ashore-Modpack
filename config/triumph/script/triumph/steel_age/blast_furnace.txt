@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:stone_decoration:1>)
+setTitle("Having a Blast")
+setDescription("Construct a Crude Blast Furnace")
+
+setParent("triumph:steel_age/treated_lumber")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:BlastFurnace")

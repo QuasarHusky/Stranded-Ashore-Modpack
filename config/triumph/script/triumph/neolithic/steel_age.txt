@@ -1,0 +1,12 @@
+setIcon(<tfc:metal/ingot/steel>)
+setTitle("Steel Age")
+setDescription("Get a Steel Ingot using the Blast Furnace")
+
+setParent("triumph:neolithic/blast_furnace")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotSteel>)

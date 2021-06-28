@@ -1,0 +1,11 @@
+setIcon(<naturescompass:naturescompass>)
+setTitle("Locating Biomes")
+setDescription("Craft a Nature's Compass")
+
+setParent("triumph:neolithic/iron_age")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<naturescompass:naturescompass>)
