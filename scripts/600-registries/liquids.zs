@@ -152,4 +152,60 @@ global liquids as ILiquidStack[string][string] = {
     "alubrass": {
         "normal":                   <liquid:alubrass>,
     },
+    "crude_oil": {
+        "normal":                   <liquid:oil>,
+        "hot":                      <liquid:oil_heat_1>,
+        "searing":                  <liquid:oil_heat_2>,
+    },
+    "distilled_oil": {
+        "normal":                   <liquid:oil_distilled>,
+        "hot":                      <liquid:oil_distilled_heat_1>,
+        "searing":                  <liquid:oil_distilled_heat_2>,
+    },
+    "dense_oil": {
+        "normal":                   <liquid:oil_dense>,
+        "hot":                      <liquid:oil_dense_heat_1>,
+        "searing":                  <liquid:oil_dense_heat_2>,
+    },
+    "heavy_oil": {
+        "normal":                   <liquid:oil_heavy>,
+        "hot":                      <liquid:oil_heavy_heat_1>,
+        "searing":                  <liquid:oil_heavy_heat_2>,
+    },
+    "light_fuel": {
+        "normal":                   <liquid:fuel_light>,
+        "hot":                      <liquid:fuel_light_heat_1>,
+        "searing":                  <liquid:fuel_light_heat_2>,
+    },
+    "dense_fuel": {
+        "normal":                   <liquid:fuel_dense>,
+        "hot":                      <liquid:fuel_dense_heat_1>,
+        "searing":                  <liquid:fuel_dense_heat_2>,
+    },
+    "refined_fuel": {
+        "normal":                   <liquid:refined_fuel>,
+    },
+    "ethanol": {
+        "normal":                   <liquid:ethanol>,
+    },
+    "biodiesel": {
+        "normal":                   <liquid:biodiesel>,
+    },
+    "diesel": {
+        "normal":                   <liquid:diesel>,
+    },
+    "grassoline": {
+        "normal":                   <liquid:refined_biofuel>,
+    },
+    "naphtha": {
+        "normal":                   <liquid:refined_oil>,
+    },
+    "residue": {
+        "normal":                   <liquid:oil_residue>,
+        "hot":                      <liquid:oil_residue_heat_1>,
+        "searing":                  <liquid:oil_residue_heat_2>,
+    },
+    "lubricant": {
+        "normal":                   <liquid:lubricant>,
+    },
 };
