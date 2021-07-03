@@ -100,3 +100,15 @@ for id, wood in woods {
         item.addTooltip("§eVARIETY: " ~ variety);
     }
 }
+
+// ===== Dyeables ===== //
+for id, dyeable in dyeables {
+    for color, item in dyeable {
+        item.addTooltip("§eDYEABLE: " ~ id);
+        item.addTooltip("§eCOLOR: " ~ color);
+    }
+}
+
+for color, ingredient in dyes {
+    ingredient.addTooltip("§eDYE: " ~ color);
+}
