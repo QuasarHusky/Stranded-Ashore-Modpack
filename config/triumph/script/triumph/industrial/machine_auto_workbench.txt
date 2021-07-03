@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_multiblock:5>)
+setTitle("Auto Workbench")
+setDescription("Construct the Automated Engineer's Workbench")
+
+setParent("triumph:industrial/heavy_engineering_block")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:AutoWorkbench")

@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_multiblock:7>)
+setTitle("In a Squeeze")
+setDescription("Construct the Squeezer")
+
+setParent("triumph:steel/light_engineering_block")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:Squeezer")

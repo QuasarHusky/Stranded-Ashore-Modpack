@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_device1:5>)
+setTitle("Rechargeable")
+setDescription("Craft a Charging Station")
+
+setParent("triumph:steel/lv_connector")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:metal_device1:5>)

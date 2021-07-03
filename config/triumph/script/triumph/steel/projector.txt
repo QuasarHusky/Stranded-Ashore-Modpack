@@ -1,0 +1,11 @@
+setIcon(<immersivepetroleum:schematic>)
+setTitle("Lights, Camera, Action!")
+setDescription("Craft a Projector")
+
+setParent("triumph:steel/treated_lumber")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersivepetroleum:schematic>)

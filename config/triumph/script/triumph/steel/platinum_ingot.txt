@@ -1,0 +1,11 @@
+setIcon(<tfc:metal/ingot/platinum>)
+setTitle("Oooh, shiny!")
+setDescription("Use the Smeltery to melt down Platinum Ore into a Platinum Ingot")
+
+setParent("triumph:steel/smeltery")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotPlatinum>)

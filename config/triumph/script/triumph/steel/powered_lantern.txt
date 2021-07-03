@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_device1:4>)
+setTitle("Enlightened")
+setDescription("Craft a Powered Lantern")
+
+setParent("triumph:steel/lv_wire")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:metal_device1:4>)

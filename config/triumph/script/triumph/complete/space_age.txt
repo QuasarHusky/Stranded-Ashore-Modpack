@@ -2,7 +2,7 @@ setIcon(<minecraft:barrier>)
 setTitle("Master of Space Travel")
 setDescription("Complete the Space Age")
 
-setParent("triumph:complete/modern_era")
+setParent("triumph:complete/modern")
 setFrameType("challenge")
 
 setShowToast(true)

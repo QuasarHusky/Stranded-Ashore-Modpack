@@ -1,0 +1,11 @@
+setIcon(<tfc:wood/sapling/palm>)
+setTitle("Tiny Trees")
+setDescription("Collect a Sapling by breaking Leaves with a Crook")
+
+setParent("triumph:exploration/sticks_and_stones")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Acacia", "minecraft:inventory_changed")
+criteria.addItem(<ore:treeSapling>)

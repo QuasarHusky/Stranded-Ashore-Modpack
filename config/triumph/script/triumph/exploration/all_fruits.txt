@@ -1,0 +1,36 @@
+setIcon(<tfc:food/banana>)
+setTitle("Fruit Salad")
+setDescription("Collect every kind of fruit which comes from a fruit tree")
+
+setParent("triumph:exploration/sapling")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Banana", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/banana>)
+
+criteria = addCriteria("Cherru", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/cherry>)
+
+criteria = addCriteria("Green Apple", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/green_apple>)
+
+criteria = addCriteria("Lemon", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/lemon>)
+
+criteria = addCriteria("Olive", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/olive>)
+
+criteria = addCriteria("Orange", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/orange>)
+
+criteria = addCriteria("Peach", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/peach>)
+
+criteria = addCriteria("Plum", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/plum>)
+
+criteria = addCriteria("Red Apple", "minecraft:inventory_changed")
+criteria.addItem(<tfc:food/red_apple>)

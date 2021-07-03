@@ -1,0 +1,12 @@
+setIcon(<chickenchunks:chunk_loader>)
+setTitle("Idle Game")
+setDescription("Create a Chunk Loader")
+
+setParent("triumph:steel/platinum_ingot")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<chickenchunks:chunk_loader>)

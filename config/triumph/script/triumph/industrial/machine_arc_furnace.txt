@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_multiblock:13>)
+setTitle("Arc Furnace")
+setDescription("Construct the Arc Furnace")
+
+setParent("triumph:industrial/heavy_engineering_block")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:ArcFurnace")

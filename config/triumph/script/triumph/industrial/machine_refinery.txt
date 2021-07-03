@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_multiblock:9>)
+setTitle("Refined")
+setDescription("Construct the Refinery")
+
+setParent("triumph:industrial/heavy_engineering_block")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:Refinery")

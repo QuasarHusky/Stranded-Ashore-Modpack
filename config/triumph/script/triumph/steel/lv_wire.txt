@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:wirecoil:0>)
+setTitle("Low Voltage")
+setDescription("Create a LV Wire Coil")
+
+setParent("triumph:steel/engineers_workbench")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:wirecoil:0>)

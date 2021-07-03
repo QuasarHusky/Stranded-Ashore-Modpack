@@ -2,7 +2,7 @@ setIcon(<minecraft:flint_and_steel>)
 setTitle("Relight My Fire")
 setDescription("Craft a Flint and Steel")
 
-setParent("triumph:neolithic/steel_age")
+setParent("triumph:neolithic/steel")
 setFrameType("challenge")
 
 setShowToast(true)

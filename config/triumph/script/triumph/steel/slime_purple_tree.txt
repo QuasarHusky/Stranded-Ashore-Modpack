@@ -1,0 +1,11 @@
+setIcon(<tconstruct:slime_sapling:1>)
+setTitle("Slimy Purple Tree")
+setDescription("Create a Purple Slime Sapling")
+
+setParent("triumph:steel/slime_purple")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:slime_sapling:1>)

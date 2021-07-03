@@ -2,7 +2,7 @@ setIcon(<minecraft:barrier>)
 setTitle("Master of The Interstellar")
 setDescription("Complete the Interstellar Age")
 
-setParent("triumph:complete/space_age")
+setParent("triumph:complete/space")
 setFrameType("challenge")
 
 setShowToast(true)

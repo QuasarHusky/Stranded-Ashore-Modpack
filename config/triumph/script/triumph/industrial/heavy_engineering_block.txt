@@ -1,0 +1,12 @@
+setIcon(<immersiveengineering:metal_decoration0:5>)
+setTitle("Heavy Engineering")
+setDescription("Create a Heavy Engineering Block")
+
+setParent("triumph:industrial/root")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:metal_decoration0:5>)

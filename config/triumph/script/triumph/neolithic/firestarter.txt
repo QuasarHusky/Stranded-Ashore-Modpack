@@ -2,7 +2,7 @@ setIcon(<tfc:firestarter>)
 setTitle("Embers")
 setDescription("Craft a Firestarter from two Sticks")
 
-setParent("triumph:neolithic/sticks_and_rocks")
+setParent("triumph:neolithic/root")
 
 setShowToast(true)
 setAnnounceToChat(true)

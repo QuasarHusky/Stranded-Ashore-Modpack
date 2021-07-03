@@ -2,7 +2,7 @@ setIcon(<tfc:stone/javelin_head/igneous_intrusive>)
 setTitle("Paleolithic")
 setDescription("Create your first tool by knapping two Rocks")
 
-setParent("triumph:neolithic/sticks_and_rocks")
+setParent("triumph:neolithic/root")
 setFrameType("goal")
 
 setShowToast(true)

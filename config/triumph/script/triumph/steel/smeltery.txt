@@ -1,0 +1,12 @@
+setIcon(<tconstruct:smeltery_controller>)
+setTitle("Smeltery")
+setDescription("Build a Tinkers' Construct Smeltery")
+
+setParent("triumph:steel/treated_lumber")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<tconstruct:smeltery_controller>)

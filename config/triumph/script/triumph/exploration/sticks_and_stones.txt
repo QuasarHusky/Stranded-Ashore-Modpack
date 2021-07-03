@@ -1,9 +1,9 @@
-setIcon(<tfc:rock/granite>)
-setTitle("Neolithic Age")
-setDescription("")
-setBackground("tfc:textures/blocks/stonetypes/raw/granite.png")
+setIcon(<minecraft:stick>)
+setTitle("Sticks and Stones")
+setDescription("Gather a Stick and a Rock found on the ground")
 
-setFrameType("challenge")
+setParent("triumph:exploration/root")
+setFrameType("goal")
 
 setShowToast(true)
 setAnnounceToChat(true)

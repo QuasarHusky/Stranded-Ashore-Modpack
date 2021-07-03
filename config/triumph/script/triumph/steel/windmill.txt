@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:wooden_device1:1>)
+setTitle("Windy Day")
+setDescription("Craft a Windmill")
+
+setParent("triumph:steel/kinetic_dynamo")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:wooden_device1:1>)

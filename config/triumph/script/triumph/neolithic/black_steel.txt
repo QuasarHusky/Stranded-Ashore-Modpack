@@ -2,7 +2,7 @@ setIcon(<tfc:metal/ingot/black_steel>)
 setTitle("Back in Black")
 setDescription("Get a Black Steel Ingot")
 
-setParent("triumph:neolithic/steel_age")
+setParent("triumph:neolithic/steel")
 setFrameType("goal")
 
 setShowToast(true)

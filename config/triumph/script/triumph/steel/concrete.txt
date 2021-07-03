@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:stone_decoration:5>)
+setTitle("Ready... Set...")
+setDescription("Mix up Liquid Concrete and set it into a Concrete block")
+
+setParent("triumph:steel/machine_mixer")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:stone_decoration:5>)

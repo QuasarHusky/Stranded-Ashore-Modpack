@@ -2,7 +2,7 @@ setIcon(<thermalfoundation:material:24>)
 setTitle("Master of Automation")
 setDescription("Complete the Industrial Revolution")
 
-setParent("triumph:complete/steel_age")
+setParent("triumph:complete/steel")
 setFrameType("challenge")
 
 setShowToast(true)

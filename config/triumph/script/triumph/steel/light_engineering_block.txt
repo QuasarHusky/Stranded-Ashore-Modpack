@@ -1,0 +1,12 @@
+setIcon(<immersiveengineering:metal_decoration0:4>)
+setTitle("Light Engineering")
+setDescription("Use the Engineer's Workbench to create a Light Engineering Block")
+
+setParent("triumph:steel/aluminum_ingot")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:metal_decoration0:4>)

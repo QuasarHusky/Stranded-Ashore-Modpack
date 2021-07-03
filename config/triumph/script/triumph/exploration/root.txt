@@ -1,0 +1,11 @@
+setIcon(<tfc:fruit_trees/sapling/banana>)
+setTitle("Exploration")
+setDescription("")
+setBackground("tfc:textures/blocks/wood/planks/birch.png")
+
+setFrameType("challenge")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("location", "minecraft:location")

@@ -1,0 +1,10 @@
+setIcon(<buildcraftlib:guide_note>)
+setTitle("Coming Soon...")
+setDescription("The Space Age isn't quite ready yet, but stay tuned for future updates!")
+
+setParent("triumph:space/root")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("main", "minecraft:impossible")

@@ -1,0 +1,12 @@
+setIcon(<thermalfoundation:material:162>)
+setTitle("Advanced Metal")
+setDescription("Use the Alloy Kiln to make an Invar Ingot")
+
+setParent("triumph:steel/alloy_kiln")
+setFrameType("goal")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<ore:ingotInvar>)

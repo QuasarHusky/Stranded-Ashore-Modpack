@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:material:27>)
+setTitle("Modern Era")
+setDescription("")
+setBackground("immersiveengineering:textures/blocks/stone_decoration_cokebrick.png")
+
+setFrameType("challenge")
+
+setShowToast(false)
+setAnnounceToChat(false)
+
+addCriteria("main", "minecraft:impossible")

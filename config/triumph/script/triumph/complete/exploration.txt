@@ -1,0 +1,11 @@
+setIcon(<tfc:fruit_trees/sapling/banana>)
+setTitle("Master Exporer")
+setDescription("Complete Exploration")
+
+setParent("triumph:complete/root")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:impossible")

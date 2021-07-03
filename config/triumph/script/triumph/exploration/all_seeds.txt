@@ -1,0 +1,144 @@
+setIcon(<tfc:crop/seeds/tomato>)
+setTitle("It's Honest Work")
+setDescription("Collect every type of crop seed")
+
+setParent("triumph:exploration/sticks_and_stones")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Barley", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/barley>)
+
+criteria = addCriteria("Maize", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/maize>)
+
+criteria = addCriteria("Oat", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/oat>)
+
+criteria = addCriteria("Rice", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/rice>)
+
+criteria = addCriteria("Rye", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/rye>)
+
+criteria = addCriteria("Wheat", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/wheat>)
+
+criteria = addCriteria("Beet", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/beet>)
+
+criteria = addCriteria("Cabbage", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/cabbage>)
+
+criteria = addCriteria("Carrot", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/carrot>)
+
+criteria = addCriteria("Garlic", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/garlic>)
+
+criteria = addCriteria("Green Bean", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/green_bean>)
+
+criteria = addCriteria("Onion", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/onion>)
+
+criteria = addCriteria("Potato", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/potato>)
+
+criteria = addCriteria("Soybean", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/soybean>)
+
+criteria = addCriteria("Squash", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/squash>)
+
+criteria = addCriteria("Sugarcane", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/sugarcane>)
+
+criteria = addCriteria("Tomato", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/tomato>)
+
+criteria = addCriteria("Red Bell pepper", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/red_bell_pepper>)
+
+criteria = addCriteria("Yellow Bell Pepper", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/yellow_bell_pepper>)
+
+criteria = addCriteria("Jute", "minecraft:inventory_changed")
+criteria.addItem(<tfc:crop/seeds/jute>)
+
+criteria = addCriteria("Pumpkin", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/pumpkin>)
+
+criteria = addCriteria("Melon", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/melon>)
+
+criteria = addCriteria("Broccoli", "minecraft:inventory_changed")
+criteria.addItem(<tfc_ph_compat:crop/seeds/broccoli>)
+
+criteria = addCriteria("Celery", "minecraft:inventory_changed")
+criteria.addItem(<tfc_ph_compat:crop/seeds/celery>)
+
+criteria = addCriteria("Chili", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/chili>)
+
+criteria = addCriteria("Coffee", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/coffee>)
+
+criteria = addCriteria("Cucumber", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/cucumber>)
+
+criteria = addCriteria("Eggplant", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/eggplant>)
+
+criteria = addCriteria("Ginger", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/ginger>)
+
+criteria = addCriteria("Grape", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/grape>)
+
+criteria = addCriteria("Lettuce", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/lettuce>)
+
+criteria = addCriteria("Mushroom", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/mushroom>)
+
+criteria = addCriteria("Mustard", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/mustard>)
+
+criteria = addCriteria("Peanut", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/peanut>)
+
+criteria = addCriteria("Pea", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/peas>)
+
+criteria = addCriteria("Peppercorn", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/peppercorn>)
+
+criteria = addCriteria("Radish", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/radish>)
+
+criteria = addCriteria("Scallion", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/scallion>)
+
+criteria = addCriteria("Sesame Seeds", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/sesameseeds>)
+
+criteria = addCriteria("Spice", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/spiceleaf>)
+
+criteria = addCriteria("Spinach", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/spinach>)
+
+criteria = addCriteria("Sweet Potato", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/sweetpotato>)
+
+criteria = addCriteria("Tea", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/tealeaf>)
+
+criteria = addCriteria("Zucchini", "minecraft:inventory_changed")
+criteria.addItem(<firmalife:crop/seeds/zucchini>)
+
+criteria = addCriteria("Hemp", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:seed>)

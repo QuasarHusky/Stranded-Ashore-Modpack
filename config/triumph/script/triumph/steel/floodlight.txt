@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_device1:9>)
+setTitle("In The Spotlight")
+setDescription("Craft a Floodlight")
+
+setParent("triumph:steel/powered_lantern")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "minecraft:inventory_changed")
+criteria.addItem(<immersiveengineering:metal_device1:9>)

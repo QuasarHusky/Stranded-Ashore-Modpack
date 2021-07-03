@@ -1,0 +1,66 @@
+setIcon(<tfc:wood/sapling/ash>)
+setTitle("Nature Reserve")
+setDescription("Collect every type of natural sapling")
+
+setParent("triumph:exploration/sapling")
+setFrameType("challenge")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("Acacia", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/acacia>)
+
+criteria = addCriteria("Aspen", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/aspen>)
+
+criteria = addCriteria("Ash", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/ash>)
+
+criteria = addCriteria("Birch", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/birch>)
+
+criteria = addCriteria("Blackwood", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/blackwood>)
+
+criteria = addCriteria("Chestnut", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/chestnut>)
+
+criteria = addCriteria("Douglas Fir", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/douglas_fir>)
+
+criteria = addCriteria("Hickory", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/hickory>)
+
+criteria = addCriteria("Kapok", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/kapok>)
+
+criteria = addCriteria("Maple", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/maple>)
+
+criteria = addCriteria("Oak", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/oak>)
+
+criteria = addCriteria("Palm", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/palm>)
+
+criteria = addCriteria("Pine", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/pine>)
+
+criteria = addCriteria("Rosewood", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/rosewood>)
+
+criteria = addCriteria("Sequoia", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/sequoia>)
+
+criteria = addCriteria("Spruce", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/spruce>)
+
+criteria = addCriteria("Sycamore", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/sycamore>)
+
+criteria = addCriteria("White Cedar", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/white_cedar>)
+
+criteria = addCriteria("Willow", "minecraft:inventory_changed")
+criteria.addItem(<tfc:wood/sapling/willow>)

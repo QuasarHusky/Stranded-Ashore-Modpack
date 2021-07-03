@@ -2,7 +2,7 @@ setIcon(<immersiveengineering:material:27>)
 setTitle("Master of Modernization")
 setDescription("Complete the Modern Era")
 
-setParent("triumph:complete/industrial_revolution")
+setParent("triumph:complete/industrial")
 setFrameType("challenge")
 
 setShowToast(true)

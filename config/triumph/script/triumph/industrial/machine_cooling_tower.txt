@@ -1,0 +1,11 @@
+setIcon(<minecraft:barrier>)
+setTitle("Cooling Off")
+setDescription("Construct the Cooling Tower")
+
+setParent("triumph:industrial/heavy_engineering_block")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IT:CoolingTower")

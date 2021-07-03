@@ -1,0 +1,11 @@
+setIcon(<immersiveengineering:metal_multiblock:0>)
+setTitle("Hot Off the Press")
+setDescription("Construct the Metal Press")
+
+setParent("triumph:industrial/heavy_engineering_block")
+
+setShowToast(true)
+setAnnounceToChat(true)
+
+criteria = addCriteria("main", "immersiveengineering:multiblock_formed")
+criteria.setMultiblock("IE:MetalPress")
